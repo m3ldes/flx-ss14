@@ -32,9 +32,6 @@
       "name": "prisoner"
     },
     {
-      "name": "virologist"
-    },
-    {
       "name": "brigmedic"
     },
     {
@@ -42,9 +39,6 @@
     },
     {
       "name": "blueshield"
-    },
-    {
-      "name": "surgeon"
     }
   ]
 }

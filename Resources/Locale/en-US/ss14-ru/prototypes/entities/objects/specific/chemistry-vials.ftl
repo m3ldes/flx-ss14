@@ -9,6 +9,3 @@ ent-RadiumChemistryVial = { ent-BaseChemistryEmptyVial }
 ent-ChlorineChemistryVial = { ent-BaseChemistryEmptyVial }
     .suffix = chlorine
     .desc = { ent-BaseChemistryEmptyVial.desc }
-ent-PlasmaChemistryVial = { ent-BaseChemistryEmptyVial }
-    .suffix = plasma
-    .desc = { ent-BaseChemistryEmptyVial.desc }

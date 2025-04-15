@@ -63,15 +63,16 @@ public sealed partial class FaxMachineComponent : Component
     /// <summary>
     /// Should that fax receive station goal info
     /// </summary>
-    [DataField]
-    public bool ReceiveStationGoal { get; set; }
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("receiveStationGoal")]
+    public bool ReceiveStationGoal { get; set; } = false;
+    // Corvax-StationGoal-End
 
     /// <summary>
-    /// Should that fax receive station goals from other stations
+    /// Sound to play when fax has been emagged
     /// </summary>
     [DataField]
-    public bool ReceiveAllStationGoals { get; set; }
-    // Corvax-StationGoal-End
+    public SoundSpecifier EmagSound = new SoundCollectionSpecifier("sparks");
 
     /// <summary>
     /// Sound to play when fax printing new message

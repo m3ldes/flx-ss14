@@ -69,9 +69,6 @@ public sealed partial class StationEventComponent : Component
     [DataField]
     public int MinimumPlayers;
 
-    [DataField]
-    public int? MaxPlayers;
-
     /// <summary>
     ///     How many times this even can occur in a single round
     /// </summary>

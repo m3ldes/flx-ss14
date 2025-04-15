@@ -28,9 +28,7 @@ using Content.Shared.Backmen.Flesh;
 using Content.Shared.Backmen.Language;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Cloning;
-using Content.Shared.Cloning.Events;
 using Content.Shared.Fluids.Components;
-using Content.Shared.Forensics.Components;
 using Content.Shared.Hands.Components;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
@@ -115,14 +113,14 @@ public sealed partial class FleshCultistSystem : EntitySystem
     private void OnCultistCloning(EntityUid uid, FleshCultistComponent component, ref CloningEvent args)
     {
         // If the cultist ate the body we need to visually reset it after cloning
-        if (!TryComp<HumanoidAppearanceComponent>(args.CloneUid, out var huAppComponent))
+        if (!TryComp<HumanoidAppearanceComponent>(args.Target, out var huAppComponent))
             return;
 
         var speciesProto = _prototype.Index(huAppComponent.Species);
         var skeletonSprites = _prototype.Index<HumanoidSpeciesBaseSpritesPrototype>(speciesProto.SpriteSet);
         foreach (var (key, id) in skeletonSprites.Sprites)
         {
-            _sharedHuApp.SetBaseLayerId(args.CloneUid, key, id, humanoid: huAppComponent);
+            _sharedHuApp.SetBaseLayerId(args.Target, key, id, humanoid: huAppComponent);
         }
     }
 
@@ -476,7 +474,7 @@ public sealed partial class FleshCultistSystem : EntitySystem
 
         if (_puddleSystem.TrySpillAt(args.Args.Target.Value, tempSol.SplitSolution(50), out var puddleUid))
         {
-            if (TryComp<DnaComponent>(args.Args.Target.Value, out var dna) && !string.IsNullOrEmpty(dna.DNA))
+            if (TryComp<DnaComponent>(args.Args.Target.Value, out var dna))
             {
                 var comp = EnsureComp<ForensicsComponent>(puddleUid);
                 comp.DNAs.Add(dna.DNA);
@@ -598,7 +596,7 @@ public sealed partial class FleshCultistSystem : EntitySystem
 
             if (_puddleSystem.TrySpillAt(uid, tempSol.SplitSolution(50), out var puddleUid))
             {
-                if (TryComp<DnaComponent>(uid, out var dna) && !string.IsNullOrEmpty(dna.DNA))
+                if (TryComp<DnaComponent>(uid, out var dna))
                 {
                     var comp = EnsureComp<ForensicsComponent>(puddleUid);
                     comp.DNAs.Add(dna.DNA);

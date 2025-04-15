@@ -29,9 +29,10 @@ using Content.Shared.Shuttles.Events;
 using Content.Shared.Tag;
 using Content.Shared.Tiles;
 using Robust.Server.GameObjects;
+using Robust.Server.Maps;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
-using Robust.Shared.EntitySerialization.Systems;
+using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -60,7 +61,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     [Dependency] private readonly DockingSystem _dock = default!;
     [Dependency] private readonly IdCardSystem _idSystem = default!;
     [Dependency] private readonly NavMapSystem _navMap = default!;
-    [Dependency] private readonly MapLoaderSystem _loader = default!;
+    [Dependency] private readonly MapLoaderSystem _map = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly RoundEndSystem _roundEnd = default!;
@@ -399,7 +400,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         // TODO: Need filter extensions or something don't blame me.
         _audio.PlayGlobal(audioFile, Filter.Broadcast(), true);
 
-        _centcommSystem.EnableFtl(_centcommSystem.CentComMapUid!.Value.Owner); // backmen: centcom
+        _centcommSystem.EnableFtl(_centcommSystem.CentComMapUid); // backmen: centcom
     }
 
     private void OnStationInit(EntityUid uid, StationCentcommComponent component, MapInitEvent args)
@@ -521,8 +522,8 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     {
         var maps = new HashSet<EntityUid>();
 
-        if(_centcommSystem.CentComMapUid != null)
-            maps.Add(_centcommSystem.CentComMapUid.Value);
+        if(_centcommSystem.CentComMapUid.IsValid())
+            maps.Add(_centcommSystem.CentComMapUid);
 
         return maps;
     }
@@ -556,11 +557,15 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
         // Load escape shuttle
         var shuttlePath = ent.Comp1.EmergencyShuttlePath;
-        if (!_loader.TryLoadGrid(map.MapId,
-            shuttlePath,
-            out var shuttle,
+        var shuttle = _map.LoadGrid(map.MapId, shuttlePath.ToString(), new MapLoadOptions()
+        {
             // Should be far enough... right? I'm too lazy to bounds check CentCom rn.
-            offset: new Vector2(500f + _centcommSystem.ShuttleIndex, 0f)))
+            Offset = new Vector2(500f + _centcommSystem.ShuttleIndex, 0f),
+            // fun fact: if you just fucking yeet centcomm into nullspace anytime you try to spawn the shuttle, then any distance is far enough. so lets not do that
+            LoadMap = false,
+        });
+
+        if (shuttle == null)
         {
             Log.Error($"Unable to spawn emergency shuttle {shuttlePath} for {ToPrettyString(ent)}");
             return;

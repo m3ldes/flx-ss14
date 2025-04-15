@@ -32,12 +32,6 @@ namespace Content.Server.Medical
         [Dependency] private readonly ForensicsSystem _forensics = default!;
         [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
 
-        [ValidatePrototypeId<SoundCollectionPrototype>]
-        private const string VomitCollection = "Vomit";
-
-        private readonly SoundSpecifier _vomitSound = new SoundCollectionSpecifier(VomitCollection,
-            AudioParams.Default.WithVariation(0.2f).WithVolume(-4f));
-
         /// <summary>
         /// Make an entity vomit, if they have a stomach.
         /// </summary>
@@ -101,7 +95,7 @@ namespace Content.Server.Medical
             }
 
             // Force sound to play as spill doesn't work if solution is empty.
-            _audio.PlayPvs(_vomitSound, uid);
+            _audio.PlayPvs("/Audio/Effects/Fluids/splat.ogg", uid, AudioParams.Default.WithVariation(0.2f).WithVolume(-4f));
             _popup.PopupEntity(Loc.GetString("disease-vomit", ("person", Identity.Entity(uid, EntityManager))), uid);
 
             RaiseLocalEvent(uid, new MoodEffectEvent("MobVomit")); // backmen: mood

@@ -57,9 +57,3 @@
 
 - type: playTimeTracker
   id: JobSpecialOperationsOfficer
-
-- type: playTimeTracker
-  id: JobBkmSurgeon
-
-- type: playTimeTracker
-  id: JobBkmVirologist

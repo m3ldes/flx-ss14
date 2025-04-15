@@ -154,7 +154,7 @@ public sealed class PsionicsSystem : SharedPsionicsSystem
             return;
 
         var chance = ent.Comp.Chance;
-        var warn = false;
+        var warn = true;
         if (TryComp<PsionicBonusChanceComponent>(ent, out var bonus))
         {
             chance += bonus.FlatBonus;

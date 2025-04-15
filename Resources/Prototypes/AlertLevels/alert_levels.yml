@@ -1,4 +1,3 @@
-#backmen start
 ---
 - type: alertLevels
   id: stationAlerts
@@ -6,49 +5,43 @@
   levels:
     green:
       announcement: alert-level-green-announcement
-      sound: /Audio/Announcements/announce.ogg
+      sound:
+        path: /Audio/Misc/greenalert.ogg
+        params:
+            volume: -4
       color: Green
       emergencyLightColor: LawnGreen
       shuttleTime: 600
     blue:
       announcement: alert-level-blue-announcement
       sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/blue_code_new_style.ogg
+        path: /Audio/Misc/bluealert.ogg
         params:
-          volume: -2
+            volume: -4
       color: DodgerBlue
+      forceEnableEmergencyLights: true
       emergencyLightColor: DodgerBlue
       shuttleTime: 600
     violet:
       announcement: alert-level-violet-announcement
-      sound: /Audio/Backmen/Misc/new-style-alerts/purple_code_new_style.ogg
+      sound: /Audio/Misc/notice1.ogg
       color: Violet
       emergencyLightColor: Violet
       forceEnableEmergencyLights: true
       shuttleTime: 600
     yellow:
       announcement: alert-level-yellow-announcement
-      sound: /Audio/Backmen/Misc/new-style-alerts/yellow_code_new_style.ogg
+      sound: /Audio/Backmen/Misc/yellow_code2.ogg #Backmen-Edit
       color: Yellow
       emergencyLightColor: Goldenrod
-      forceEnableEmergencyLights: true
-      shuttleTime: 600
-    amber:
-      announcement: alert-level-amber-announcement
-      sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/amber_code_new_style.ogg
-        params:
-          volume: -2
-      color: Orange
-      emergencyLightColor: Orange
       forceEnableEmergencyLights: true
       shuttleTime: 600
     red:
       announcement: alert-level-red-announcement
       sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/red_code_new_style.ogg
+        path: /Audio/Misc/redalert.ogg
         params:
-          volume: -2
+          volume: -4
       color: Red
       emergencyLightColor: Red
       forceEnableEmergencyLights: true
@@ -68,9 +61,9 @@
       announcement: alert-level-delta-announcement
       selectable: false
       sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/delta_code_new_style.ogg
+        path: /Audio/Misc/delta.ogg
         params:
-          volume: -4
+          volume: -6 # Corvax: Reduce sound volume
       disableSelection: true
       color: DarkRed
       emergencyLightColor: Orange
@@ -80,31 +73,41 @@
       announcement: alert-level-epsilon-announcement
       selectable: false
       sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/epsilon_code_new_style.ogg
+        path: /Audio/Misc/epsilon.ogg
         params:
-          volume: -2
+          volume: -4
       disableSelection: true
       color: DarkViolet
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+    sintwave:
+      announcement: alert-level-sintwave-announcement
+      selectable: false
+      sound:
+        path: /Audio/Misc/sintwave.ogg
+        params:
+          volume: -4
+      disableSelection: false
+      color: Violet
+      emergencyLightColor: Violet
+      forceEnableEmergencyLights: false
+      shuttleTime: 400
     sigma:
       announcement: alert-level-sigma-announcement
       selectable: false
-      sound: /Audio/Backmen/Misc/new-style-alerts/sigma_code_new_style.ogg
+      sound:
+        path: /Audio/Misc/sigma.ogg
+        params:
+          volume: -4
       disableSelection: true
       color: Pink
-      emergencyLightColor: Aqua
+      emergencyLightColor: Violet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
     white:
       announcement: alert-level-white-announcement
-      sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/white_code_new_style.ogg
-        params:
-          volume: -2
+      sound: /Audio/Misc/white.ogg
       color: White
-      emergencyLightColor: White
-      forceEnableEmergencyLights: true
+      emergencyLightColor: PaleVioletRed
       shuttleTime: 600
-#backmen end

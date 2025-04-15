@@ -12,13 +12,13 @@ using Content.Shared.Administration;
 using Content.Shared.Administration.Events;
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.CCCVars;
-using Content.Shared.Forensics.Components;
 using Content.Shared.GameTicking;
 using Content.Shared.Hands.Components;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
 using Content.Shared.Mind;
 using Content.Shared.PDA;
+using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Popups;
 using Content.Shared.Roles;
@@ -33,7 +33,6 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Administration.Systems;
 
@@ -50,7 +49,6 @@ public sealed class AdminSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly PhysicsSystem _physics = default!;
     [Dependency] private readonly PlayTimeTrackingManager _playTime = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly SharedRoleSystem _role = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
@@ -67,6 +65,7 @@ public sealed class AdminSystem : EntitySystem
 
     private readonly HashSet<NetUserId> _roundActivePlayers = new();
     public readonly PanicBunkerStatus PanicBunker = new();
+    public readonly BabyJailStatus BabyJail = new();
 
     public override void Initialize()
     {
@@ -86,14 +85,23 @@ public sealed class AdminSystem : EntitySystem
         Subs.CVar(_config, CCVars.PanicBunkerMinOverallMinutes, OnPanicBunkerMinOverallMinutesChanged, true);
         Subs.CVar(_config, CCCVars.PanicBunkerDenyVPN, OnPanicBunkerDenyVpnChanged, true); // Corvax-VPNGuard
 
+        /*
+         * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
+         */
+
+        // Baby Jail Settings
+        Subs.CVar(_config, CCVars.BabyJailEnabled, OnBabyJailChanged, true);
+        Subs.CVar(_config, CCVars.BabyJailShowReason, OnBabyJailShowReasonChanged, true);
+        Subs.CVar(_config, CCVars.BabyJailMaxAccountAge, OnBabyJailMaxAccountAgeChanged, true);
+        Subs.CVar(_config, CCVars.BabyJailMaxOverallMinutes, OnBabyJailMaxOverallMinutesChanged, true);
+
+        SubscribeLocalEvent<IdentityChangedEvent>(OnIdentityChanged);
         SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
         SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
         SubscribeLocalEvent<RoleAddedEvent>(OnRoleEvent);
         SubscribeLocalEvent<RoleRemovedEvent>(OnRoleEvent);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
-
         SubscribeLocalEvent<ActorComponent, EntityRenamedEvent>(OnPlayerRenamed);
-        SubscribeLocalEvent<ActorComponent, IdentityChangedEvent>(OnIdentityChanged);
     }
 
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent ev)
@@ -149,16 +157,18 @@ public sealed class AdminSystem : EntitySystem
         return value ?? null;
     }
 
-    private void OnIdentityChanged(Entity<ActorComponent> ent, ref IdentityChangedEvent ev)
+    private void OnIdentityChanged(ref IdentityChangedEvent ev)
     {
-        UpdatePlayerList(ent.Comp.PlayerSession);
+        if (!TryComp<ActorComponent>(ev.CharacterEntity, out var actor))
+            return;
+
+        UpdatePlayerList(actor.PlayerSession);
     }
 
     private void OnRoleEvent(RoleEvent ev)
     {
         var session = _minds.GetSession(ev.Mind);
-
-        if (!ev.RoleTypeUpdate || session == null)
+        if (!ev.Antagonist || session == null)
             return;
 
         UpdatePlayerList(session);
@@ -224,9 +234,7 @@ public sealed class AdminSystem : EntitySystem
         var name = data.UserName;
         var entityName = string.Empty;
         var identityName = string.Empty;
-        var sortWeight = 0;
 
-        // Visible (identity) name can be different from real name
         if (session?.AttachedEntity != null)
         {
             entityName = EntityManager.GetComponent<MetaDataComponent>(session.AttachedEntity.Value).EntityName;
@@ -234,30 +242,15 @@ public sealed class AdminSystem : EntitySystem
         }
 
         var antag = false;
-
-        // Starting role, antagonist status and role type
-        RoleTypePrototype roleType = new();
         var startingRole = string.Empty;
-        if (_minds.TryGetMind(session, out var mindId, out var mindComp) && mindComp is not null)
+        if (_minds.TryGetMind(session, out var mindId, out _))
         {
-            sortWeight = _role.GetRoleCompByTime(mindComp)?.Comp.SortWeight ?? 0;
-
-            if (_proto.TryIndex(mindComp.RoleType, out var role))
-                roleType = role;
-            else
-                Log.Error($"{ToPrettyString(mindId)} has invalid Role Type '{mindComp.RoleType}'. Displaying '{Loc.GetString(roleType.Name)}' instead");
-
             antag = _role.MindIsAntagonist(mindId);
             startingRole = _jobs.MindTryGetJobName(mindId);
         }
 
-        // Connection status and playtime
         var connected = session != null && session.Status is SessionStatus.Connected or SessionStatus.InGame;
-
-        // Start with the last available playtime data
-        var cachedInfo = GetCachedPlayerInfo(data.UserId);
-        var overallPlaytime = cachedInfo?.OverallPlaytime;
-        // Overwrite with current playtime data, unless it's null (such as if the player just disconnected)
+        TimeSpan? overallPlaytime = null;
         if (session != null &&
             _playTime.TryGetTrackerTimes(session, out var playTimes) &&
             playTimes.TryGetValue(PlayTimeTrackingShared.TrackerOverall, out var playTime))
@@ -270,8 +263,6 @@ public sealed class AdminSystem : EntitySystem
             identityName,
             startingRole,
             antag,
-            roleType,
-            sortWeight,
             GetNetEntity(session?.AttachedEntity),
             data.UserId,
             connected,
@@ -290,6 +281,17 @@ public sealed class AdminSystem : EntitySystem
         ));
 
         SendPanicBunkerStatusAll();
+    }
+
+    private void OnBabyJailChanged(bool enabled)
+    {
+        BabyJail.Enabled = enabled;
+        _chat.SendAdminAlert(Loc.GetString(enabled
+            ? "admin-ui-baby-jail-enabled-admin-alert"
+            : "admin-ui-baby-jail-disabled-admin-alert"
+        ));
+
+        SendBabyJailStatusAll();
     }
 
     private void OnPanicBunkerDisableWithAdminsChanged(bool enabled)
@@ -316,16 +318,34 @@ public sealed class AdminSystem : EntitySystem
         SendPanicBunkerStatusAll();
     }
 
+    private void OnBabyJailShowReasonChanged(bool enabled)
+    {
+        BabyJail.ShowReason = enabled;
+        SendBabyJailStatusAll();
+    }
+
     private void OnPanicBunkerMinAccountAgeChanged(int minutes)
     {
         PanicBunker.MinAccountAgeMinutes = minutes;
         SendPanicBunkerStatusAll();
     }
 
+    private void OnBabyJailMaxAccountAgeChanged(int minutes)
+    {
+        BabyJail.MaxAccountAgeMinutes = minutes;
+        SendBabyJailStatusAll();
+    }
+
     private void OnPanicBunkerMinOverallMinutesChanged(int minutes)
     {
         PanicBunker.MinOverallMinutes = minutes;
         SendPanicBunkerStatusAll();
+    }
+
+    private void OnBabyJailMaxOverallMinutesChanged(int minutes)
+    {
+        BabyJail.MaxOverallMinutes = minutes;
+        SendBabyJailStatusAll();
     }
 
     // Corvax-VPNGuard-Start
@@ -376,6 +396,15 @@ public sealed class AdminSystem : EntitySystem
     private void SendPanicBunkerStatusAll()
     {
         var ev = new PanicBunkerChangedEvent(PanicBunker);
+        foreach (var admin in _adminManager.AllAdmins)
+        {
+            RaiseNetworkEvent(ev, admin);
+        }
+    }
+
+    private void SendBabyJailStatusAll()
+    {
+        var ev = new BabyJailChangedEvent(BabyJail);
         foreach (var admin in _adminManager.AllAdmins)
         {
             RaiseNetworkEvent(ev, admin);

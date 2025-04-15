@@ -15,7 +15,6 @@ using Content.Shared.Backmen.Psionics.Components;
 using Content.Shared.Backmen.Psionics.Glimmer;
 using Content.Shared.Body.Systems;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.EntityTable;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Materials;
 using Robust.Server.GameObjects;
@@ -37,13 +36,12 @@ public sealed class OracleSystem : EntitySystem
     [Dependency] private readonly PuddleSystem _puddleSystem = default!;
     [Dependency] private readonly SharedBodySystem _body = default!;
     [Dependency] private readonly AppearanceSystem _appearance = default!;
-    [Dependency] private readonly EntityTableSystem _entityTable = default!;
 
 
     [ValidatePrototypeId<ReagentPrototype>]
     public readonly IReadOnlyList<ProtoId<ReagentPrototype>> RewardReagents = new ProtoId<ReagentPrototype>[]
     {
-        "LotophagoiOil", "LotophagoiOil", "LotophagoiOil", "LotophagoiOil", "LotophagoiOil", "Wine", "Blood", "Ichor"
+        "LotophagoiOil", "LotophagoiOil", "LotophagoiOil", "LotophagoiOil", "LotophagoiOil", "Wine", "Blood", "Ichor", "SlermQueenPlus"
     };
 
     [ViewVariables(VVAccess.ReadWrite)]
@@ -123,11 +121,14 @@ public sealed class OracleSystem : EntitySystem
         "MechEquipmentGrabber",
     };
 
-    [ValidatePrototypeId<EntityTablePrototype>]
-    private const string ResearchDisk5000 = "OraculStandartTable";
+    [ValidatePrototypeId<EntityPrototype>]
+    private const string ResearchDisk5000 = "ResearchDisk5000";
 
     [ValidatePrototypeId<EntityPrototype>]
     private const string CrystalNormality = "CrystalNormality";
+
+    [ValidatePrototypeId<EntityPrototype>]
+    private const string MaterialBluespace1 = "MaterialBluespace1";
 
     public override void Update(float frameTime)
     {
@@ -168,11 +169,7 @@ public sealed class OracleSystem : EntitySystem
         var spawnPos = new EntityCoordinates(xform.Coordinates.EntityId,
             xform.Coordinates.Position + xform.LocalRotation.ToWorldVec());
 
-        foreach (var item in _entityTable
-                     .GetSpawns(_prototypeManager.Index<EntityTablePrototype>(ResearchDisk5000).Table))
-        {
-            Spawn(item, spawnPos);
-        }
+        Spawn(ResearchDisk5000, spawnPos);
 
         DispenseLiquidReward(ent);
 
@@ -262,15 +259,18 @@ public sealed class OracleSystem : EntitySystem
         }
 
         QueueDel(args.Used);
-        var pos = Transform(args.User).Coordinates;
 
-        foreach (var item in _entityTable
-                     .GetSpawns(_prototypeManager.Index<EntityTablePrototype>(ResearchDisk5000).Table))
-        {
-            Spawn(item, pos);
-        }
+        Spawn(ResearchDisk5000, Transform(args.User).Coordinates);
 
         DispenseLiquidReward(uid);
+
+        var i = _random.Next(1, 4);
+
+        while (i != 0)
+        {
+            EntityManager.SpawnEntity(MaterialBluespace1, Transform(args.User).Coordinates);
+            i--;
+        }
 
         if (nextItem)
             NextItem(component);
@@ -380,11 +380,7 @@ public sealed class OracleSystem : EntitySystem
         var spawnPos = new EntityCoordinates(xform.Coordinates.EntityId,
             xform.Coordinates.Position + xform.LocalRotation.ToWorldVec());
 
-        foreach (var itemTable in _entityTable
-                     .GetSpawns(_prototypeManager.Index<EntityTablePrototype>(ResearchDisk5000).Table))
-        {
-            Spawn(itemTable, spawnPos);
-        }
+        Spawn(ResearchDisk5000, spawnPos);
 
         DispenseLiquidReward(uid);
 

@@ -1,5 +1,4 @@
-ui-lobby-title = Лобби: { $serverName }
-ui-lobby-open-votemenu = Меню Голосований
+ui-lobby-title = Лобби
 ui-lobby-ahelp-button = AHelp
 ui-lobby-options-button = Настройки
 ui-lobby-leave-button = Выйти

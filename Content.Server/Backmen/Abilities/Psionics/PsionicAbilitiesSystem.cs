@@ -46,7 +46,7 @@ public sealed class PsionicAbilitiesSystem : SharedPsionicAbilitiesSystem
         RemCompDeferred<PsionicAwaitingPlayerComponent>(uid);
     }
 
-    public void AddPsionics(EntityUid uid, bool warn = false)
+    public void AddPsionics(EntityUid uid, bool warn = true)
     {
         if (Deleted(uid))
             return;
@@ -88,9 +88,7 @@ public sealed class PsionicAbilitiesSystem : SharedPsionicAbilitiesSystem
 
     public void AddRandomPsionicPower(EntityUid uid)
     {
-        if(HasComp<PsionicComponent>(uid))
-            return;
-        EnsureComp<PsionicComponent>(uid);
+        AddComp<PsionicComponent>(uid);
 
         if (!_prototypeManager.TryIndex<WeightedRandomPrototype>(RandomPsionicPowerPool, out var pool))
         {
@@ -100,7 +98,7 @@ public sealed class PsionicAbilitiesSystem : SharedPsionicAbilitiesSystem
 
         // uh oh, stinky!
         var newComponent = (Component) _componentFactory.GetComponent(pool.Pick());
-        EntityManager.AddComponent(uid, newComponent, true);
+        EntityManager.AddComponent(uid, newComponent);
 
         _glimmerSystem.Glimmer += _random.Next(1, 5);
     }

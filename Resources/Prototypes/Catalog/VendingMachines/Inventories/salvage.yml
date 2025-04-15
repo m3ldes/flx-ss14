@@ -1,4 +1,4 @@
-- type: vendingMachineInventory
+﻿- type: vendingMachineInventory
   id: SalvageEquipmentInventory
   startingInventory:
     Crowbar: 2
@@ -10,9 +10,3 @@
     RadioHandheld: 2
     WeaponGrapplingGun: 4
     WeaponProtoKineticAccelerator: 4
-  contrabandInventory:
-    PlushieCarp: 1
-    SeismicCharge: 2
-    FultonBeacon: 1
-    Fulton: 2
-    ClothingOuterHardsuitSpatio: 2 #Goobstation

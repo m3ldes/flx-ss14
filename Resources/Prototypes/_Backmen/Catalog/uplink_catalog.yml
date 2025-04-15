@@ -87,15 +87,15 @@
   categories:
   - UplinkPointless
 
-#- type: listing
-#  id: UplinkMagazineBoxHeavyRifle
-#  name: uplink-box-heavy-rifle-name
-#  description: uplink-box-heavy-rifle-desc
-#  productEntity: MagazineBoxHeavyRifle
-#  cost:
-#    Telecrystal: 3
-#  categories:
-#  - UplinkAmmo
+- type: listing
+  id: UplinkMagazineBoxHeavyRifle
+  name: uplink-box-heavy-rifle-name
+  description: uplink-box-heavy-rifle-desc
+  productEntity: MagazineBoxHeavyRifle
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkAmmo
 
 - type: listing
   id: UplinkMagazineBoxRifleLightSniper
@@ -129,7 +129,7 @@
   cost:
     Telecrystal: 1
   categories:
-  - UplinkPsionic
+  - UplinkAllies
 
 - type: listing
   id: UplinkAntiPsiGrenadeBundle
@@ -139,57 +139,7 @@
   cost:
     Telecrystal: 2
   categories:
-  - UplinkPsionic
-
-- type: listing
-  id: UplinkClothingHandsGlovesColorYellowUnsulated
-  name: uplink-ClothingHandsGlovesColorYellowUnsulated-name
-  description: uplink-ClothingHandsGlovesColorYellowUnsulated-desc
-  productEntity: ClothingHandsGlovesColorYellowUnsulated
-  cost:
-    Telecrystal: 7
-  categories:
-  - UplinkPsionic
-
-- type: listing
-  id: UplinkBedsheetInvisibilityCloak
-  name: uplink-BedsheetInvisibilityCloak-name
-  description: uplink-BedsheetInvisibilityCloak-desc
-  productEntity: BedsheetInvisibilityCloak
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkPsionic
-
-- type: listing
-  id: UplinkClothingHandsDispelGloves
-  name: uplink-ClothingHandsDispelGloves-name
-  description: uplink-ClothingHandsDispelGloves-desc
-  productEntity: ClothingHandsDispelGloves
-  cost:
-    Telecrystal: 3
-  categories:
-  - UplinkPsionic
-
-- type: listing
-  id: UplinkClothingEyesTelegnosisSpectacles
-  name: uplink-ClothingEyesTelegnosisSpectacles-name
-  description: uplink-ClothingEyesTelegnosisSpectacles-desc
-  productEntity: ClothingEyesTelegnosisSpectacles
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkPsionic
-
-- type: listing
-  id: UplinkAntiPsychicKnife
-  name: uplink-AntiPsychicKnife-name
-  description: uplink-AntiPsychicKnife-desc
-  productEntity: AntiPsychicKnife
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkPsionic
+  - UplinkAllies
 
 # Weapon and mask
 - type: listing
@@ -212,22 +162,3 @@
     Telecrystal: 10
   categories:
     - UplinkDeception
-
-- type: listing
-  id: UplinkDartSyringeGun
-  name: uplink-dart-syringe-gun-name
-  description: uplink-dart-syringe-gun-desc
-  icon: { sprite: /Textures/_Goobstation/Objects/Weapons/Guns/Cannons/syringe_gun.rsi, state: dart-syringe-gun }
-  productEntity: DartSyringeGun
-  cost:
-    Telecrystal: 30 # goob
-  categories:
-  - UplinkChemicals
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - MedicalDoctor
-    - MedicalIntern
-    - Psychologist
-    - Chemist
-    - Paramedic

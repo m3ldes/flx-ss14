@@ -64,7 +64,7 @@
 
 - type: reinforcement
   id: BKCCSecOfficer
-  name: Охранник
+  name: Охраник
   job: BKCCSecOfficer
   max: 2
 

@@ -18,7 +18,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
     priceMultiplier: 0
   - type: Food
     requiresSpecialDigestion: true
@@ -236,7 +235,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.75
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -267,7 +265,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.75
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -331,7 +328,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -448,7 +444,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.9
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -479,7 +474,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -556,7 +550,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.75
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -611,7 +604,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -666,14 +658,13 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterSci
 
 - type: entity
-  parent: [ClothingOuterWinterCoatToggleable, BaseSecurityContraband]
+  parent: [ClothingOuterWinterCoatToggleable, BaseRestrictedContraband]
   id: ClothingOuterWinterSec
   name: security winter coat
   components:
@@ -720,7 +711,6 @@
       coefficients:
         Slash: 0.95
         Heat: 0.90
-        Stun: 0.80 #Backmen-edit
         Caustic: 0.9
     priceMultiplier: 0.15
   - type: ToggleableClothing
@@ -728,7 +718,7 @@
 
 ################################################################
 - type: entity
-  parent: [ClothingOuterArmorWarden, ClothingOuterWinterCoatToggleable, BaseSecurityContraband]
+  parent: [ClothingOuterArmorWarden, ClothingOuterWinterCoatToggleable, BaseRestrictedContraband]
   id: ClothingOuterWinterWarden
   name: warden's armored winter coat
   description: A sturdy, utilitarian winter coat designed to protect a warden from any brig-bound threats and hypothermic events.
@@ -742,7 +732,7 @@
 ################################################################
 
 - type: entity
-  parent: [ClothingOuterWinterCoatToggleable, BaseSecurityContraband]
+  parent: [ClothingOuterWinterCoatToggleable, BaseRestrictedContraband]
   id: ClothingOuterWinterWardenUnarmored
   name: warden's winter coat
   description: A sturdy coat, a warm coat, but not an armored coat.

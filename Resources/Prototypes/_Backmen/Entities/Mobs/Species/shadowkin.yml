@@ -119,6 +119,7 @@
       types:
         Asphyxiation: -1.0
 
+
 - type: entity
   save: false
   parent: MobShadowkinBase

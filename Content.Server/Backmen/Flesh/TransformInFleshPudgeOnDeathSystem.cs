@@ -6,7 +6,6 @@ using Content.Server.Mind;
 using Content.Server.Popups;
 using Content.Shared.Body.Part;
 using Content.Shared.Chemistry.Components;
-using Content.Shared.Forensics.Components;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
@@ -94,7 +93,7 @@ public sealed class TransformInFleshPudgeOnDeathSystem : EntitySystem
 
                 if (_puddleSystem.TrySpillAt(uid, tempSol.SplitSolution(50), out var puddleUid))
                 {
-                    if (TryComp<DnaComponent>(uid, out var dna) && !string.IsNullOrEmpty(dna.DNA))
+                    if (TryComp<DnaComponent>(uid, out var dna))
                     {
                         var comp = EnsureComp<ForensicsComponent>(puddleUid);
                         comp.DNAs.Add(dna.DNA);

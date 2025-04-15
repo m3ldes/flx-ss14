@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Grid
-  engineVersion: 250.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 03/29/2025 03:10:03
-  entityCount: 927
-maps: []
-grids:
-- 1
-orphans:
-- 1
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   29: FloorDark
@@ -80,10 +69,10 @@ entities:
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
     - type: DeviceNetwork
-      deviceNetId: Wireless
       configurators: []
       deviceLists: []
       transmitFrequencyId: ShuttleTimer
+      deviceNetId: Wireless
     - type: DecalGrid
       chunkCollection:
         version: 2
@@ -472,14 +461,6 @@ entities:
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -783,14 +764,6 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
         - 0
         - 0
         - 0
@@ -2348,22 +2321,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 16.5,-2.5
       parent: 1
-- proto: ChemistryBottleEpinephrine
-  entities:
-  - uid: 579
-    components:
-    - type: Transform
-      pos: 6.5416865,-8.488731
-      parent: 1
-    - type: Physics
-      canCollide: False
-  - uid: 580
-    components:
-    - type: Transform
-      pos: 6.7847424,-8.481787
-      parent: 1
-    - type: Physics
-      canCollide: False
 - proto: CigaretteSpent
   entities:
   - uid: 483
@@ -2416,14 +2373,6 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
         - 0
         - 0
         - 0
@@ -2752,14 +2701,6 @@ entities:
         - 0
         - 0
         - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -2784,14 +2725,6 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
         - 0
         - 0
         - 0
@@ -3063,6 +2996,22 @@ entities:
     components:
     - type: Transform
       parent: 539
+    - type: Physics
+      canCollide: False
+- proto: EpinephrineChemistryBottle
+  entities:
+  - uid: 579
+    components:
+    - type: Transform
+      pos: 6.5416865,-8.488731
+      parent: 1
+    - type: Physics
+      canCollide: False
+  - uid: 580
+    components:
+    - type: Transform
+      pos: 6.7847424,-8.481787
+      parent: 1
     - type: Physics
       canCollide: False
 - proto: ExtinguisherCabinetFilled
@@ -4314,7 +4263,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4354,7 +4303,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4394,7 +4343,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4434,7 +4383,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4474,7 +4423,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4514,7 +4463,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4554,7 +4503,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4594,7 +4543,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4634,7 +4583,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4674,7 +4623,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4741,7 +4690,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -4781,7 +4730,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -5743,28 +5692,6 @@ entities:
       parent: 422
     - type: Physics
       canCollide: False
-- proto: Screen
-  entities:
-  - uid: 56
-    components:
-    - type: Transform
-      pos: -4.5,-9.5
-      parent: 1
-  - uid: 57
-    components:
-    - type: Transform
-      pos: 0.5,-3.5
-      parent: 1
-  - uid: 58
-    components:
-    - type: Transform
-      pos: 5.5,-9.5
-      parent: 1
-  - uid: 59
-    components:
-    - type: Transform
-      pos: 17.5,-3.5
-      parent: 1
 - proto: Screwdriver
   entities:
   - uid: 260
@@ -6288,14 +6215,6 @@ entities:
         - 0
         - 0
         - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -6320,14 +6239,6 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
         - 0
         - 0
         - 0
@@ -6552,10 +6463,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -6572,7 +6483,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable
@@ -6614,10 +6525,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -6634,7 +6545,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable
@@ -6676,10 +6587,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -6696,7 +6607,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable
@@ -6749,10 +6660,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -6769,7 +6680,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable
@@ -6876,10 +6787,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -6896,7 +6807,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable
@@ -6938,10 +6849,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -6958,7 +6869,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable
@@ -7022,10 +6933,10 @@ entities:
             - -0.45,0.45
           mask:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           layer:
-          - MidImpassable
+          - TableLayer
           - LowImpassable
           density: 60
           hard: True
@@ -7042,7 +6953,7 @@ entities:
           mask: []
           layer:
           - Impassable
-          - MidImpassable
+          - TableLayer
           - HighImpassable
           - LowImpassable
           - InteractImpassable

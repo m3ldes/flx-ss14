@@ -19,16 +19,14 @@
   - bloodsucker
   name: vampires-title
   description: vampires-description
-  showInVote: false # secret
+  showInVote: true
   rules:
   - VampiresGameRule
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - SubGamemodesRule
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Blob
@@ -39,12 +37,11 @@
   showInVote: false
   rules:
   - BlobGameMode
+  - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   - SubGamemodesRule
   - CalmMeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: XenoAgent
@@ -56,11 +53,9 @@
   - XenoAgentGameMode
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   - SubGamemodesRule
   - CalmMeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: FleshCult
@@ -74,11 +69,9 @@
   - FleshCult
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   - SubGamemodesRule
   - CalmMeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: FleshCultAndTraitor
@@ -93,10 +86,8 @@
   - Traitor
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: NukeopsFleshCult
@@ -111,10 +102,8 @@
     - FleshCult
     - BasicStationEventScheduler
     - WageScheduler #backmen: currency
-    - PsiScheduler #backmen: psi
     - BasicRoundstartVariation
     - MeteorSwarmScheduler
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: RevolutionaryTraitor
@@ -131,10 +120,8 @@
     - BasicStationEventScheduler
     - Traitor
     - WageScheduler #backmen: currency
-    - PsiScheduler #backmen: psi
     - BasicRoundstartVariation
     - MeteorSwarmScheduler
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: RevolutionaryNukeops
@@ -151,10 +138,8 @@
     - BasicStationEventScheduler
     - Nukeops
     - WageScheduler #backmen: currency
-    - PsiScheduler #backmen: psi
     - BasicRoundstartVariation
     - MeteorSwarmScheduler
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: ZombieTraitor
@@ -172,11 +157,9 @@
   - Zombie
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - Traitor
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: ZombieNukeops
@@ -194,11 +177,9 @@
   - Zombie
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - Nukeops
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: NukeopsFleshCultTraitor
@@ -214,11 +195,9 @@
     - FleshCult
     - BasicStationEventScheduler
     - WageScheduler #backmen: currency
-    - PsiScheduler #backmen: psi
     - Traitor
     - BasicRoundstartVariation
     - MeteorSwarmScheduler
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SurvivalNukeops
@@ -232,11 +211,10 @@
   rules:
     - RampingStationEventScheduler
     - WageScheduler #backmen: currency
-    - PsiScheduler #backmen: psi
     - Nukeops
     - BasicRoundstartVariation
     - MeteorSwarmScheduler
-    - LavalandStormScheduler # Lavaland Change
+
 
 - type: gamePreset
   id: Changeling
@@ -249,13 +227,11 @@
   showInVote: false
   rules:
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - Changeling
   - SubGamemodesRule
   - BasicStationEventScheduler
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Traitorling
@@ -267,13 +243,12 @@
   showInVote: false
   rules:
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - Changeling
   - Traitor
   - SubGamemodesRule
+  - BasicStationEventScheduler
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: ExtendedThief
@@ -288,10 +263,8 @@
   - ExtendedThief
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Criminal
@@ -307,10 +280,8 @@
   - Traitor
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SuperKessler
@@ -325,7 +296,6 @@
   rules:
   - BasicStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - BasicRoundstartVariation
   # Oh my god.
   - KesslerSyndromeScheduler
@@ -336,7 +306,6 @@
   - RampingStationEventScheduler
 #  - SpaceTrafficControlEventScheduler
 #  - SpaceTrafficControlFriendlyEventScheduler
-  - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Calm
@@ -346,25 +315,22 @@
   rules:
   - CalmStationEventScheduler
   - WageScheduler #backmen: currency
-  - PsiScheduler #backmen: psi
   - CalmMeteorSwarmScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+
 
 - type: gamePreset
   id: BabelTower
   name: babelTower-title
   description: babelTower-description
   minPlayers: 5
-  showInVote: false # secret
+  showInVote: true
   rules:
     - BabelTower
     - CalmStationEventScheduler
     - WageScheduler
-    - PsiScheduler #backmen: psi
     - CalmMeteorSwarmScheduler
     - BasicRoundstartVariation
 #    - SpaceTrafficControlEventScheduler
 #    - SpaceTrafficControlFriendlyEventScheduler
     - ExtendedThief
-    - LavalandStormScheduler # Lavaland Change

@@ -20,29 +20,6 @@ public sealed class StandingStateSystem : EntitySystem
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
     private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
 
-    public override void Initialize()
-    {
-        base.Initialize();
-        SubscribeLocalEvent<StandingStateComponent, AttemptMobCollideEvent>(OnMobCollide);
-        SubscribeLocalEvent<StandingStateComponent, AttemptMobTargetCollideEvent>(OnMobTargetCollide);
-    }
-
-    private void OnMobTargetCollide(Entity<StandingStateComponent> ent, ref AttemptMobTargetCollideEvent args)
-    {
-        if (!ent.Comp.Standing)
-        {
-            args.Cancelled = true;
-        }
-    }
-
-    private void OnMobCollide(Entity<StandingStateComponent> ent, ref AttemptMobCollideEvent args)
-    {
-        if (!ent.Comp.Standing)
-        {
-            args.Cancelled = true;
-        }
-    }
-
     public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
     {
         if (!Resolve(uid, ref standingState, false))
@@ -75,9 +52,11 @@ public sealed class StandingStateSystem : EntitySystem
         // and ultimately this is just to avoid boilerplate in Down callers + keep their behavior consistent.
         if (dropHeldItems && hands != null)
         {
-            var ev = new DropHandItemsEvent();
-            RaiseLocalEvent(uid, ref ev, false);
+            RaiseLocalEvent(uid, new DropHandItemsEvent(), false);
         }
+
+        //if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // WD EDIT
+        //    return false;
 
         if (!force)
         {
@@ -115,7 +94,7 @@ public sealed class StandingStateSystem : EntitySystem
 
         if (playSound)
         {
-            _audio.PlayPredicted(standingState.DownSound, uid, uid);
+            _audio.PlayPredicted(standingState.DownSound, uid, null);
         }
 
         _movement.RefreshMovementSpeedModifiers(uid); // BACKMEN EDIT
@@ -136,6 +115,9 @@ public sealed class StandingStateSystem : EntitySystem
 
         if (standingState.Standing)
             return true;
+
+        //if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // WD EDIT
+        //    return false;
 
         if (!force)
         {
@@ -167,8 +149,9 @@ public sealed class StandingStateSystem : EntitySystem
     }
 }
 
-[ByRefEvent]
-public record struct DropHandItemsEvent();
+public sealed class DropHandItemsEvent : EventArgs
+{
+}
 
 /// <summary>
 /// Subscribe if you can potentially block a down attempt.
@@ -197,24 +180,3 @@ public sealed class StoodEvent : EntityEventArgs
 public sealed class DownedEvent : EntityEventArgs
 {
 }
-
-/// <summary>
-/// Raised after an entity falls down.
-/// </summary>
-public sealed class FellDownEvent : EntityEventArgs
-{
-    public EntityUid Uid { get; }
-
-    public FellDownEvent(EntityUid uid)
-    {
-        Uid = uid;
-    }
-}
-
-/// <summary>
-/// Raised on the entity being thrown due to the holder falling down.
-/// </summary>
-[ByRefEvent]
-public record struct FellDownThrowAttemptEvent(EntityUid Thrower, bool Cancelled = false);
-
-

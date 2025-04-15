@@ -97,11 +97,8 @@
   components:
     - type: Sprite
       layers:
-      - state: card_silver # Backmen
-      - state: sub_department # Backmen
-        color: "#1b67a5"
-      - state: frame_head # Backmen
-        color: "#1b67a5"
+      - state: silver
+      - state: idiaa
       - state: idcentcom
     - type: Item
       heldPrefix: silver

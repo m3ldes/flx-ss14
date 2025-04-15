@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Grid
-  engineVersion: 247.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 02/19/2025 11:10:08
-  entityCount: 106
-maps: []
-grids:
-- 1
-orphans:
-- 1
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   92: FloorSteel
@@ -352,14 +341,6 @@ entities:
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -371,6 +352,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,1.5
       parent: 1
+    - type: AtmosDevice
+      joinedGrid: 1
 - proto: AirCanister
   entities:
   - uid: 59
@@ -378,6 +361,8 @@ entities:
     - type: Transform
       pos: -0.5,-0.5
       parent: 1
+    - type: AtmosDevice
+      joinedGrid: 1
 - proto: AirlockExternalGlassShuttleLocked
   entities:
   - uid: 24
@@ -659,6 +644,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-2.5
       parent: 1
+    - type: AtmosDevice
+      joinedGrid: 1
 - proto: GasPipeStraight
   entities:
   - uid: 89
@@ -674,6 +661,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,-0.5
       parent: 1
+    - type: AtmosDevice
+      joinedGrid: 1
 - proto: GasVentPump
   entities:
   - uid: 61
@@ -682,6 +671,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-0.5
       parent: 1
+    - type: AtmosDevice
+      joinedGrid: 1
 - proto: GasVentScrubber
   entities:
   - uid: 86
@@ -689,6 +680,8 @@ entities:
     - type: Transform
       pos: 1.5,-0.5
       parent: 1
+    - type: AtmosDevice
+      joinedGrid: 1
 - proto: GeneratorWallmountBasic
   entities:
   - uid: 29
@@ -898,6 +891,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,4.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 84
 - proto: ShuttleWindow
   entities:
   - uid: 25

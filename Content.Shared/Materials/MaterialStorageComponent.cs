@@ -67,22 +67,6 @@ public sealed partial class MaterialStorageComponent : Component
     /// </summary>
     [DataField]
     public bool CanEjectStoredMaterials = true;
-
-    // Goobstation Change Start
-    [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public bool ConnectToSilo;
-
-    [DataField, AutoNetworkedField]
-    public bool DisconnectSiloOffMap;
-
-    [DataField, AutoNetworkedField]
-    public bool DisallowOreEjection = true;
-
-    // WHY THE FUCK DID WIZDEN THINK IT WOULD BE A GOOD IDEA TO INTRODUCE A WHITELIST, AND IMMEDIATELY INVALIDATING IT BY DYNAMICALLY GENERATING
-    // ANOTHER BASED ON RECIPES. ON TWO FUCKING COMPONENTS THAT ARE ALMOST ALWAYS USED TOGETHER, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    [DataField, AutoNetworkedField]
-    public bool IgnoreMaterialWhiteList;
-    // Goobstation Change End
 }
 
 [Serializable, NetSerializable]
@@ -92,15 +76,12 @@ public enum MaterialStorageVisuals : byte
 }
 
 /// <summary>
-/// Lavaland Change: Event raised on the materialStorage when a material entity is inserted into it.
+/// event raised on the materialStorage when a material entity is inserted into it.
 /// </summary>
 [ByRefEvent]
-public readonly record struct MaterialEntityInsertedEvent(EntityUid User, EntityUid Inserted, MaterialComponent MaterialComp, int Count)
+public readonly record struct MaterialEntityInsertedEvent(MaterialComponent MaterialComp)
 {
-    public readonly EntityUid User = User;
-    public readonly EntityUid Inserted = Inserted;
     public readonly MaterialComponent MaterialComp = MaterialComp;
-    public readonly int Count = Count;
 }
 
 /// <summary>

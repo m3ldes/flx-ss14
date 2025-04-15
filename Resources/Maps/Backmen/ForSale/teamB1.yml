@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Grid
-  engineVersion: 247.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 02/19/2025 11:09:48
-  entityCount: 295
-maps: []
-grids:
-- 62
-orphans:
-- 62
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   69: FloorMono
@@ -184,14 +173,6 @@ entities:
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -207,25 +188,9 @@ entities:
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         - volume: 2500
           temperature: 293.15
           moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
           - 0
           - 0
           - 0
@@ -255,6 +220,8 @@ entities:
       parent: 62
     - type: Physics
       bodyType: Static
+    - type: AtmosDevice
+      joinedGrid: 62
 - proto: AirlockCommandGlass
   entities:
   - uid: 49
@@ -318,12 +285,18 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 2.5,-4.5
       parent: 62
+    - type: DeviceLinkSink
+      links:
+      - 217
   - uid: 190
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 2.5,-3.5
       parent: 62
+    - type: DeviceLinkSink
+      links:
+      - 217
 - proto: CableApcExtension
   entities:
   - uid: 1
@@ -659,6 +632,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,-8.5
       parent: 62
+    - type: AtmosDevice
+      joinedGrid: 62
     - type: AtmosPipeColor
       color: '#0000FFFF'
 - proto: GasVentPump
@@ -669,6 +644,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,-5.5
       parent: 62
+    - type: AtmosDevice
+      joinedGrid: 62
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 124
@@ -676,6 +653,8 @@ entities:
     - type: Transform
       pos: -0.5,-1.5
       parent: 62
+    - type: AtmosDevice
+      joinedGrid: 62
     - type: AtmosPipeColor
       color: '#0000FFFF'
 - proto: GeneratorRTG
@@ -1768,6 +1747,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,2.5
       parent: 62
+    - type: DeviceLinkSink
+      links:
+      - 63
 - proto: ShuttleWindow
   entities:
   - uid: 24

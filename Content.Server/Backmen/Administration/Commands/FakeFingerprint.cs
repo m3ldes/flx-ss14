@@ -2,7 +2,6 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Forensics;
 using Content.Shared.Administration;
-using Content.Shared.Forensics.Components;
 using Content.Shared.Inventory;
 using Robust.Shared.Console;
 
@@ -56,7 +55,7 @@ public sealed class FakeFingerprint : IConsoleCommand
         }
 
         var f = _entityManager.EnsureComponent<ForensicsComponent>(item.Value);
-        if (_entityManager.TryGetComponent<DnaComponent>(playerUid, out var dna) && !string.IsNullOrEmpty(dna.DNA))
+        if (_entityManager.TryGetComponent<DnaComponent>(playerUid, out var dna))
         {
             f.DNAs.Add(dna.DNA);
         }

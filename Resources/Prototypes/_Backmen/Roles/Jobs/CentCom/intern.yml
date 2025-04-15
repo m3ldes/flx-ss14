@@ -102,11 +102,7 @@
   components:
     - type: Sprite
       layers:
-      - state: card_centcom # Backmen
-      - state: sub_department # Backmen
-        color: "#0F4162"
-      - state: frame_head # Backmen
-        color: "#0F4162"
+      - state: centcom
       - state: idintern-service
     - type: PresetIdCard
       job: BKCCAssistant

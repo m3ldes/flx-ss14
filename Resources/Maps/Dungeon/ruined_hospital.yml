@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Map
-  engineVersion: 247.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 02/19/2025 11:09:28
-  entityCount: 823
-maps:
-- 1
-grids:
-- 1
-orphans: []
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   7: FloorAsteroidSand
@@ -37,6 +26,7 @@ entities:
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
+    - type: LoadedMap
     - type: MapGrid
       chunks:
         0,0:
@@ -1219,14 +1209,6 @@ entities:
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         - volume: 2500
           temperature: 147.92499
           moles:
@@ -1242,25 +1224,9 @@ entities:
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
         - volume: 2500
           temperature: 111.618744
           moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
           - 0
           - 0
           - 0
@@ -4150,14 +4116,6 @@ entities:
         - 0
         - 0
         - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -4180,14 +4138,6 @@ entities:
         immutable: False
         temperature: 93.465614
         moles:
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
         - 0
         - 0
         - 0

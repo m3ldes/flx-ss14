@@ -23,8 +23,4 @@ public sealed partial class GlimmerSourceComponent : Component
     /// </summary>
     [DataField("addToGlimmer")]
     public bool AddToGlimmer = true;
-
-    [DataField("range")]
-    public float Range = 4f;
-
 }

@@ -29,24 +29,26 @@
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifleBig
   name: ammunition box (.30 rifle)
-  categories: [ HideSpawnMenu ]
-  suffix: Big
   components:
   - type: BallisticAmmoProvider
     capacity: 200
     proto: CartridgeLightRifle
   - type: Sprite
     layers:
-    - state: base
+    - state: base-b
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: magb-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
 
 - type: entity
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifle
   name: ammunition box (.30 rifle)
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifle
@@ -61,7 +63,6 @@
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRiflePractice
   name: ammunition box (.30 rifle practice)
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -77,7 +78,6 @@
   id: MagazineBoxLightRifleIncendiary
   parent: BaseMagazineBoxLightRifle
   name: ammunition box (.30 rifle incendiary)
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary
@@ -93,7 +93,6 @@
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifleUranium
   name: ammunition box (.30 rifle uranium)
-  categories: [ HideSpawnMenu ]
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleUranium

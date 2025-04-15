@@ -32,11 +32,6 @@
       - map: [ "enum.EdgeLayer.West" ]
         state: rock_asteroid_west
   - type: MiningScannerViewable
-  - type: SoundOnGather # Goobstation
-  - type: Gatherable    # Goobstation
-    toolWhitelist:
-      tags:
-        - Pickaxe
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Rock
@@ -58,6 +53,7 @@
 - type: entity
   id: AsteroidRockCoal
   parent: AsteroidRock
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -76,34 +72,11 @@
           state: rock_asteroid_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
-
-- type: entity
-  id: AsteroidRockCoalCrab
-  parent: AsteroidRock
-  description: An ore vein rich with coal.
-  suffix: Coal Crab
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreCoalCrab
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_coal
-          map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: AsteroidRockGold
   parent: AsteroidRock
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -122,34 +95,11 @@
           state: rock_asteroid_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
-
-- type: entity
-  id: AsteroidRockGoldCrab
-  parent: AsteroidRock
-  description: An ore vein rich with gold.
-  suffix: Gold Crab
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreGoldCrab
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_gold
-          map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: AsteroidRockDiamond
   parent: AsteroidRock
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -168,11 +118,11 @@
           state: rock_asteroid_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockPlasma
   parent: AsteroidRock
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -191,11 +141,11 @@
           state: rock_asteroid_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockQuartz
   parent: AsteroidRock
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -214,11 +164,11 @@
           state: rock_asteroid_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockQuartzCrab
   parent: AsteroidRock
+  description: An ore vein rich with quartz.
   suffix: Quartz Crab
   components:
     - type: OreVein
@@ -237,11 +187,11 @@
           state: rock_asteroid_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockSilver
   parent: AsteroidRock
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -260,7 +210,6 @@
           state: rock_asteroid_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockSilverCrab
@@ -275,6 +224,7 @@
 - type: entity
   id: AsteroidRockTin
   parent: AsteroidRock
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -293,7 +243,6 @@
           state: rock_asteroid_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockTinCrab
@@ -307,6 +256,7 @@
 - type: entity
   id: AsteroidRockUranium
   parent: AsteroidRock
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -325,7 +275,6 @@
           state: rock_asteroid_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockUraniumCrab
@@ -339,6 +288,7 @@
 - type: entity
   id: AsteroidRockBananium
   parent: AsteroidRock
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -357,11 +307,11 @@
           state: rock_asteroid_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockSalt
   parent: AsteroidRock
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -380,7 +330,6 @@
           state: rock_asteroid_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockArtifactFragment
@@ -404,7 +353,6 @@
           state: rock_asteroid_west
         - state: rock_artifact_fragment
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockMining
@@ -459,6 +407,7 @@
 - type: entity
   id: IronRockCoal
   parent: IronRock
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -477,11 +426,11 @@
           state: ironrock_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockGold
   parent: IronRock
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -500,11 +449,11 @@
           state: ironrock_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockPlasma
   parent: IronRock
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -523,11 +472,11 @@
           state: ironrock_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockQuartz
   parent: IronRock
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -546,11 +495,11 @@
           state: ironrock_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockSilver
   parent: IronRock
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -569,11 +518,11 @@
           state: ironrock_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockIron
   parent: IronRock
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -592,11 +541,11 @@
           state: ironrock_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockUranium
   parent: IronRock
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -615,11 +564,11 @@
           state: ironrock_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockBananium
   parent: IronRock
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -638,11 +587,11 @@
           state: ironrock_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockSalt
   parent: IronRock
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -661,7 +610,6 @@
           state: ironrock_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: IronRockArtifactFragment
@@ -685,11 +633,11 @@
       state: ironrock_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockDiamond
   parent: IronRock
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -708,7 +656,6 @@
           state: ironrock_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 # Rocks and ore veins
 - type: entity
@@ -722,21 +669,19 @@
     - type: SoundOnGather
     - type: Gatherable
       toolWhitelist:
-        tags: [] # Lavaland Change
-        #- Pickaxe
+        tags:
+          - Pickaxe
     - type: Damageable
       damageContainer: StructuralInorganic
-      damageModifierSet: Rock # Lavaland Change
+      damageModifierSet: Metallic
     - type: Destructible
       thresholds:
-      # Lavaland Change start
-      - trigger:
-          !type:DamageTrigger
-          damage: 120
-        behaviors:
-        - !type:DoActsBehavior
-          acts: ["Destruction"]
-      # Lavaland Change end
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
     - type: IconSmooth
       key: walls
       mode: NoSprite
@@ -762,6 +707,7 @@
 - type: entity
   id: WallRockCoal
   parent: WallRock
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
   - type: EntityRemap
@@ -787,11 +733,11 @@
         state: rock_west
       - state: rock_coal
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 - type: entity
   id: WallRockGold
   parent: WallRock
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
   - type: EntityRemap
@@ -817,11 +763,11 @@
         state: rock_west
       - state: rock_gold
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 - type: entity
   id: WallRockDiamond
   parent: WallRock
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -840,11 +786,11 @@
           state: rock_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockPlasma
   parent: WallRock
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
   - type: EntityRemap
@@ -870,11 +816,11 @@
         state: rock_west
       - state: rock_phoron
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 - type: entity
   id: WallRockQuartz
   parent: WallRock
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
   - type: EntityRemap
@@ -900,11 +846,11 @@
         state: rock_west
       - state: rock_quartz
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSilver
   parent: WallRock
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
   - type: EntityRemap
@@ -930,12 +876,12 @@
         state: rock_west
       - state: rock_silver
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 # Yes I know it drops steel but we may get smelting at some point
 - type: entity
   id: WallRockTin
   parent: WallRock
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: EntityRemap
@@ -961,11 +907,11 @@
           state: rock_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockUranium
   parent: WallRock
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
   - type: EntityRemap
@@ -991,12 +937,12 @@
         state: rock_west
       - state: rock_uranium
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 
 - type: entity
   id: WallRockBananium
   parent: WallRock
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
   - type: EntityRemap
@@ -1022,7 +968,6 @@
         state: rock_west
       - state: rock_bananium
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 - type: entity
   id: WallRockArtifactFragment
@@ -1053,11 +998,11 @@
         state: rock_west
       - state: rock_artifact_fragment
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSalt
   parent: WallRock
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
   - type: EntityRemap
@@ -1083,7 +1028,6 @@
         state: rock_west
       - state: rock_salt
         map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-        visible: false # Lavaland Change
 
 # Basalt variants
 - type: entity
@@ -1110,6 +1054,7 @@
 - type: entity
   id: WallRockBasaltCoal
   parent: WallRockBasalt
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -1128,11 +1073,11 @@
           state: rock_wall_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltGold
   parent: WallRockBasalt
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -1151,11 +1096,11 @@
           state: rock_wall_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltDiamond
   parent: WallRockBasalt
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -1174,11 +1119,11 @@
           state: rock_wall_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltPlasma
   parent: WallRockBasalt
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -1197,11 +1142,11 @@
           state: rock_wall_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltQuartz
   parent: WallRockBasalt
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -1220,11 +1165,11 @@
           state: rock_wall_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltSilver
   parent: WallRockBasalt
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -1243,11 +1188,11 @@
           state: rock_wall_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltTin
   parent: WallRockBasalt
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -1266,11 +1211,11 @@
           state: rock_wall_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltUranium
   parent: WallRockBasalt
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -1289,12 +1234,12 @@
           state: rock_wall_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 
 - type: entity
   id: WallRockBasaltBananium
   parent: WallRockBasalt
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -1313,7 +1258,6 @@
           state: rock_wall_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltArtifactFragment
@@ -1337,11 +1281,11 @@
           state: rock_wall_west
         - state: rock_artifact_fragment
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltSalt
   parent: WallRockBasalt
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -1360,7 +1304,6 @@
           state: rock_wall_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 # Snow variants
 - type: entity
@@ -1387,6 +1330,7 @@
 - type: entity
   id: WallRockSnowCoal
   parent: WallRockSnow
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -1405,11 +1349,11 @@
           state: rock_snow_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowGold
   parent: WallRockSnow
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -1428,11 +1372,11 @@
           state: rock_snow_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowDiamond
   parent: WallRockSnow
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -1451,11 +1395,11 @@
           state: rock_snow_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowPlasma
   parent: WallRockSnow
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -1474,11 +1418,11 @@
           state: rock_snow_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowQuartz
   parent: WallRockSnow
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -1497,11 +1441,11 @@
           state: rock_snow_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowSilver
   parent: WallRockSnow
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -1520,11 +1464,11 @@
           state: rock_snow_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowTin
   parent: WallRockSnow
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -1543,11 +1487,11 @@
           state: rock_snow_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowUranium
   parent: WallRockSnow
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -1566,12 +1510,12 @@
           state: rock_snow_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 
 - type: entity
   id: WallRockSnowBananium
   parent: WallRockSnow
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -1590,7 +1534,6 @@
           state: rock_snow_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowArtifactFragment
@@ -1614,11 +1557,11 @@
           state: rock_snow_west
         - state: rock_artifact_fragment
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowSalt
   parent: WallRockSnow
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -1637,7 +1580,6 @@
           state: rock_snow_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 # Sand variants
 - type: entity
@@ -1664,6 +1606,7 @@
 - type: entity
   id: WallRockSandCoal
   parent: WallRockSand
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -1682,11 +1625,11 @@
           state: rock_sand_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandGold
   parent: WallRockSand
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -1705,11 +1648,11 @@
           state: rock_sand_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandDiamond
   parent: WallRockSand
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -1728,11 +1671,11 @@
           state: rock_sand_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandPlasma
   parent: WallRockSand
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -1751,11 +1694,11 @@
           state: rock_sand_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandQuartz
   parent: WallRockSand
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -1774,11 +1717,11 @@
           state: rock_sand_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandSilver
   parent: WallRockSand
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -1797,11 +1740,11 @@
           state: rock_sand_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandTin
   parent: WallRockSand
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -1820,11 +1763,11 @@
           state: rock_sand_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandUranium
   parent: WallRockSand
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -1843,11 +1786,11 @@
           state: rock_sand_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandBananium
   parent: WallRockSand
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -1866,7 +1809,6 @@
           state: rock_sand_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandArtifactFragment
@@ -1890,11 +1832,11 @@
           state: rock_sand_west
         - state: rock_artifact_fragment
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandSalt
   parent: WallRockSand
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -1913,7 +1855,6 @@
           state: rock_sand_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 # Chromite variants
 - type: entity
@@ -1940,6 +1881,7 @@
 - type: entity
   id: WallRockChromiteCoal
   parent: WallRockChromite
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -1958,11 +1900,11 @@
           state: rock_chromite_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteGold
   parent: WallRockChromite
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -1981,11 +1923,11 @@
           state: rock_chromite_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteDiamond
   parent: WallRockChromite
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -2004,11 +1946,11 @@
           state: rock_chromite_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromitePlasma
   parent: WallRockChromite
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -2027,11 +1969,11 @@
           state: rock_chromite_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteQuartz
   parent: WallRockChromite
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -2050,11 +1992,11 @@
           state: rock_chromite_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteSilver
   parent: WallRockChromite
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -2073,11 +2015,11 @@
           state: rock_chromite_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteTin
   parent: WallRockChromite
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -2096,11 +2038,11 @@
           state: rock_chromite_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteUranium
   parent: WallRockChromite
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -2119,12 +2061,12 @@
           state: rock_chromite_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 
 - type: entity
   id: WallRockChromiteBananium
   parent: WallRockChromite
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -2143,7 +2085,6 @@
           state: rock_chromite_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteArtifactFragment
@@ -2167,11 +2108,11 @@
           state: rock_chromite_west
         - state: rock_artifact_fragment
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteSalt
   parent: WallRockChromite
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -2190,7 +2131,6 @@
           state: rock_chromite_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 # Andesite variants
 - type: entity
@@ -2217,6 +2157,7 @@
 - type: entity
   id: WallRockAndesiteCoal
   parent: WallRockAndesite
+  description: An ore vein rich with coal.
   suffix: Coal
   components:
     - type: OreVein
@@ -2235,11 +2176,11 @@
           state: rock_andesite_west
         - state: rock_coal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteGold
   parent: WallRockAndesite
+  description: An ore vein rich with gold.
   suffix: Gold
   components:
     - type: OreVein
@@ -2258,11 +2199,11 @@
           state: rock_andesite_west
         - state: rock_gold
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteDiamond
   parent: WallRockAndesite
+  description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
     - type: OreVein
@@ -2281,11 +2222,11 @@
           state: rock_andesite_west
         - state: rock_diamond
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesitePlasma
   parent: WallRockAndesite
+  description: An ore vein rich with plasma.
   suffix: Plasma
   components:
     - type: OreVein
@@ -2304,11 +2245,11 @@
           state: rock_andesite_west
         - state: rock_phoron
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteQuartz
   parent: WallRockAndesite
+  description: An ore vein rich with quartz.
   suffix: Quartz
   components:
     - type: OreVein
@@ -2327,11 +2268,11 @@
           state: rock_andesite_west
         - state: rock_quartz
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteSilver
   parent: WallRockAndesite
+  description: An ore vein rich with silver.
   suffix: Silver
   components:
     - type: OreVein
@@ -2350,11 +2291,11 @@
           state: rock_andesite_west
         - state: rock_silver
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteTin
   parent: WallRockAndesite
+  description: An ore vein rich with iron.
   suffix: Iron
   components:
     - type: OreVein
@@ -2373,11 +2314,11 @@
           state: rock_andesite_west
         - state: rock_tin
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteUranium
   parent: WallRockAndesite
+  description: An ore vein rich with uranium.
   suffix: Uranium
   components:
     - type: OreVein
@@ -2396,12 +2337,12 @@
           state: rock_andesite_west
         - state: rock_uranium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 
 - type: entity
   id: WallRockAndesiteBananium
   parent: WallRockAndesite
+  description: An ore vein rich with bananium.
   suffix: Bananium
   components:
     - type: OreVein
@@ -2420,7 +2361,6 @@
           state: rock_andesite_west
         - state: rock_bananium
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteArtifactFragment
@@ -2444,11 +2384,11 @@
           state: rock_andesite_west
         - state: rock_artifact_fragment
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteSalt
   parent: WallRockAndesite
+  description: An ore vein rich with salt.
   suffix: Salt
   components:
     - type: OreVein
@@ -2467,4 +2407,3 @@
           state: rock_andesite_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change

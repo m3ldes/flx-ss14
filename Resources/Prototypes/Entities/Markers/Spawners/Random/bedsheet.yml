@@ -11,7 +11,6 @@
     - type: RandomSpawner
       rarePrototypes:
         - BedsheetIan
-        - BedsheetInteQ # Backmen
         - BedsheetCosmos
       rareChance: 0.03
       prototypes:

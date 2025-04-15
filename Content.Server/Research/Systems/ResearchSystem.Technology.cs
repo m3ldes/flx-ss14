@@ -23,7 +23,7 @@ public sealed partial class ResearchSystem
 
         Dirty(primaryUid, primaryDb);
 
-        var ev = new TechnologyDatabaseSynchronizedEvent();
+        var ev = new TechnologyDatabaseModifiedEvent();
         RaiseLocalEvent(primaryUid, ref ev);
     }
 
@@ -80,7 +80,7 @@ public sealed partial class ResearchSystem
             return false;
 
         AddTechnology(serverEnt.Value, prototype);
-        //TrySetMainDiscipline(prototype, serverEnt.Value); // Goobstation commented
+        TrySetMainDiscipline(prototype, serverEnt.Value);
         ModifyServerPoints(serverEnt.Value, -prototype.Cost);
         UpdateTechnologyCards(serverEnt.Value);
 

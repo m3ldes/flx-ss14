@@ -3,7 +3,7 @@
   maps:
   - BackmenAspid
   - BackmenKettle
-  #- BackmenTortuga
+  - BackmenTortuga
   - BackmenHive
   - BackmenShoukou
   #- BackmenRook
@@ -12,6 +12,7 @@
   - Saltern
   - Bagel
   - Box
+  - Cog
   - Core
   - Fland
   - Marathon

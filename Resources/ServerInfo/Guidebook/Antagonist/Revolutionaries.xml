@@ -51,9 +51,4 @@
   - Главный Врач
 
   Помните, ваша цель — захватить станцию, а не разрушить её, поэтому постарайтесь свести к минимуму ущерб, где это возможно. Viva la revolución!
-
-  <Box>
-    <GuideEntityEmbed Entity="MindShieldImplanter"/>
-  </Box>
-
 </Document>

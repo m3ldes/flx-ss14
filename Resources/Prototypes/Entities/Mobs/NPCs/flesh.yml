@@ -68,7 +68,6 @@
     understands:
     - Flesh
     - SpaceMob
-  - type: Fauna # Lavaland Change
 
 - type: entity
   parent: BaseMobFlesh

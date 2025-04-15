@@ -11,7 +11,6 @@ fibers-nitrile = nitrile
 fibers-nanomachines = insulative nanomachine
 fibers-chameleon = holographic chameleon
 fibers-rubber = rubber
-fibers-kinetic = kinetic
 
 fibers-purple = purple
 fibers-red = red
@@ -19,7 +18,6 @@ fibers-black = black
 fibers-blue = blue
 fibers-teal = teal
 fibers-brown = brown
-fibers-light-brown = light brown
 fibers-grey = grey
 fibers-green = green
 fibers-orange = orange

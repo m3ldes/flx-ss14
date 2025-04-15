@@ -10,8 +10,6 @@
   - type: Speech
     speechSounds: Combine
     soundCooldownTime: 0.1
-  - type: Damageable
-    damageModifierSet: CombineHuman
   - type: Stamina
     critThreshold: 250
   - type: MobState

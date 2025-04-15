@@ -18,12 +18,10 @@
   wage: 500
   #end-backmen: currency
   access:
-  - SecurityTechnician #backmen
   - Security
   - Brig
   - Maintenance
-  - Engineering #backmen
-  - Atmospherics #backmen
+  - Service
   - External
   - Cryogenics
   special:
@@ -33,13 +31,14 @@
 - type: startingGear
   id: PilotGear
   equipment:
+    eyes: ClothingEyesGlassesSecurity
+    head: ClothingHeadHatBeretSecurity
     id: PilotPDA
     ears: ClothingHeadsetSecurity
-    gloves: ClothingHandsGlovesCombat #backmen
-    pocket1: WeaponMultiphaseEnergyGun #backmen
-    pocket2: RadioSecurityPilotSupplyPod #backmen
+    neck: ClothingNeckTieRed
+    pocket1: WeaponPistolMk58
   storage:
     back:
+    - BoxSurvivalSecurity
     - Flash
-    - securityTechnicianRCD    #backmen
-   #- MagazinePistol  (backmen)
+    - MagazinePistol

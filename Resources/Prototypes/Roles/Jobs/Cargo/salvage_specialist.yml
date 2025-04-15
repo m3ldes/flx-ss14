@@ -30,6 +30,6 @@
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     id: SalvagePDA
     ears: ClothingHeadsetCargo
-  storage: # DeltaV: Add mining voucher
-    back:
-    - MiningVoucher
+  #storage:
+    #back:
+    #- Stuff

@@ -20,7 +20,6 @@
     - id: RubberStampQm
     - id: AstroNavCartridge
     - id: PrinterDocFlatpack # Corvax-Printer
-    - id: MailTeleporterMachineCircuitboard
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -42,27 +41,27 @@
       prob: 0.25
     - id: ClothingBeltSheathFilled
     - id: ClothingHeadsetAltCommand
-#    - id: ClothingOuterArmorCaptainCarapace # Backmen-CaptainDrobe
+    - id: ClothingOuterArmorCaptainCarapace
     - id: CommsComputerCircuitboard
     - id: DoorRemoteCommand
-#    - id: MedalCase # Backmen-CaptainDrobe
+    - id: MedalCase
     - id: NukeDisk
     - id: PinpointerNuclear
     - id: PlushieNuke
       prob: 0.1
-#    - id: RubberStampCaptain # Backmen-CaptainDrobe
+    - id: RubberStampCaptain
     - id: SpaceCash1000
     - id: WeaponDisabler
-#    - id: ClothingEyesGlassesCommand # Backmen-CaptainDrobe
+    - id: ClothingEyesGlassesCommand
     - id: Eftpos # backmen
     # Corvax-Resprite-Start
-#    - id: ClothingHeadCaptainHat # Backmen-CaptainDrobe
-#    - id: ClothingOuterCoatCaptain # Backmen-CaptainDrobe
+    - id: ClothingHeadCaptainHat
+    - id: ClothingOuterCoatCaptain
     # Corvax-Resprite-End
     - id: AntiPsychicKnife  # backmen
     - id: ClothingHeadCage # backmen
     - id: HandheldReinforcementCentCom # backmen
-#    - id: ClothingEyesGlassesCommand # Backmen - Because dublicate (56)???
+    - id: ClothingEyesGlassesCommand
 
 # No laser table + Laser table
 - type: entityTable
@@ -188,7 +187,7 @@
   id: FillChiefEngineerHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingMaskGasAtmos
+    - id: ClothingMaskBreath
     - id: ClothingOuterHardsuitEngineeringWhite
     - id: ClothingShoesBootsMagAdv
     - id: JetpackVoidFilled
@@ -245,8 +244,6 @@
     - id: FlatpackMetempsychoticMachine # backmen
     - id: MedicalBiofabMachineBoard # backmen
     - id: MedTekCartridge
-    - id: RapidSyringeGun # backmen
-    - id: BoxSyringePax # backmen
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -303,7 +300,6 @@
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: FlatpackOracle # backmen
     - id: FlatpackSophie # backmen
-    - id: BoxBodyBagRadiation # Backmen-AdvancedBodyBags
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -360,19 +356,15 @@
     - id: HoloprojectorSecurity
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
-    - id: GunsmithTechFabCircuitboard #backmen
     - id: WeaponDisabler
     - id: AntiPsychicKnife # backmen
     - id: ClothingHeadCage # backmen
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: WantedListCartridge
-    - id: DrinkHosFlask
-    # Corvax-Start
-    - id: ClothingHeadHatCapHoS
+    - id: ClothingHeadHatCapHoS # Corvax-SecFashion
       prob: 0.5
-    - id: ClothingOuterCoatHoSGreatcoat
-    - id: BookBusido
-    # Corvax-End
+    - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
+    - id: BookBusido # Corvax-Books
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

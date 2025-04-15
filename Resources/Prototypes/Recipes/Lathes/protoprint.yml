@@ -217,8 +217,7 @@
 - type: latheRecipe
   id: CashMachineCircuitboard
   result: ProtolatheCashMachineCircuitboard
-  categories:
-  -  Circuitry
+  category: Circuitry
   completetime: 4
   materials:
      Steel: 500

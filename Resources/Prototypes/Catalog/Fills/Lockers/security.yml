@@ -25,7 +25,6 @@
       - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
       - id: ClothingOuterCoatWardenAlt # Corvax-SecFashion
       - id: ClothingBackpackWarden # Corvax-SecFashion
-      - id: BoxBodyBagPrisoner # Backmen-AdvancedBodyBags
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
@@ -60,12 +59,10 @@
         amount: 2
       - id: BookSpaceLaw
       - id: ClothingBackpackWarden # Corvax-SecFashion
-      - id: BoxBodyBagPrisoner # Backmen-AdvancedBodyBags
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
         amount: 2
-      - id: Binoculars
 
 - type: entity
   id: LockerSecurityFilled
@@ -132,7 +129,6 @@
         prob: 0.4
       - id: ClothingHeadCage # backmen
       - id: ClothingHeadsetAltBrigmedic # backmen
-      - id: BoxBodyBagPrisoner # Backmen-AdvancedBodyBags
 
 - type: entity
   id: LockerDetectiveFilled
@@ -143,6 +139,7 @@
     contents:
       - id: ClothingEyesGlassesSecurity
         prob: 0.3
+      - id: ClothingHeadHatFedoraBrown
       - id: ClothingNeckTieDet
       - id: ClothingOuterVestDetective
       - id: ClothingOuterCoatDetective
@@ -169,13 +166,16 @@
     contents:
       - id: ClothingHeadHelmetBombSuit
       - id: ClothingOuterSuitBomb
+      # NT is cheap, what can you do...
       - id: Wirecutter
+        prob: 0.9
       - id: Screwdriver
+        prob: 0.9
       - id: Multitool
         prob: 0.5
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeDisabler
   name: disabler safe
   components:
@@ -185,23 +185,21 @@
       amount: 5
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafePistolMk58
   name: mk58 safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
     - id: WeaponPistolACP14
       amount: 4
-    - id: MagazinePistol9x17
+    - id: MagazinePistol
       amount: 8
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeRifleLecter
   name: lecter safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -211,10 +209,9 @@
       amount: 4
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeSubMachineGunDrozd
   name: drozd safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -224,10 +221,9 @@
       amount: 4
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeShotgunEnforcer
   name: enforcer safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -237,10 +233,9 @@
       amount: 4
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeShotgunKammerer
   name: kammerer safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -252,9 +247,8 @@
 - type: entity
   id: GunSafeSubMachineGunWt550
   suffix: Wt550
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   name: wt550 safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -264,10 +258,9 @@
       amount: 4
 
 - type: entity
-  parent: [GunSafeBaseSecure, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeLaserCarbine
   name: laser safe
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:

@@ -5,15 +5,13 @@
   description: Finally, some decent reception around here...
   components:
   - type: Sprite
-    sprite: Backmen/Structures/Machines/Computers/tv.rsi # BACKMEN-EDIT
     noRot: true
     drawdepth: SmallObjects
     layers:
     - map: ["computerLayerBody"]
       state: television
     - map: ["computerLayerScreen"]
-      state: television_playing # BACKMEN-EDIT
-      shader: unshaded # Backmen
+      state: detective_television
   - type: Computer
     board: ComputerTelevisionCircuitboard
   - type: PointLight

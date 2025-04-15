@@ -40,10 +40,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
 
 - type: emoteSounds
   id: FemaleHuman
@@ -86,10 +82,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
 
 - type: emoteSounds
   id: MaleReptilian
@@ -114,10 +106,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: DeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
 
 - type: emoteSounds
   id: FemaleReptilian
@@ -142,10 +130,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
 
 - type: emoteSounds
   id: MaleSlime
@@ -188,10 +172,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
   params:
     variation: 0.125
 
@@ -236,10 +216,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
   params:
     variation: 0.125
 
@@ -250,14 +226,6 @@
       path: /Audio/Voice/Vox/shriek1.ogg
     Laugh:
       path: /Audio/Voice/Vox/vox_laugh.ogg
-    Honk:
-      collection: BikeHorn
-    Weh:
-      collection: Weh
-    Hew:
-      collection: Hew
-    BCatMeow:
-      collection: BCatMeowSound
   params:
     variation: 0.125
     # We need vox sounds for the other emotes
@@ -281,10 +249,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: DeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
   params:
     variation: 0.125
 
@@ -305,16 +269,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Honk:
-      collection: BikeHorn
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
       collection: DeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
 
 - type: emoteSounds
   id: UnisexDwarf
@@ -355,10 +313,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
   params:
     variation: 0.125
     pitch: 0.75
@@ -402,10 +356,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
   params:
     variation: 0.125
     pitch: 0.75
@@ -429,16 +379,10 @@
       collection: Weh
     Hew:
       collection: Hew
-    Honk:
-      collection: BikeHorn
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MothDeathGasp
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: # Backmen
-      collection: ReptilianHisses
 
 - type: emoteSounds
   id: UnisexSilicon
@@ -484,8 +428,6 @@
   sounds:
     Clap:
       collection: Claps
-    ClapSingle:
-      collection: ClapSingle
     Snap:
       collection: Snaps
       params:
@@ -498,9 +440,6 @@
   sounds:
     Clap:
       path: /Audio/Voice/Diona/diona_clap.ogg
-    # TODO: Replace this with a similar wood themed single clap
-    ClapSingle:
-      collection: ClapSingle
     Snap:
       path: /Audio/Voice/Diona/diona_snap.ogg
       params:
@@ -519,8 +458,6 @@
         variation: 0.125
     Clap:
       collection: Claps
-    ClapSingle:
-      collection: ClapSingle
     Snap:
       collection: Snaps
       params:
@@ -545,33 +482,24 @@
 
 - type: emoteSounds
   id: Mouse
-  sounds:
-    Scream:
-      path: /Audio/Animals/mouse_squeak.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
+  sound:
+    path: /Audio/Animals/mouse_squeak.ogg
+    params:
+      variation: 0.125
 
 - type: emoteSounds
   id: Cluwne
-  sounds:
-    Scream:
-      path: /Audio/Voice/Cluwne/cluwnelaugh1.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
+  sound:
+    collection: CluwneScreams
+    params:
+      variation: 0.125
 
 - type: emoteSounds
   id: Bear
-  sounds:
-    Scream:
-      path: /Audio/Animals/bear.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
+  sound:
+    path: /Audio/Animals/bear.ogg
+    params:
+      variation: 0.125
 
 - type: emoteSounds
   id: FleshPudgeEmote
@@ -596,48 +524,27 @@
 
 - type: emoteSounds
   id: Cerberus
-  sounds:
-    Scream:
-      path: /Audio/Animals/cerberus.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
+  sound:
+    path: /Audio/Animals/cerberus.ogg
+    params:
+      variation: 0.125
 
 - type: emoteSounds
   id: Kangaroo
-  sounds:
-    Scream:
-      path: /Audio/Animals/kangaroo_grunt.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
+  sound:
+    path: /Audio/Animals/kangaroo_grunt.ogg
+    params:
+      variation: 0.125
 
 - type: emoteSounds
   id: Nymph
   sounds:
     Chirp:
       path: /Audio/Animals/nymph_chirp.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
 
 - type: emoteSounds
   id: Parrot
-  sounds:
-    Scream:
-      path: /Audio/Animals/parrot_raught.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
-
-- type: emoteSounds
-  id: Goat
-  sounds:
-    Scream:
-      path: /Audio/Animals/goat_bah.ogg
-    BCatMeow:
-      path: /Audio/Corvax/Effects/Growl/growl1.ogg
-  params:
-    variation: 0.125
+  sound:
+    path: /Audio/Animals/parrot_raught.ogg
+    params:
+      variation: 0.125

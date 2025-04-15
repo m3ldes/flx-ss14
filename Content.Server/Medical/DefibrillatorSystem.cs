@@ -23,7 +23,6 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.PowerCell;
 using Content.Shared.Timing;
 using Content.Shared.Toggleable;
-using Content.Shared.Traits.Assorted;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 
@@ -196,9 +195,9 @@ public sealed class DefibrillatorSystem : EntitySystem
             _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-rotten"),
                 InGameICChatType.Speak, true);
         }
-        else if (TryComp<UnrevivableComponent>(target, out var unrevivable))
+        else if (HasComp<UnrevivableComponent>(target))
         {
-            _chatManager.TrySendInGameICMessage(uid, Loc.GetString(unrevivable.ReasonMessage),
+            _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-unrevivable"),
                 InGameICChatType.Speak, true);
         }
         else

@@ -20,7 +20,7 @@
   - type: ScatteringGrenade
 
 - type: entity
-  parent: [ScatteringGrenadeBase, BaseSecurityContraband]
+  parent: [ScatteringGrenadeBase, BaseRestrictedContraband]
   id: ClusterBang
   name: clusterbang
   description: Can be used only with flashbangs. Explodes several times.
@@ -70,13 +70,6 @@
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Machines/door_lock_off.ogg"
-  - type: OnUseTimerTrigger # Backmen
-    beepSound:
-      path: "/Audio/Effects/beep1.ogg"
-      params:
-        volume: 5
-    initialBeepDelay: 0
-    beepInterval: 2
 
 - type: entity
   parent: [ScatteringGrenadeBase, BaseSyndicateContraband]

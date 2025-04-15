@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Grid
-  engineVersion: 247.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 02/19/2025 11:09:37
-  entityCount: 186
-maps: []
-grids:
-- 173
-orphans:
-- 173
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   1: FloorReinforced
@@ -146,14 +135,6 @@ entities:
           moles:
           - 21.824879
           - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
           - 0
           - 0
           - 0
