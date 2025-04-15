@@ -68,7 +68,8 @@
     back:
     - MedkitCombatFilled
     - BoxSurvivalSecurity
-    - MagazineRifle
+    - MagazineRifleFamas556UEG
+    - MagazinePistol9x17
   #innerClothingSkirt: ClothingUniformJumpskirtSec
   #satchel: ClothingBackpackSatchelSecurityFilled
   #duffelbag: ClothingBackpackDuffelSecurityFilled
@@ -103,7 +104,11 @@
   components:
     - type: Sprite
       layers:
-      - state: centcom
+      - state: card_centcom # Backmen
+      - state: sub_department # Backmen
+        color: "#0F4162"
+      - state: frame_head # Backmen
+        color: "#0F4162"
       - state: idsecurityofficer
     - type: PresetIdCard
       job: BKCCSecOfficer

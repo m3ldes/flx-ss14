@@ -26,6 +26,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using System.Linq;
+using Content.Shared.Traits.Assorted;
 
 namespace Content.Server.Medical;
 
@@ -89,8 +90,9 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             component.NextUpdate = _timing.CurTime + component.UpdateInterval;
 
             //Get distance between health analyzer and the scanned entity
+            //null is infinite range
             var patientCoordinates = Transform(patient).Coordinates;
-            if (!_transformSystem.InRange(patientCoordinates, transform.Coordinates, component.MaxScanRange))
+            if (component.MaxScanRange != null && !_transformSystem.InRange(patientCoordinates, transform.Coordinates, component.MaxScanRange.Value))
             {
                 //Range too far, disable updates
                 StopAnalyzingEntity((uid, component), patient);
@@ -257,9 +259,8 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             bleeding = bloodstream.BleedAmount > 0;
         }
 
-        /*if (HasComp<UnrevivableComponent>(target)) Somehow we dont have unrevivable???
+        if (HasComp<UnrevivableComponent>(target))
             unrevivable = true;
-        */
 
         // Start-backmen: surgery
         Dictionary<TargetBodyPart, TargetIntegrity>? body = null;

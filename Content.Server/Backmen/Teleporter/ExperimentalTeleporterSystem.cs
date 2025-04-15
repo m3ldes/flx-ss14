@@ -2,7 +2,6 @@ using Content.Shared.Ghost;
 using System.Linq;
 using System.Numerics;
 using Content.Server.Body.Systems;
-using Content.Server.Standing;
 using Content.Shared.Backmen.Standing;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Coordinates.Helpers;
@@ -15,6 +14,8 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
+using Content.Server.Disposal.Unit.Components;
+using Content.Shared.Popups;
 
 namespace Content.Server._White.Teleporter;
 
@@ -30,6 +31,7 @@ public sealed class ExperimentalTeleporterSystem : EntitySystem
     [Dependency] private readonly SharedLayingDownSystem _layingDown = default!;
     [Dependency] private readonly SharedChargesSystem _charges = default!;
     [Dependency] private readonly TagSystem _tag = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
@@ -39,6 +41,12 @@ public sealed class ExperimentalTeleporterSystem : EntitySystem
 
     private void OnUse(EntityUid uid, ExperimentalTeleporterComponent component, UseInHandEvent args)
     {
+        if (HasComp<BeingDisposedComponent>(args.User))
+        {
+            _popup.PopupEntity(Loc.GetString("experimental-teleporter-in-disposal"), args.User, args.User);
+            return;
+        }
+
         if (_charges.IsEmpty(uid)
             || !TryComp<TransformComponent>(args.User, out var xform)
             || (_containerSystem.IsEntityInContainer(args.User)
