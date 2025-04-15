@@ -232,7 +232,7 @@
       - state: equipped-HAND
         color: "#C09F72"
   - type: Fiber
-    fiberColor: fibers-brown
+    fiberColor: fibers-light-brown
 
 # Orange Gloves
 - type: entity
@@ -337,6 +337,10 @@
     spawned:
     - id: ClothingHandsGlovesFingerlessInsulated
   - type: Insulated
+  - type: Armor #Backmen-armorstun
+    modifiers:
+      coefficients:
+        Stun: 0.9
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-yellow

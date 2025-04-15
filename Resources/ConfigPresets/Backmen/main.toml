@@ -1,5 +1,5 @@
 ﻿[game]
-hostname = "[RU][TTS]🌆Backmen - Ataraxia [MRP]"
+hostname = "👽 МЁРТВЫЙ КОСМОС 🌆 Конфедерация [TTS][MRP]"
 maxplayers = 70
 soft_max_players = 60
 desc="""📣 Наш личный модовый не коммерческий проект, который мы ведем и разрабатываем уже более года
@@ -13,6 +13,7 @@ desc="""📣 Наш личный модовый не коммерческий п
 ✔️ - DS-авторизация с просмотром своей статистики прямо в чате!
 ✔️ - Новая боёвка!
 ✔️ - Система языков!
+✔️ - Хирургия и кукла!
 🕖 Именно мы одни из тех первых проектов, кто решился встать на открытый путь разработки по личной инициативе!
 
 ☎️ Присоединяйся и стань частью нашей большой семьи!
@@ -25,12 +26,17 @@ cryo_sleep_rejoining = true
 lobbyduration=300
 contraband_examine = true
 
+# IPIntel stuff
+ipintel_enabled = true
+ipintel_contact_email = "backmen@bk.ru"
+
 [infolinks]
 website="https://backmen.ru"
 discord="https://discord.gg/B7gWj7hB8b"
 wiki="http://wiki.backmen.ru"
 github="https://github.com/Rxup/space-station-14"
-appeal="https://backmen.ru/discord"
+appeal="https://backmen.ru/tag/ticket"
+patreon="https://boosty.to/ds14confederation"
 
 [shuttle]
 arrivals = true
@@ -62,13 +68,12 @@ enabled_crit = true
 easy_mode = false
 
 [atmos]
-space_wind = false
+space_wind = true
 space_wind_max_velocity = 22.0
-#tickrate = 7
-monstermos_rip_tiles = true
+max_explosion_range = 5
 
 [physics]
-target_minimum_tickrate = 20
+target_minimum_tickrate = 30
 timetosleep = 0.1
 angsleeptol = 0.01
 linsleeptol = 0.001
@@ -77,7 +82,7 @@ linsleeptol = 0.001
 restart_delay = 120
 
 [worldgen]
-enabled = false
+enabled = true
 
 [ahelp]
 admin_prefix = true
@@ -137,3 +142,12 @@ enabled=true
 
 [laying]
 crawlundertables=true
+
+[vote]
+map_enabled = true
+restart_required_ratio = 0.6
+timermap = 60
+
+[hub]
+advertise = true
+tags = "lang:ru,rp:med,region:eu_e,tts"

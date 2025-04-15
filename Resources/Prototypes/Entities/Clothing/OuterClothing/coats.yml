@@ -10,7 +10,7 @@
     sprite: Clothing/OuterClothing/Coats/bomber.rsi
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterArmorBasic]
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterArmorBase]
   id: ClothingOuterCoatDetective
   name: detective trenchcoat
   description: An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business.
@@ -30,7 +30,7 @@
   parent: [ClothingOuterCoatDetectiveLoadout]
   id: ClothingOuterCoatDetectiveLoadoutGrey
   name: noir trenchcoat
-  description: Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 speos.
+  description: Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 spesos.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
@@ -68,7 +68,9 @@
       coefficients:
         Blunt: 0.7
         Slash: 0.7
-        Piercing: 0.7
+        Piercing: 0.4
+        ArmorPiercing: 0.8
+        Stun: 0.6
         Heat: 0.7
         Caustic: 0.75 # not the full 90% from ss13 because of the head
   - type: ExplosionResistance
@@ -84,8 +86,10 @@
       coefficients:
         Blunt: 0.7
         Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
+        Piercing: 0.4
+        ArmorPiercing: 0.8
+        Heat: 0.8
+        Stun: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -112,6 +116,11 @@
     sprite: Clothing/OuterClothing/Coats/jensencoat.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodChaplainHood
+  - type: Armor #Backmen-armorstun
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Stun: 0.8
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -130,6 +139,7 @@
     modifiers:
       coefficients:
         Slash: 0.95
+        Stun: 0.8 #Backmen-armorstun
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
@@ -315,7 +325,7 @@
     sprite: Clothing/OuterClothing/Coats/pirate.rsi
 
 - type: entity
-  parent: [ClothingOuterArmorWarden, ClothingOuterStorageBase, BaseRestrictedContraband]
+  parent: [ClothingOuterArmorWarden, ClothingOuterStorageBase, BaseSecurityContraband]
   id: ClothingOuterCoatWarden
   name: warden's armored jacket
   description: A sturdy, utilitarian jacket designed to protect a warden from any brig-bound threats.
@@ -413,11 +423,12 @@
         Blunt: 0.8
         Slash: 0.85
         Piercing: 0.65
+        ArmorPiercing: 0.9
         Heat: 0.85
         Caustic: 0.75
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatLabSeniorResearcher
   name: senior researcher lab coat
   description: A suit that protects against minor chemical spills. Has a purple collar and wrist trims.
@@ -432,7 +443,12 @@
         Caustic: 0.75
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabSeniorResearcher]
+  id: ClothingOuterCoatLabSeniorResearcherOpened
+  name: senior researcher lab coat
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatLabSeniorPhysician
   name: senior physician lab coat
   description: A suit that protects against minor chemical spills. Has light blue sleeves and an orange waist trim.
@@ -447,6 +463,11 @@
         Caustic: 0.75
 
 - type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabSeniorPhysician]
+  id: ClothingOuterCoatLabSeniorPhysicianOpened
+  name: senior physician lab coat
+
+- type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatSpaceAsshole
   name: the coat of space asshole
@@ -456,9 +477,14 @@
     sprite: Clothing/OuterClothing/Coats/space_asshole.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/space_asshole.rsi
+  - type: Armor #Backmen-armorstun
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Stun: 0.8
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatExpensive
   name: expensive coat
   description: Very fluffy pink coat, made out of very expensive fur (clearly).
@@ -467,3 +493,8 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatExpensive]
+  id: ClothingOuterCoatExpensiveOpened
+  name: expensive coat

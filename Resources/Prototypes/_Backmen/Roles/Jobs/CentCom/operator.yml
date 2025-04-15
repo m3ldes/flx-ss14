@@ -21,7 +21,7 @@
       department: CentCom
       time: 14400
     - !type:DepartmentTimeRequirement
-      department: Silicons
+      department: Silicon
       time: 6000
   access:
     - CCCargo
@@ -74,7 +74,7 @@
       state: pda-centcom
 
 - type: entity
-  parent: CentcomIDCardDeathsquad
+  parent: CentcomIDCard
   id: IDCardCentComGavnaOperator
   name: ID карта оператора ЦК
   components:

@@ -73,6 +73,8 @@
       # Only used for NT borgs that can switch type, defined here to avoid copy-pasting the rest of this component.
       enum.BorgSwitchableTypeUiKey.SelectBorgType:
         type: BorgSelectTypeUserInterface
+      enum.SurgeryUIKey.Key: # Backmen
+        type: SurgeryBui
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
@@ -155,6 +157,8 @@
   - type: Vocal
     sounds:
       Unsexed: UnisexSilicon
+    screamAction: null
+  - type: DamagedSiliconAccent
   - type: UnblockableSpeech
   - type: FootstepModifier
     footstepSoundCollection:
@@ -167,7 +171,6 @@
     - cell_slot
   - type: Lock
     locked: true
-    breakOnEmag: false
     unlockOnClick: false
   - type: ActivatableUIRequiresLock
   - type: LockedWiresPanel
@@ -235,9 +238,10 @@
     - DoorBumpOpener
     - FootstepSound
     - CanPilot
+    - Unimplantable
   - type: Emoting
   - type: TTS # Corvax-TTS
-    voice: Borgs
+    voice: Glados
   - type: LayingDown # backmen: LayingDown
   - type: GuideHelp
     guides:
@@ -257,6 +261,8 @@
     understands:
     - Binary
     - TauCetiBasic
+  - type: Immersive # Backmen
+  - type: Targeting # Backmen
 
 - type: entity
   abstract: true
@@ -294,7 +300,7 @@
   components:
   - type: RandomMetadata
     nameSegments:
-      - names_borg
+    - NamesBorg
   - type: NpcFactionMember
     factions:
     - NanoTrasen
@@ -302,6 +308,8 @@
     enabled: false
     groups:
     - AllAccess
+    tags:
+    - Borg
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: ShowJobIcons
@@ -325,6 +333,7 @@
     access: [["SyndicateAgent"], ["NuclearOperative"]]
   - type: SiliconLawProvider
     laws: SyndicateStatic
+    subverted: true
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
@@ -336,6 +345,8 @@
   - type: MovementAlwaysTouching
   - type: Speech
     speechSounds: SyndieBorg
+    allowedEmotes:
+    - Laugh
   - type: Vocal
     sounds:
       Unsexed: UnisexSiliconSyndicate

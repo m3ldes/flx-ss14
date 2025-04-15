@@ -15,8 +15,10 @@
     allowMovement: true
     allowSpeech: true
     makeSentient: true
-    job: CBURN
     name: Оперативник РХБЗЗ
+    job: CBURN
+    mindRoles:
+    - MindRoleCBURN
   - type: RandomMetadata
     nameSegments:
     - NameSpetsCBURN
@@ -53,6 +55,9 @@
         time: 18000
       - !type:OverallPlaytimeRequirement
         time: 36000
+    job: CBURN
+    mindRoles:
+    - MindRoleCBURN
   - type: Loadout
     prototypes: [CBURN]
 
@@ -76,6 +81,9 @@
       - !type:DepartmentTimeRequirement
         department: Medical
         time: 18000
+    job: CBURN
+    mindRoles:
+    - MindRoleCBURN
   - type: Loadout
     prototypes: [CBURNMedic]
 
@@ -96,6 +104,9 @@
         time: 18000
       - !type:OverallPlaytimeRequirement
         time: 36000
+    job: CBURN
+    mindRoles:
+    - MindRoleCBURN
   - type: Loadout
     prototypes: [CBURNFlamer]
 
@@ -119,6 +130,9 @@
       - !type:DepartmentTimeRequirement
         department: Command
         time: 18000
+    job: CBURN
+    mindRoles:
+    - MindRoleCBURN
   - type: Loadout
     prototypes: [CBURNLeader]
   - type: RandomMetadata
