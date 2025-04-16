@@ -1,0 +1,15 @@
+﻿- type: entity
+  parent: [DrinkBottleVisualsOpenable, DrinkBottleGlassBaseFull]
+  id: DrinkBottleOfSleepPointFull
+  name: sleeppoint bottle
+  description: unsuccessful company drink maysonmil&yanlu company.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Sleeppoint
+          Quantity: 30
+  - type: Sprite
+    sprite: _Ataraxia/Objects/Consumable/Drinks/sleeppoint.rsi
+  -type: Sealable

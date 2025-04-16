@@ -1,0 +1,44 @@
+- type: reagent
+  id: FourteenLokoPlus
+  name: reagent-name-fourteen-loko-plus
+  parent: BaseSoda
+  desc: reagent-desc-fourteen-loko-plus
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: fourteen_loko_soda_plus
+  color: "#fcf6de"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+    Narcotic:
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.17
+        sprintSpeedModifier: 1.19
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.8
+
+- type: reagent
+  id: Lukins
+  name: reagent-name-lukins
+  parent: BaseSoda
+  desc: reagent-desc-lukins
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: lukins
+  color: "#5f9ea0"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.5
