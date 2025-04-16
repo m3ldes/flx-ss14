@@ -25,6 +25,7 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+    fireOnDropChance: 0.9 # Corvax-Next-FireOnDrop
   - type: BallisticAmmoProvider
     capacity: 10
     proto: CartridgeLightRifle
@@ -53,20 +54,26 @@
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSniperHristov
   description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. Uses .60 anti-materiel ammo.
+  categories: [ HideSpawnMenu ] #Backmen-weapons
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+  - type: GunRequiresWield
   - type: Gun
-    fireRate: 1
+    fireRate: 0.4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:
       - CartridgeAntiMateriel
     capacity: 5
     proto: CartridgeAntiMateriel
-<<<<<<< HEAD
 #  - type: SpeedModifiedOnWield
 #    walkModifier: 0.25
 #    sprintModifier: 0.25
@@ -75,9 +82,6 @@
 #    maxOffset: 3
 #    pvsIncrease: 0.3
   - type: Telescope # backmen: immersive
-=======
-  - type: Telescope # WD EDIT
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
 
 - type: entity
   name: musket

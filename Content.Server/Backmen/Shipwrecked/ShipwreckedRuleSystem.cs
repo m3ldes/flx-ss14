@@ -2,12 +2,12 @@
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using Content.Server._Lavaland.Procedural;
 using Content.Server.Access.Systems;
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Backmen.NPC.Prototypes;
 using Content.Server.Backmen.NPC.Systems;
-using Content.Server.Backmen.Shipwrecked.Biome;
 using Content.Server.Backmen.Shipwrecked.Components;
 using Content.Server.Backmen.Shipwrecked.Prototypes;
 using Content.Server.Body.Components;
@@ -53,6 +53,7 @@ using Content.Shared.Corvax.TTS;
 using Content.Shared.Damage;
 using Content.Shared.Dataset;
 using Content.Shared.Doors.Components;
+using Content.Shared.Explosion;
 using Content.Shared.FixedPoint;
 using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
@@ -60,6 +61,8 @@ using Content.Shared.Ghost;
 using Content.Shared.Gravity;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
+using Content.Shared.Light.Components;
+using Content.Shared.Light.EntitySystems;
 using Content.Shared.Lock;
 using Content.Shared.Maps;
 using Content.Shared.Mobs;
@@ -85,10 +88,10 @@ using Content.Shared.Verbs;
 using Content.Shared.Zombies;
 using Robust.Server.Audio;
 using Robust.Server.GameObjects;
-using Robust.Server.Maps;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Configuration;
+using Robust.Shared.EntitySerialization;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Map.Enumerators;
@@ -150,14 +153,11 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
     [Dependency] private readonly SharedPinpointerSystem _pinpointerSystem = default!;
     [Dependency] private readonly TagSystem _tagSystem = default!;
     [Dependency] private readonly SharedSalvageSystem _salvageSystem = default!;
-<<<<<<< HEAD
     [Dependency] private readonly SharedRoofSystem _roofSystem = default!;
     [Dependency] private readonly DoorSystem _door = default!;
     [Dependency] private readonly ISerializationManager _serialization = default!;
     [Dependency] private readonly IComponentFactory _componentFactory = default!;
 
-=======
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
 
     public override void Initialize()
     {
@@ -179,19 +179,41 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         SubscribeLocalEvent<ShipwreckSurvivorComponent, BeingGibbedEvent>(OnSurvivorBeingGibbed);
         SubscribeLocalEvent<EntityZombifiedEvent>(OnZombified);
 
+        SubscribeLocalEvent<LoadingMapsEvent>(OnLoadMap);
+
         //SubscribeLocalEvent<LoadingMapsEvent>(OnLoadingMaps);
-        SubscribeLocalEvent<PostGameMapLoad>(OnMapReady);
+        //SubscribeLocalEvent<PostGameMapLoad>(OnMapReady);
         SubscribeLocalEvent<PlayerBeforeSpawnEvent>(OnBeforeSpawn);
 
         SubscribeLocalEvent<ShipwreckMapGridComponent, UnLoadChunkEvent>(OnChunkUnLoaded);
         SubscribeLocalEvent<ShipwreckMapGridComponent, MapInitEvent>(OnChunkLoad);
 
-
         SubscribeLocalEvent<ShipwreckPinPointerComponent, MapInitEvent>(OnPinPointerSpawn);
         SubscribeLocalEvent<ShipwreckPinPointerComponent, GetVerbsEvent<Verb>>(GetVerbsPinPointer);
     }
 
+    private void OnLoadMap(LoadingMapsEvent ev)
+    {
+        if (GameTicker.CurrentPreset?.ID != "Shipwrecked")
+            return;
 
+        var mainStationMap = ev.Maps.FirstOrDefault();
+
+        if (mainStationMap != null && GameTicker.CurrentPreset?.MapPool != null &&
+            _prototypeManager.TryIndex<GameMapPoolPrototype>(GameTicker.CurrentPreset.MapPool, out var pool) &&
+            !pool.Maps.Contains(mainStationMap!.ID))
+        {
+
+            foreach (var map in pool.Maps)
+            {
+                if(ev.Maps.Any(x=>x.ID == map))
+                    continue;
+
+                ev.Maps.Clear();
+                ev.Maps.Add(_prototypeManager.Index<GameMapPrototype>(RobustRandom.Pick(pool.Maps)));
+            }
+        }
+    }
 
     public static readonly VerbCategory ShipwreckPinpointer =
         new("verb-categories-shipwreck-pinpointer", null);
@@ -232,7 +254,7 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         if(HasComp<PacifiedComponent>(ent))
             args.Cancel();
     }
-
+/*
     private void OnMapReady(PostGameMapLoad ev)
     {
         if (_gameTicker.RunLevel != GameRunLevel.PreRoundLobby)
@@ -248,7 +270,7 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
             AttachMap(ev.Grids.FirstOrDefault(), shipwrecked); // т.е. сначало добавление, далее загрузка карты, и после только запуск
         }
     }
-
+*/
     private void OnChunkLoad(EntityUid uid, ShipwreckMapGridComponent component, MapInitEvent args)
     {
         var enumerator = new ChunkIndicesEnumerator(component.Area, SharedBiomeSystem.ChunkSize);
@@ -389,9 +411,10 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
 
         var seed = _random.Next();
 
-        var biome = AddComp<BiomeComponent>(planetMapUid);
-        _biomeSystem.SetSeed(planetMapUid, biome, seed);
-        _biomeSystem.SetTemplate(planetMapUid, biome, _prototypeManager.Index<BiomeTemplatePrototype>(destination.BiomePrototype));
+        var biome = (BiomeComponent) EntityManager.ComponentFactory.GetComponent(typeof(BiomeComponent));
+        _biomeSystem.SetSeed(planetMapUid, biome, seed,false);
+        _biomeSystem.SetTemplate(planetMapUid, biome, _prototypeManager.Index<BiomeTemplatePrototype>(destination.BiomePrototype), false);
+        AddComp(planetMapUid, biome, true);
         _biomeSystem.AddMarkerLayer(planetMapUid, biome, "OreIron");
         _biomeSystem.AddMarkerLayer(planetMapUid, biome, "OreQuartz");
         _biomeSystem.AddMarkerLayer(planetMapUid, biome, "OreGold");
@@ -402,7 +425,6 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         _biomeSystem.AddTemplate(planetMapUid, biome, "Loot", _prototypeManager.Index<BiomeTemplatePrototype>("Caves"), 1);
         Dirty(planetMapUid, biome);
 
-<<<<<<< HEAD
         EnsureComp<RoofComponent>(planetMapUid);
 
         //EnsureComp<LightCycleComponent>(planetMapUid);
@@ -410,13 +432,12 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         //EnsureComp<SunShadowComponent>(planetMapUid);
         //EnsureComp<SunShadowCycleComponent>(planetMapUid);
 
-=======
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
         // Gravity
         if (destination.Gravity)
         {
             var gravity = EnsureComp<GravityComponent>(planetMapUid);
             gravity.Enabled = true;
+            gravity.Inherent = true;
             Dirty(planetMapUid, gravity);
         }
 
@@ -551,6 +572,9 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         _random.Shuffle(structuresToBuild);
         _random.Shuffle(directions);
 
+        Entity<MapGridComponent?, RoofComponent?> gridRoof = (component.PlanetMap.Value,
+            Comp<MapGridComponent>(component.PlanetMap.Value), Comp<RoofComponent>(component.PlanetMap.Value));
+
         foreach (var direction in directions)
         {
             var minDistance = component.Destination.StructureDistance;
@@ -559,21 +583,57 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
             var point = direction * distance;
 
             var dungeonProto = structuresToBuild.Pop();
-            var dungeon = await _dungeonSystem.GenerateDungeonAsync(dungeonProto,
-                component.PlanetMap.Value,
-                component.PlanetGrid,
-                point,
-                _random.Next());
+            try
+            {
+                var dungeon = await _dungeonSystem.GenerateDungeonAsync(dungeonProto,
+                    component.PlanetMap.Value,
+                    component.PlanetGrid,
+                    point,
+                    _random.Next());
 
-            component.Structures.AddRange(dungeon);
+                component.Structures.AddRange(dungeon);
+                foreach (var dungeon1 in dungeon)
+                {
+                    foreach (var tile in dungeon1.AllTiles)
+                    {
+                        _roofSystem.SetRoof(gridRoof, tile, true);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.ToString());
+            }
         }
     }
 
 
     private MapId LoadDefaultMap()
     {
-        _gameTicker.LoadGameMap(_prototypeManager.Index<GameMapPrototype>(DefaultShuttle), _gameTicker.DefaultMap, new MapLoadOptions(), null);
-        return _gameTicker.DefaultMap;
+        _gameTicker.LoadGameMap(_prototypeManager.Index<GameMapPrototype>(DefaultShuttle), out var mapId, new DeserializationOptions()
+        {
+            InitializeMaps = true
+        });
+        return mapId;
+    }
+
+    private IEnumerable<Entity<MetaDataComponent, TransformComponent, SpawnPointComponent>> GetSpawnPointsAll(EntityUid gridId, ShipwreckedRuleComponent component)
+    {
+        //var mapId = component.SpaceMapId ?? _gameTicker.DefaultMap;
+        foreach (var row in EntityQuery<MetaDataComponent, TransformComponent, SpawnPointComponent>(true))
+        {
+            var xform = row.Item2;
+
+            if(xform.GridUid == null || !gridId.IsValid())
+                continue;
+
+            //if(xform.MapID != mapId)
+            //    continue;
+
+            if (xform.GridUid.Value != gridId)
+                continue;
+            yield return (row.Item1.Owner, row.Item1, row.Item2, row.Item3);
+        }
     }
 
     [ValidatePrototypeId<GameMapPrototype>]
@@ -585,21 +645,10 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
 
         var isValidMap = false;
 
-        foreach (var (spawnPointComponent, meta, xform) in EntityQuery<SpawnPointComponent, MetaDataComponent, TransformComponent>(true))
+        foreach (var (_, meta, xform, _) in GetSpawnPointsAll(gridId, component))
         {
             if (meta.EntityPrototype?.ID != component.SpawnPointHecate.Id)
                 continue;
-
-            if (gridId.IsValid())
-            {
-                if (xform.GridUid != gridId)
-                    continue;
-            }
-            else
-            {
-                if(xform.MapID != mapId)
-                    continue;
-            }
 
             isValidMap = true;
             break;
@@ -655,7 +704,6 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         return true;
     }
 
-<<<<<<< HEAD
     private void BoltAirlock(EntityUid grid)
     {
         var airlock = new HashSet<Entity<DoorBoltComponent>>();
@@ -686,57 +734,49 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
     }
 
     private bool SpawnHecate(Entity<ShipwreckedRuleComponent> ent)
-=======
-    private void SpawnHecate(ShipwreckedRuleComponent component)
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
     {
-        if (component.Hecate != null)
+        if (ent.Comp.Hecate != null)
         {
             Log.Warning("Hecate was already spawned.");
-            return;
+            return true;
         }
 
-        var query = EntityQueryEnumerator<SpawnPointComponent, MetaDataComponent, TransformComponent>();
-        while (query.MoveNext(out var uid, out var meta, out var xform))
+        foreach(var (_, meta, xform, _) in GetSpawnPointsAll(ent.Comp.Shuttle!.Value, ent))
         {
-            if (meta.EntityPrototype?.ID != component.SpawnPointHecate.Id)
+            if (meta.EntityPrototype?.ID != ent.Comp.SpawnPointHecate.Id)
                 continue;
 
-            if (xform.GridUid != component.Shuttle)
-                continue;
+            ent.Comp.Hecate = Spawn(ent.Comp.HecatePrototype, xform.Coordinates);
+            EnsureComp<TTSComponent>(ent.Comp.Hecate.Value).VoicePrototypeId = ent.Comp.Tts;
 
-            component.Hecate = Spawn(component.HecatePrototype, xform.Coordinates);
-            EnsureComp<TTSComponent>(component.Hecate.Value).VoicePrototypeId = component.Tts;
+            if (TryComp<ShipwreckedNPCHecateComponent>(ent.Comp.Hecate, out var hecateComponent))
+                hecateComponent.Rule = ent.Comp;
 
-            if (TryComp<ShipwreckedNPCHecateComponent>(component.Hecate, out var hecateComponent))
-                hecateComponent.Rule = component;
+            _audioSystem.PlayPvs(new SoundPathSpecifier("/Audio/Nyanotrasen/Mobs/Hologram/hologram_start.ogg"), ent.Comp.Hecate.Value);
 
-            _audioSystem.PlayPvs(new SoundPathSpecifier("/Audio/Nyanotrasen/Mobs/Hologram/hologram_start.ogg"), component.Hecate.Value);
-
-            return;
+            return true;
         }
 
-        throw new ArgumentException("Shipwrecked shuttle has no valid spawn points for Hecate.");
+        Log.Error("Shipwrecked shuttle has no valid spawn points for Hecate.");
+        _gameTicker.RestartRound();
+
+        return false;
     }
 
     private List<EntityCoordinates> GetSpawnPoints(ShipwreckedRuleComponent component)
     {
         var spawns = new List<EntityCoordinates>();
 
-        var query = EntityQueryEnumerator<SpawnPointComponent, MetaDataComponent, TransformComponent>();
-        while (query.MoveNext(out _, out var meta, out var xform))
+        foreach(var (_, meta, xform, _) in GetSpawnPointsAll(component.Shuttle!.Value, component))
         {
             if (meta.EntityPrototype?.ID != component.SpawnPointTraveller.Id)
-                continue;
-
-            if (xform.GridUid != component.Shuttle)
                 continue;
 
             spawns.Add(xform.Coordinates);
         }
 
         if (spawns.Count == 0)
-            throw new ArgumentException("Shipwrecked shuttle has no valid spawn points for travellers.");
+            Log.Error("Shipwrecked shuttle has no valid spawn points for travellers.");
 
         return spawns;
     }
@@ -898,12 +938,21 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         */
     }
 
+    [ValidatePrototypeId<ExplosionPrototype>]
+    private const string CraterExplosion = "DemolitionCharge";
+
+    [ValidatePrototypeId<ContentTileDefinition>]
+    private const string SandTile = "FloorAsteroidSand";
+
+    [ValidatePrototypeId<ContentTileDefinition>]
+    private const string CraterTile = "FloorAsteroidSandDug";
+
     public void MakeCrater(MapGridComponent grid, EntityCoordinates coordinates)
     {
         // Clear the area with a bomb.
         _explosionSystem.QueueExplosion(
             coordinates.ToMap(EntityManager, _transformSystem),
-            "DemolitionCharge",
+            CraterExplosion,
             200f,
             5f,
             30f,
@@ -917,8 +966,10 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
 
         // Put down a nice crater.
         var center = grid.GetTileRef(coordinates);
-        var sand = (ContentTileDefinition) _tileDefinitionManager["FloorAsteroidCoarseSand0"];
-        var crater = (ContentTileDefinition) _tileDefinitionManager["FloorAsteroidCoarseSandDug"];
+        var sand = (ContentTileDefinition) _tileDefinitionManager[SandTile];
+        var crater = (ContentTileDefinition) _tileDefinitionManager[CraterTile];
+
+        List<Vector2i> reservedTiles = new();
 
         for (var y = -1; y <= 1; ++y)
         {
@@ -929,6 +980,8 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         }
 
         _tileSystem.ReplaceTile(center, crater);
+
+
     }
 
     private bool TryGetRandomStructureSpot(ShipwreckedRuleComponent component,
@@ -1191,7 +1244,6 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
         if (!TryComp<MapGridComponent>(component.Shuttle, out var grid))
             return;
 
-<<<<<<< HEAD
         var shuttleRoof = EnsureComp<RoofComponent>(component.Shuttle.Value);
         Entity<MapGridComponent?, RoofComponent?> entRoof = (component.Shuttle.Value, grid, shuttleRoof);
         foreach (var shuttleTile in _mapSystem.GetAllTiles(component.Shuttle.Value, grid))
@@ -1201,8 +1253,6 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
 
         UnBoltAirlock(component.Shuttle.Value);
 
-=======
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
         // Slam the front window.
         var aabb = grid.LocalAABB;
         var topY = grid.LocalAABB.Top + 1;
@@ -1249,14 +1299,7 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
             var limit = _destructibleSystem.DestroyedAt(ent);
             var smash = new DamageSpecifier();
             smash.DamageDict.Add("Structural", limit);
-<<<<<<< HEAD
             _damageableSystem.TryChangeDamage(ent, smash, ignoreResistances: true, damageable: damageableComponent);
-=======
-            _damageableSystem.TryChangeDamage(consoleUid, smash, ignoreResistances: true, damageable: damageableComponent);
-
-            // Break, because we're technically modifying the enumeration by destroying the console.
-            //break;
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
         }
 
         var crashSound = new SoundPathSpecifier("/Audio/Nyanotrasen/Effects/crash_impact_metal.ogg");
@@ -1358,7 +1401,7 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
                 }
                 case ShipwreckedEventId.ShowHecate:
                 {
-                    SpawnHecate(component);
+                    SpawnHecate((uid, component));
                     break;
                 }
                 case ShipwreckedEventId.IntroduceHecate:
@@ -1683,6 +1726,12 @@ public sealed class ShipwreckedRuleSystem : GameRuleSystem<ShipwreckedRuleCompon
             var manifestText = new StringBuilder();
 
             var spawnPoints = GetSpawnPoints(shipwrecked);
+            if (spawnPoints.Count == 0)
+            {
+                this.ForceEndSelf(uid, gameRule);
+                GameTicker.RestartRound();
+                return;
+            }
             _random.Shuffle(spawnPoints);
 
             var lastSpawnPointUsed = 0;

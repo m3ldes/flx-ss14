@@ -30,7 +30,7 @@ BulletAntiMaterial: BulletAntiMateriel
 # 2023-05-10
 FoodCondimentBottleSmallHotsauce: FoodCondimentBottleHotsauce
 FoodBakedCookieFortune: FoodSnackCookieFortune
-GunSafeSubMachineGunVector: GunSafeSubMachineGunDrozd
+# GunSafeSubMachineGunVector: GunSafeSubMachineGunDrozd
 
 # 2023-05-24
 AMEController: AmeController
@@ -206,7 +206,6 @@ WeaponShotgunBulldog: WeaponShotgunZauer
 
 # 2023-11-26
 WeaponSniperHristov: WeaponRifleSR127
-MagazineBoxAntiMateriel: MagazineAntiMaterielRifleSR
 
 # 2023-12-10
 SpawnPointSeniorResearcher: null
@@ -454,7 +453,6 @@ MagazineBoxLightRifleRubber: MagazineBoxLightRifle
 MagazineBoxRifleRubber: MagazineBoxRifle
 MagazineBoxRifleBigRubber: MagazineBoxRifleBig
 MagazineBoxCaselessRifleRubber: MagazineBoxCaselessRifle
-MagazineBoxCaselessRifleBigRubber: MagazineBoxCaselessRifle10x24
 BoxMagazinePistolRubber: BoxMagazinePistol
 BoxMagazinePistolHighCapacityRubber: BoxMagazinePistolHighCapacity
 BoxMagazinePistolSubMachineGunRubber: BoxMagazinePistolSubMachineGun
@@ -467,6 +465,7 @@ WeaponPistolN1984Nonlethal: WeaponPistolN1984
 WeaponSubMachineGunVectorRubber: WeaponSubMachineGunMP5 #Backmen-migration
 WeaponSubMachineGunDrozdRubber: WeaponSubMachineGunMP5 #Backmen-migration
 WeaponRifleLecterRubber: WeaponRifleFamas #Backmen-migration
+
 
 # 2024-04-26
 GlassBoxLaserBroken: GlassBoxBroken
@@ -606,12 +605,16 @@ GunSafeShotgunEnforcer: GunSafeShotgunShotgun39
 GunSafeShotgunKammerer: GunSafeShotgunTrenchgun
 GunSafeSubMachineGunWt550: GunSafeSubMachineGunMP5
 GunSafeLaserCarbine: GunSafeLaserCarbineUEG
+GunSafePistolMk58: GunSafePistolGlock
 ShotGunCabinetFilled: ShotGunCabinetFilledBackmen
 ShotGunCabinetFilledOpen: ShotGunCabinetFilledOpenBackmen
 
 # 2024-10-05 - Corvax
 SheetPrinter: SheetPaper
 SheetPrinter1: SheetPaper1
+
+# 2024-11-14 - # Backmen
+DresserCaptainFilled: CaptainDrobe
 
 # 2024-10-09
 # Removal of separate borg chassis parts, replace them with generic borg parts.
@@ -716,9 +719,12 @@ LightTree04: LightTree
 LightTree05: LightTree
 LightTree06: LightTree
 
+# 2024-12-12 - Corvax-next
+NTFlag: FlagNanoTrasen
+SyndieFlag: FlagSyndicate
+
 #2024-12-28
 DrinkIrishCarBomb: DrinkIrishSlammer
-<<<<<<< HEAD
 
 #2025-01-06
 ClothingMaskSexyClown: ClothingMaskBlushingClown
@@ -869,5 +875,3 @@ ToxinChemistryBottle: ChemistryBottleToxin
 
 # 2025-04-14
 ClothingBeltMythistophelRapier: null
-=======
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')

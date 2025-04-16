@@ -150,7 +150,6 @@
 
 - type: Tag
   id: Eyes
-<<<<<<< HEAD
 
 - type: Tag
   id: CartridgeRifle762x39
@@ -226,5 +225,3 @@
 
 - type: Tag
   id: Wakizashi
-=======
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')

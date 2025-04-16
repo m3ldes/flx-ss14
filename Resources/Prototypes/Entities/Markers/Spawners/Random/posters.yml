@@ -93,7 +93,21 @@
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
-    chance: 1
+      - PosterContrabandInteQRecruitment # BACKMEN-START
+      - PosterContrabandInteQWorkship
+      - PosterContrabandInteQWorkship2
+      - PosterContrabandInteQ
+      - PosterContrabandInteQNoSex
+      - PosterContrabandInteQVulp
+      - PosterContrabandInteQJulie # BACKMEN-END
+    chance: 0.99 # Сorvax-Next-EDIT
+      # Сorvax-Next-START
+    rarePrototypes:
+      - FlagCoder
+      - FlagSyndicate
+      - FlagInteQ
+    rareChance: 0.01
+      # Сorvax-Next-END
 
 - type: entity
   parent: MarkerBase
@@ -170,4 +184,22 @@
       - PosterLegitSafetyMothHardhat
       - PosterLegitSafetyMothSSD
       - PosterLegitOppenhopper
-    chance: 1
+      - PosterLegitTyrone
+    chance: 0.99 # Сorvax-Next-EDIT
+      # Сorvax-Next-START
+    rarePrototypes:
+      - FlagAgurk
+      - FlagHCA
+      - FlagLizard
+      - FlagMothic
+      - FlagNanoTrasen
+      - FlagShigu
+      - FlagSolfed
+      - FlagSolfedAlt
+      - FlagTizira
+      - FlagGoldRing
+      - FlagNRI
+      - FlagSovietUSSP
+      - FlagVulp
+    rareChance: 0.01
+      # Сorvax-Next-END

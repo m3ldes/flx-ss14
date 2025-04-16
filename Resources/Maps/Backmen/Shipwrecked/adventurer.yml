@@ -1,5 +1,4 @@
 meta:
-<<<<<<< HEAD
   format: 7
   category: Map
   engineVersion: 251.0.0
@@ -13,10 +12,6 @@ grids:
 - 2
 orphans: []
 nullspace: []
-=======
-  format: 6
-  postmapinit: false
->>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
 tilemap:
   0: Space
   38: FloorDarkPlastic
@@ -322,6 +317,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.14996
           moles:
@@ -337,9 +340,25 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -367,6 +386,14 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -378,12 +405,12 @@ entities:
       name: map 1000
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
 - proto: AirAlarm
   entities:
   - uid: 35
@@ -543,9 +570,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -0.5,6.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 1
 - proto: BookRandomStory
   entities:
   - uid: 268
@@ -1432,7 +1456,7 @@ entities:
     - type: Transform
       pos: -1.5,9.5
       parent: 2
-- proto: GunSafe
+- proto: GunSafeBaseSecure
   entities:
   - uid: 153
     components:
@@ -1453,6 +1477,14 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -1540,6 +1572,14 @@ entities:
         immutable: False
         temperature: 99.138466
         moles:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -1749,7 +1789,6 @@ entities:
     - type: Physics
       bodyType: Static
     - type: InsertingMaterialStorage
-      endTime: 0
 - proto: PosterLegitHotDonkExplosion
   entities:
   - uid: 198
@@ -2051,7 +2090,6 @@ entities:
       solutions:
         tank:
           temperature: 293.15
-          canMix: False
           canReact: True
           maxVol: 500
           name: null
@@ -2175,6 +2213,14 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0

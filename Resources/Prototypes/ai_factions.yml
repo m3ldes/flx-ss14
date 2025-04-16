@@ -16,6 +16,9 @@
     - CombineForce
     - CentralCommand
     - AllHostile
+    - Wizard
+    - InteQ # Backmen
+    - InteQHostile # Backmen
 
 - type: npcFaction
   id: NanoTrasen
@@ -34,12 +37,14 @@
   - CombineForce
   - Dragon
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: Mouse
   hostile:
-    - PetsNT
-    - AllHostile
+  - PetsNT
+  - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: Passive
@@ -57,6 +62,8 @@
   - SpecialForce
   - CombineForce
   - AllHostile
+  - Wizard
+  - Dragon
 
 - type: npcFaction
   id: SimpleHostile
@@ -76,6 +83,10 @@
   - CombineForce
   - CentralCommand
   - AllHostile
+  - Wizard
+  - InteQ # Backmen
+  - InteQHostile # Backmen
+  - Dragon
 
 - type: npcFaction
   id: SimpleNeutral
@@ -97,6 +108,9 @@
   - CentralCommand
   - Dragon
   - AllHostile
+  - Wizard
+  - InteQ
+  - InteQHostile
 
 - type: npcFaction
   id: Xeno
@@ -116,6 +130,10 @@
   - CombineForce
   - CentralCommand
   - AllHostile
+  - Wizard
+  - InteQ # Backmen
+  - InteQHostile # Backmen
+  - Dragon
 
 - type: npcFaction
   id: Zombie
@@ -136,6 +154,10 @@
   - CombineForce
   - CentralCommand
   - AllHostile
+  - Wizard
+  - InteQ # Backmen
+  - InteQHostile # Backmen
+  - Dragon
 
 - type: npcFaction
   id: Revolutionary
@@ -153,6 +175,7 @@
   - CombineForce
   - CentralCommand
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: AllHostile
@@ -168,3 +191,24 @@
   - Xeno
   - Zombie
   - Revolutionary
+  - Wizard
+  - InteQ # Backmen
+  - InteQHostile # Backmen
+
+- type: npcFaction
+  id: Wizard
+  hostile:
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - AllHostile
+  - InteQ # Backmen
+  - InteQHostile # Backmen
