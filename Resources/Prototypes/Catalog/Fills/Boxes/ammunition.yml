@@ -42,7 +42,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazineRifleLight762x39
+      - id: MagazineLightRifle
         amount: 4
 
 - type: entity
@@ -56,12 +56,11 @@
       - id: MagazineLightRiflePractice
         amount: 4
 
-# Magnum
 - type: entity
-  name: box of SMG .45 magnum magazines
+  name: box of Vector magazines
   parent: BoxMagazine
   id: BoxMagazineMagnumSubMachineGun
-  description: A box full of SMG .45 magnum magazines.
+  description: A box full of Vector magazines.
   components:
   - type: StorageFill
     contents:
@@ -69,10 +68,10 @@
         amount: 3
 
 - type: entity
-  name: box of SMG .45 magnum (practice) magazines
+  name: box of Vector (practice) magazines
   parent: BoxMagazine
   id: BoxMagazineMagnumSubMachineGunPractice
-  description: A box full of SMG .45 magnum (practice) magazines.
+  description: A box full of Vector (practice) magazines.
   components:
   - type: StorageFill
     contents:
@@ -99,7 +98,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazinePistol9x17
+      - id: MagazinePistol
         amount: 4
 
 - type: entity
@@ -121,7 +120,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazinePistol57x28Extd
+      - id: MagazinePistolHighCapacity
         amount: 4
 
 - type: entity
@@ -143,7 +142,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazinePistolSubMachineGun9x17
+      - id: MagazinePistolSubMachineGun
         amount: 3
 
 - type: entity
@@ -211,7 +210,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazineRifle556UEG
+      - id: MagazineRifle
         amount: 4
 
 - type: entity

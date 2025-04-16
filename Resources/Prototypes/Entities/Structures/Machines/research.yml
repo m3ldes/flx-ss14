@@ -15,17 +15,10 @@
   - type: DiseaseServer
   - type: TechnologyDatabase
     supportedDisciplines:
-    # Backmen-Edit-START
-    - Engineering
+    - Industrial
     - Arsenal
-    - Security
-    - Cargo
-    - Shaft
-    - Scientific
-    - Robotics
-    - Medical
-    - Service
-    # Backmen-Edit-END
+    - Experimental
+    - CivilianServices
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: ExtensionCableReceiver

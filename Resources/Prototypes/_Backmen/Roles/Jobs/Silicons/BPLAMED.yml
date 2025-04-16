@@ -16,7 +16,5 @@
   icon: JobIconUnknown
   supervisors: job-supervisors-human
   canBeAntag: false
-  jobEntity: DroneBPLAMED
-  whitelisted: true
-  discordRequired: true
+  jobEntity: BackmenDroneMED
   startingGear: RobotGear # for char preview only

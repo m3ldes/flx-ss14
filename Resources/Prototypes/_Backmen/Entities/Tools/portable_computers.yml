@@ -13,7 +13,6 @@
     layers:
       - state: off
       - state: on
-        shader: unshaded
         visible: true
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
   - type: Appearance
@@ -55,7 +54,7 @@
         name: power-cell-slot-component-slot-name-default
   - type: Sprite
     sprite: Backmen/Objects/Tools/handheld_camera_monitor.rsi
-    state: off
+    state: icon
     layers:
       - state: off
       - state: on

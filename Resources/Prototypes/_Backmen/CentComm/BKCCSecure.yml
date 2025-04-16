@@ -1,18 +1,16 @@
 ﻿- type: entity
   id: SpawnPointCMBKCCSecOfficer
-  name: Охранник ЦК
-  suffix: Спавнер, Директор Событий, DO NOT MAP
+  name: Охраник ЦК
+  suffix: Спавнер, Директор Событий
   parent: MarkerBase
   components:
   - type: GhostRole
     allowMovement: true
     allowSpeech: true
     makeSentient: true
-    name: Охранник ЦК
+    name: Охраник ЦК
     description: A Central Command Security Officer responsible for maintaining order and security.
     rules: Follow Central Command protocols. Protect CC personnel and assets. Maintain professional conduct at all times.
-    mindRoles:
-    - MindRoleBKCCSecOfficer
     raffle:
       settings: short
     requirements:
@@ -33,8 +31,8 @@
       state: ertsecurity
 
 - type: entity
-  name: Охранник ЦК
-  suffix: Директор Событий, DO NOT MAP
+  name: Охраник ЦК
+  suffix: Директор Событий
   parent: MobHumanCombine
   description: A highly trained Central Command Security Officer equipped with specialized gear and implants.
   id: MobHumanCMBKCCSecOfficer

@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Grid
-  engineVersion: 247.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 02/19/2025 11:09:34
-  entityCount: 303
-maps: []
-grids:
-- 2
-orphans:
-- 2
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   88: FloorShuttleWhite
@@ -162,14 +151,6 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
           - 0
           - 0
           - 0
@@ -495,6 +476,8 @@ entities:
     - type: Transform
       pos: -15.5,-1.5
       parent: 2
+    - type: AtmosDevice
+      joinedGrid: 2
 - proto: OxygenTankFilled
   entities:
   - uid: 257

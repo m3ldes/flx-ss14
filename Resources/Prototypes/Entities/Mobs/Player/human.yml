@@ -21,7 +21,7 @@
     prototypes: [SyndicateOperativeGearExtremelyBasic]
     roleLoadout: [ RoleSurvivalSyndicate ]
   - type: RandomMetadata
-    nameSegments: [ NamesFirstMale, names_last_male ] # Corvax-MRP
+    nameSegments: [names_first_male, names_last_male] # Corvax-MRP
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -71,8 +71,8 @@
   - type: NukeOperative
   - type: RandomMetadata
     nameSegments:
-    - NamesSyndicateNormal
-    nameFormat: name-format-nukie-operator
+    - nukeops-role-operator
+    - SyndicateNamesNormal
   - type: Loadout
     prototypes: [SyndicateOperativeGearFullNoUplink]
 
@@ -131,21 +131,8 @@
     roleLoadout: [ RoleSurvivalSyndicate ]
   - type: RandomMetadata
     nameSegments:
-    - NamesSyndicatePrefix
-    - NamesSyndicateNormal
-    nameFormat: name-format-nukie-generic
+    - SyndicateNamesPrefix
+    - SyndicateNamesNormal
   - type: NpcFactionMember
     factions:
     - Syndicate
-
-# Wizard
-- type: entity
-  categories: [ HideSpawnMenu ]
-  name: Wizard
-  parent: MobHuman
-  id: MobHumanWizard
-  components:
-  - type: RandomHumanoidAppearance
-  - type: NpcFactionMember
-    factions:
-    - Wizard

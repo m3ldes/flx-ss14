@@ -1,3 +1,13 @@
+# Last match in file takes precedence.
+
 # Ping for all PRs
 * @Rxup
 
+# Head Mapper
+/Resources/Maps/** @Roudenn
+
+# Head Spriter
+*.png @CatBackGround
+
+# Head Wiki
+*.xml @Danone453

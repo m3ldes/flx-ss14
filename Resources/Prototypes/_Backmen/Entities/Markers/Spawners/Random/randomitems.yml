@@ -154,9 +154,9 @@
       - WoodenBuckler
       - MakeshiftShield
       - DehydratedSpaceCarp
-      - ChemistryBottleRobustHarvest
-      - ChemistryBottleUnstableMutagen
-      - ChemistryBottleEphedrine
+      - RobustHarvestChemistryBottle
+      - UnstableMutagenChemistryBottle
+      - EphedrineChemistryBottle
       - Syringe
       - HandheldHealthAnalyzer
       - Ointment

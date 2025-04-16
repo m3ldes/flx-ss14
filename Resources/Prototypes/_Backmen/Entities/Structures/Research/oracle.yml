@@ -1,7 +1,15 @@
 - type: entity
+<<<<<<< HEAD
   parent: Oracle
   id: OracleEvil
   name: Oracle
+=======
+  parent:
+  - Oracle
+  - Recycler
+  id: OracleRecycler
+  name: Оракул
+>>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
   description: It asks for items in exchange for knowledge. No one knows how it works.
   suffix: Evil
   components:
@@ -63,11 +71,34 @@
       state: oracle-0
     - map: ["enum.SolutionContainerLayers.Fill"]
       state: oracle-0
+<<<<<<< HEAD
+=======
+  - type: MaterialReclaimer
+    enabled: true
+    efficiency: 0.25
+    scaleProcessSpeed: false #instant!
+    minimumProcessDuration: 0
+    whitelist:
+      components:
+      - MobState
+    blacklist:
+      components:
+      - Material
+      - Pda
+      - IdCard
+      tags:
+      - HighRiskItem
+    sound:
+      path: /Audio/Effects/saw.ogg
+      params:
+        volume: -3
+    cutOffSound: false
+>>>>>>> parent of 7057a6b7f5 (Merge remote-tracking branch 'upstream/master')
 
 - type: entity
   parent: BaseStructure
   id: Oracle
-  name: Oracle
+  name: Оракул
   description: It asks for items in exchange for knowledge. No one knows how it works.
   components:
   - type: Sprite
@@ -109,6 +140,6 @@
   - type: Prayable
   - type: SpriteFade
   - type: TTS
-    voice: Monolith2
+    voice: Npc1
   - type: Tag
     tags: []

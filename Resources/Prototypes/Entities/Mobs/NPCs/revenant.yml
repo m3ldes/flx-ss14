@@ -24,7 +24,7 @@
     damageContainer: ManifestedSpirit
     damageModifierSet: ManifestedSpirit
   - type: TTS # Corvax-TTS
-    voice: Monolith2
+    voice: Kelthuzad
   - type: NoSlip
   - type: Eye
     drawFov: false
@@ -40,8 +40,6 @@
     name: ghost-role-information-revenant-name
     description: ghost-role-information-revenant-description
     rules: ghost-role-information-antagonist-rules
-    mindRoles:
-    - MindRoleGhostRoleSoloAntagonist
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -67,7 +65,7 @@
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
       enum.VoiceMaskUIKey.Key:
-        type: VoiceMaskBoundUserInterface # Backmen
+        type: VoiceMaskBoundUserInterface # Backmen 
   - type: Visibility
     layer: 2 #ghost vis layer
   - type: Store
@@ -77,10 +75,11 @@
     - StolenEssence
   - type: RandomMetadata
     nameSegments:
-    - NamesRevenantType
-    - NamesRevenantAdjective
-    - NamesRevenantTheme
-    nameFormat: name-format-revenant
+#    - The
+    - RevenantType
+#    - of
+    - RevenantAdjective
+    - RevenantTheme
   - type: Speech
     speechVerb: Ghost
 # backmen

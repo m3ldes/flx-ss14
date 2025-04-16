@@ -32,7 +32,7 @@ public sealed class MoodEffectPrototype : IPrototype
     public int Timeout;
 
     /// <summary>
-    ///     Should this moodlet be hidden from the player? EG: No popups.
+    ///     Should this moodlet be hidden from the player? EG: No popups or chat messages.
     /// </summary>
     [DataField]
     public bool Hidden;

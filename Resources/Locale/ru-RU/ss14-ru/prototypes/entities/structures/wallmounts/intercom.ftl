@@ -36,6 +36,3 @@ ent-IntercomSupply = { ent-Intercom }
 ent-IntercomAll = { ent-Intercom }
     .suffix = Все
     .desc = { ent-Intercom.desc }
-ent-IntercomFreelance = { ent-Intercom }
-    .suffix = Фриланс
-    .desc = { ent-Intercom.desc }

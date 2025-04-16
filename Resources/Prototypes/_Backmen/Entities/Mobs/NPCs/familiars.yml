@@ -75,7 +75,7 @@
         - id: WelderIfrit
     - type: Hands
     - type: RandomMetadata
-      nameSegments: [NamesGolem]
+      nameSegments: [names_golem]
     - type: PotentialPsionic
     - type: Psionic
       removable: false

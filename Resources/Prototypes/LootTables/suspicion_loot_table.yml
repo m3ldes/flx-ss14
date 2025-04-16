@@ -68,11 +68,14 @@
   - id: WeaponSubMachineGunC20r
     amount: 0
     maxAmount: 5
+  - id: WeaponSubMachineGunVector
+    amount: 0
+    maxAmount: 5
   - id: WeaponSubMachineGunWt550
     amount: 0
     maxAmount: 5
 
-  - id: WeaponSniperMosinNew
+  - id: WeaponSniperMosin
     amount: 0
     maxAmount: 5
   - id: WeaponSniperHristov

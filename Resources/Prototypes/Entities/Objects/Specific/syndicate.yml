@@ -8,22 +8,13 @@
   components:
   - type: Sprite
     sprite: Objects/Specific/Syndicate/telecrystal.rsi
-# Backmen-Stak-Start
-    layers:
-      - state: telecrystal_3
-        map: ["base"]
-  - type: Item 
-    size: Tiny 
-  - type: Appearance
+    state: telecrystal
+  - type: Item
+    sprite: Objects/Specific/Syndicate/telecrystal.rsi
+    size: Tiny
   - type: Stack
-    stackType: Telecrystal
-    baseLayer: base
-    layerStates:
-      - telecrystal
-      - telecrystal_2
-      - telecrystal_3
     count: 20
-# Backmen-Stak-End 
+    stackType: Telecrystal
   - type: StaticPrice
     price: 0
   - type: StackPrice
@@ -49,24 +40,22 @@
         - Scientist
         - Borg
 # Corvax-HiddenDesc-End
-
+        
 - type: entity
   parent: Telecrystal
   id: Telecrystal1
   suffix: 1 TC
   components:
   - type: Stack
-    stackType: Telecrystal # Backmen
     count: 1
-        
+
 - type: entity
   parent: Telecrystal
   id: Telecrystal5
   suffix: 5 TC
   components:
   - type: Stack
-    stackType: Telecrystal # Backmen
-    count: 5    
+    count: 5
 
 - type: entity
   parent: Telecrystal
@@ -74,7 +63,6 @@
   suffix: 10 TC
   components:
   - type: Stack
-    stackType: Telecrystal # Backmen
     count: 10
 
 # Uplinks

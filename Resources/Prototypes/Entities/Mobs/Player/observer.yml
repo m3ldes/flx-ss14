@@ -100,15 +100,11 @@
     - GROUPS_8
     - GROUPS_9
     - GROUPS_0
-    - InteQ # Backmen
     globalReceive: true
   - type: Tag
     tags:
     - BypassInteractionRangeChecks
   - type: UniversalLanguageSpeaker #backmen: languages
-  - type: PointLight
-    radius: 6
-    enabled: false
 
 # proto for player ghosts specifically
 - type: entity
@@ -116,9 +112,6 @@
   id: MobObserver
   components:
   - type: Spectral
-  - type: Tag
-    tags:
-    - AllowGhostShownByEvent
 
 - type: entity
   id: ActionGhostBoo
@@ -134,8 +127,8 @@
 
 - type: entity
   id: ActionToggleLighting
-  name: Toggle Lighting
-  description: Toggle light rendering to better observe dark areas.
+  name: Toggle All Lighting
+  description: Toggle all light rendering to better observe dark areas.
   components:
   - type: InstantAction
     icon: Interface/VerbIcons/light.svg.192dpi.png

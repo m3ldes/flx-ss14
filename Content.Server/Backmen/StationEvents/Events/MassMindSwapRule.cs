@@ -64,16 +64,18 @@ internal sealed class MassMindSwapRule : StationEventSystem<MassMindSwapRuleComp
             var psiIsulated = GetEntityQuery<PsionicInsulationComponent>();
 
             var query = EntityQueryEnumerator<PotentialPsionicComponent, TransformComponent, MobStateComponent>();
-            while (query.MoveNext(out var psion, out _, out var xform, out var mobstate))
+            while (query.MoveNext(out var psion, out _, out var xform, out _))
             {
                 if (mindswaped.HasComponent(psion) || psiIsulated.HasComponent(psion))
+                {
                     continue;
+                }
 
                 // Глиммер пробивает MS при уровне выше Dangerous
                 if(_glimmer.GetGlimmerTier() < GlimmerTier.Dangerous && mindshild.HasComponent(psion))
                     continue;
 
-                if (_mobStateSystem.IsIncapacitated(psion, mobstate))
+                if (!_mobStateSystem.IsAlive(psion))
                     continue;
 
                 if (!stationEvents.Contains(xform.MapID))
@@ -111,8 +113,9 @@ internal sealed class MassMindSwapRule : StationEventSystem<MassMindSwapRuleComp
                     continue;
 
                 if (mindswaped.HasComponent(other)) // skip if swapped
+                {
                     continue;
-
+                }
                 if(!(actorQuery.HasComponent(actor) && actorQuery.HasComponent(other)))
                 {
                     var gridA = Transform(actor).GridUid;

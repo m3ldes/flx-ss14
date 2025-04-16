@@ -15,8 +15,6 @@
   parent: SpawnPointJobBase
   name: surgeon
   components:
-  - type: SpawnPoint
-    job_id: BkmSurgeon
   - type: Sprite
     layers:
     - state: green

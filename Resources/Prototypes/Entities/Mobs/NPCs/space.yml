@@ -119,7 +119,6 @@
     interactFailureString: petting-failure-bear
     interactSuccessSound:
       path: /Audio/Animals/sloth_squeak.ogg
-  - type: Fauna # Lavaland Change
 
 - type: entity
   id: MobBearSpaceSalvage
@@ -177,18 +176,15 @@
       collection: FootstepBounce
 #  - type: ReplacementAccent
 #    accent: kangaroo
-  - type: Butcherable
-    spawned:
-    - id: FoodMeat
-      amount: 1
   - type: LanguageSpeaker
-    currentLanguage: Kangaroo
+    currentLanguage: TauCetiBasic
   - type: LanguageKnowledge #backmen: languages
     speaks:
+    - SpaceMob
     - Kangaroo
     understands:
+    - SpaceMob
     - Kangaroo
-  - type: Fauna # Lavaland Change
 
 - type: entity
   id: MobKangarooSpaceSalvage
@@ -296,7 +292,6 @@
       Unsexed: UnisexArachnid
   - type: TypingIndicator
     proto: spider
-  - type: Fauna # Lavaland Change
 
 - type: entity
   id: MobSpiderSpaceSalvage
@@ -403,7 +398,6 @@
     - type: StealthOnMove
       passiveVisibilityRate: -0.25
       movementVisibilityRate: 0.25
-    - type: Fauna # Lavaland Change
 
 - type: entity
   id: MobCobraSpaceSalvage
@@ -427,8 +421,6 @@
     name: ghost-role-information-snail-name
     description: ghost-role-information-snail-description
     rules: ghost-role-information-freeagent-rules
-    mindRoles:
-    - MindRoleGhostRoleFreeAgentHarmless
   - type: GhostTakeoverAvailable
   - type: Emoting
   - type: Sprite
@@ -554,13 +546,10 @@
   id: MobSnailInstantDeath
   suffix: Smite
   components:
-  - type: GhostRole
-    mindRoles:
-    - MindRoleGhostRoleFreeAgent
   - type: MobStateActions
     actions:
       Alive:
-      - ActionSmiteNoReq
+      - ActionSmite
       Critical:
       - ActionCritSuccumb
       - ActionCritFakeDeath

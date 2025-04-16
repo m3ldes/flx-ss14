@@ -36,9 +36,6 @@
       tags:
         - GasVent
         - Unstackable
-    - type: SubFloorHide
-      visibleLayers:
-      - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/vent.rsi
@@ -73,11 +70,7 @@
     - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-      - AirVent
-      - DeviceMonitoringAndControl
-
+      
 - type: entity
   parent: GasUnaryBase
   id: GasPassiveVent
@@ -86,9 +79,6 @@
   placement:
     mode: SnapgridCenter
   components:
-    - type: SubFloorHide
-      visibleLayers:
-      - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/vent.rsi
@@ -106,10 +96,7 @@
       node: passivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-      - PassiveVent
-
+      
 - type: entity
   parent: [GasUnaryBase, AirSensorBase]
   id: GasVentScrubber
@@ -126,9 +113,6 @@
       tags:
         - GasScrubber
         - Unstackable
-    - type: SubFloorHide
-      visibleLayers:
-      - enum.SubfloorLayers.FirstLayer
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/scrubber.rsi
@@ -163,11 +147,7 @@
     - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentScrubber
-    - type: GuideHelp
-      guides:
-      - AirScrubber
-      - DeviceMonitoringAndControl
-
+      
 - type: entity
   parent: GasUnaryBase
   id: GasOutletInjector
@@ -208,10 +188,7 @@
       - enum.LightLayers.Unshaded
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-      - AirInjector
-
+      
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: BaseGasThermoMachine
@@ -238,8 +215,7 @@
       key: enum.ThermomachineUiKey.Key
     - type: WiresPanel
     - type: WiresVisuals
-  # backmen - Allow device-on-pipe stacking
-  # - type: PipeRestrictOverlap
+    - type: PipeRestrictOverlap
     - type: NodeContainer
       nodes:
         pipe:
@@ -258,10 +234,7 @@
     - type: PowerSwitch
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: Thermoregulator
-    - type: GuideHelp
-      guides:
-      - Thermomachines
-
+      
 - type: entity
   parent: BaseGasThermoMachine
   id: GasThermoMachineFreezer
@@ -421,8 +394,7 @@
   - type: GasCondenser
   - type: AtmosPipeColor
   - type: AtmosDevice
-  # backmen - Allow device-on-pipe stacking
-  # - type: PipeRestrictOverlap
+  - type: PipeRestrictOverlap
   - type: ApcPowerReceiver
     powerLoad: 10000
   - type: Machine
@@ -469,6 +441,3 @@
   - type: PowerSwitch
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: Thermoregulator
-  - type: GuideHelp
-    guides:
-    - GasCondensing

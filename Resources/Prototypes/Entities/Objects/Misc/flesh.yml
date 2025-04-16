@@ -8,7 +8,8 @@
       - Wall
   components:
     - type: Tag
-      tags: [ Flesh ]
+      tags:
+        - Flesh
     - type: MeleeSound
       soundGroups:
         Brute:
@@ -23,8 +24,7 @@
     - type: Clickable
     - type: Transform
       anchored: true
-    - type: Physics #wtf?????
-      canCollide: False
+    - type: Physics
     - type: Fixtures
       fixtures:
         fix1:

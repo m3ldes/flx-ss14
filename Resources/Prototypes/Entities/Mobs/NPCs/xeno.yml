@@ -137,7 +137,6 @@
     - TauCetiBasic
   - type: TTS
     voice: Xenia
-  - type: Fauna # Lavaland Change
 
 - type: entity
   name: praetorian

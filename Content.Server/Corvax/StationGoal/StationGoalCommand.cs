@@ -11,7 +11,6 @@ namespace Content.Server.Corvax.StationGoal
     public sealed class StationGoalCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
-        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
         public string Command => "sendstationgoal";
         public string Description => Loc.GetString("send-station-goal-command-description");
@@ -32,14 +31,15 @@ namespace Content.Server.Corvax.StationGoal
             }
 
             var protoId = args[1];
-            if (!_prototypeManager.TryIndex<StationGoalPrototype>(protoId, out var proto))
+            var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
+            if (!prototypeManager.TryIndex<StationGoalPrototype>(protoId, out var proto))
             {
                 shell.WriteError($"No station goal found with ID {protoId}!");
                 return;
             }
 
-            var stationGoalPaper = _entManager.System<StationGoalPaperSystem>();
-            if (!stationGoalPaper.SendStationGoal(euid.Value, protoId))
+            var stationGoalPaper = IoCManager.Resolve<IEntityManager>().System<StationGoalPaperSystem>();
+            if (!stationGoalPaper.SendStationGoal(euid, protoId))
             {
                 shell.WriteError("Station goal was not sent");
                 return;
@@ -52,9 +52,9 @@ namespace Content.Server.Corvax.StationGoal
             {
                 case 1:
                     var stations = ContentCompletionHelper.StationIds(_entManager);
-                    return CompletionResult.FromHintOptions(stations, Loc.GetString("send-station-goal-command-arg-station"));
+                    return CompletionResult.FromHintOptions(stations, "[StationId]");
                 case 2:
-                    var options = _prototypeManager
+                    var options = IoCManager.Resolve<IPrototypeManager>()
                         .EnumeratePrototypes<StationGoalPrototype>()
                         .Select(p => new CompletionOption(p.ID));
 

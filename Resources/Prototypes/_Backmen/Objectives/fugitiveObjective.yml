@@ -12,7 +12,8 @@
         state: shuttle
     - type: RoleRequirement
       roles:
-      - FugitiveRole
+        mindRoles:
+          - FugitiveRole
 
 - type: entity
   categories: [ HideSpawnMenu ]

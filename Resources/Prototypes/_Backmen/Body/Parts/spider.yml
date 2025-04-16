@@ -25,8 +25,6 @@
     sprite: Backmen/Mobs/Species/Moth/parts.rsi
     state: "torso_m"
   - type: BodyPart #"Other" type
-    slotId: thorax
-    containerName: thorax_slot
 
 - type: entity
   id: RightLegSpider

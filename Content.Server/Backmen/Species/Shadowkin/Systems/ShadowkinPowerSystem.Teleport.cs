@@ -67,7 +67,7 @@ public sealed class ShadowkinTeleportSystem : EntitySystem
             return;
 
         if(!_interaction.InRangeUnobstructed(args.Performer, args.Target, 0,
-               CollisionGroup.Opaque,
+               CollisionGroup.TeleportLayer,
                predicate: (ent) => _tagSystem.HasTag(ent, "Structure"),
                popup:true))
             return;

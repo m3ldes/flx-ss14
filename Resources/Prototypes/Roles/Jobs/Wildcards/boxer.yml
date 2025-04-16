@@ -13,10 +13,6 @@
   minBankBalance: 150
   maxBankBalance: 250
   #end-backmen: currency
-  special:
-  - !type:GiveItemOnHolidaySpecial
-    holiday: BoxingDay
-    prototype: ClothingHandsGlovesBoxingRigged
 
 - type: startingGear
   id: BoxerGear

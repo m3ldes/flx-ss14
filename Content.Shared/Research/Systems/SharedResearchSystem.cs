@@ -9,7 +9,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Research.Systems;
 
-public abstract partial class SharedResearchSystem : EntitySystem   // Goobstation - made class partial
+public abstract class SharedResearchSystem : EntitySystem
 {
     [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
@@ -73,8 +73,8 @@ public abstract partial class SharedResearchSystem : EntitySystem   // Goobstati
         if (!component.SupportedDisciplines.Contains(tech.Discipline))
             return false;
 
-        // if (tech.Tier > disciplineTiers[tech.Discipline])    // Goobstation R&D Console rework - removed main discipline checks
-        //     return false;
+        if (tech.Tier > disciplineTiers[tech.Discipline])
+            return false;
 
         if (component.UnlockedTechnologies.Contains(tech.ID))
             return false;
@@ -227,9 +227,6 @@ public abstract partial class SharedResearchSystem : EntitySystem   // Goobstati
             return;
         component.MainDiscipline = prototype.Discipline;
         Dirty(uid, component);
-
-        var ev = new TechnologyDatabaseModifiedEvent();
-        RaiseLocalEvent(uid, ref ev);
     }
 
     /// <summary>

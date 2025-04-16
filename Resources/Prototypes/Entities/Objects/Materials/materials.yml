@@ -90,7 +90,6 @@
       types:
         Slash: -0.5
         Piercing: -0.5
-        ArmorPiercing: -0.5
     bloodlossModifier: -4
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -550,8 +549,6 @@
   - type: Appearance
   - type: Item
     heldPrefix: bananium
-  - type: RadiationSource # Goobstation - ITS BACK
-    intensity: 0.1
 
 - type: entity
   parent: MaterialBananium

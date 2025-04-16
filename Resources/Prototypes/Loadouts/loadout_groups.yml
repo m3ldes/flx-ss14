@@ -19,21 +19,18 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
-# start-backmen: no pride
-#  - ClothingNeckLGBTPin
-#  - ClothingNeckAromanticPin
-#  - ClothingNeckAsexualPin
-#  - ClothingNeckBisexualPin
-#  - ClothingNeckGayPin
-#  - ClothingNeckIntersexPin
-#  - ClothingNeckLesbianPin
-#  - ClothingNeckNonBinaryPin
-#  - ClothingNeckPansexualPin
-#  - ClothingNeckOmnisexualPin
-#  - ClothingNeckTransPin
-#  - ClothingNeckAutismPin
-#  - ClothingNeckGoldAutismPin
-# end-backmen: no pride
+  - ClothingNeckLGBTPin
+  - ClothingNeckAromanticPin
+  - ClothingNeckAsexualPin
+  - ClothingNeckBisexualPin
+  - ClothingNeckGayPin
+  - ClothingNeckIntersexPin
+  - ClothingNeckLesbianPin
+  - ClothingNeckNonBinaryPin
+  - ClothingNeckPansexualPin
+  - ClothingNeckTransPin
+  - ClothingNeckAutismPin
+  - ClothingNeckGoldAutismPin
   # backmen-pins-start
   - ClothingNeckDonkPin
   - ClothingNeckDeForestPin
@@ -100,7 +97,6 @@
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
 
-# nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
   id: GroupEVATank
   name: loadout-group-EVA-tank
@@ -108,14 +104,6 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
-
-# vox get a nitrogen tank, other species get nothing
-- type: loadoutGroup
-  id: GroupEVATankVox
-  name: loadout-group-vox-tank
-  hidden: true
-  loadouts:
-  - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: GroupPocketTankDouble
@@ -163,7 +151,6 @@
   - CaptainBackpack
   - CaptainSatchel
   - CaptainDuffel
-  - CaptainMessenger # Backmen
 
 - type: loadoutGroup
   id: CaptainOuterClothing
@@ -205,7 +192,6 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
-  - CommonMessenger # Backmen
   - HoPBackpackIan
 
 - type: loadoutGroup
@@ -246,7 +232,6 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
-  - CommonMessenger # Backmen
 
 - type: loadoutGroup
   id: PassengerNeck
@@ -459,7 +444,6 @@
   - BotanistBackpack
   - BotanistSatchel
   - BotanistDuffel
-  - BotanistMessenger # Backmen
 
 - type: loadoutGroup
   id: BotanistOuterClothing
@@ -493,7 +477,6 @@
   - ClownBackpack
   - ClownSatchel
   - ClownDuffel
-  - ClownMessenger # Backmen
 
 - type: loadoutGroup
   id: ClownOuterClothing
@@ -551,7 +534,6 @@
   - MimeBackpack
   - MimeSatchel
   - MimeDuffel
-  - MimeMessenger # Backmen
 
 - type: loadoutGroup
   id: MimeOuterClothing
@@ -688,7 +670,6 @@
   - CargoTechnicianBackpack
   - CargoTechnicianSatchel
   - CargoTechnicianDuffel
-  - CargoTechnicianMessenger # Backmen
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
@@ -711,7 +692,6 @@
   - SalvageSpecialistBackpack
   - SalvageSpecialistSatchel
   - SalvageSpecialistDuffel
-  - SalvageSpecialistMessenger # Backmen
 
 - type: loadoutGroup
   id: SalvageSpecialistOuterClothing
@@ -777,7 +757,6 @@
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
-  minLimit: 0
   loadouts:
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange
@@ -801,7 +780,6 @@
   - StationEngineerBackpack
   - StationEngineerSatchel
   - StationEngineerDuffel
-  - StationEngineerMessenger # Backmen
 
 - type: loadoutGroup
   id: StationEngineerOuterClothing
@@ -847,7 +825,6 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianSatchel
   - AtmosphericTechnicianDuffel
-  - AtmosphericTechnicianMessenger # Backmen
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
@@ -942,7 +919,6 @@
   - ScientistBackpack
   - ScientistSatchel
   - ScientistDuffel
-  - ScientistMessenger # Backmen
 
 - type: loadoutGroup
   id: ScientistOuterClothing
@@ -1098,7 +1074,6 @@
   - SecurityBackpack
   - SecuritySatchel
   - SecurityDuffel
-  - SecurityMessenger # Backmen
 
 - type: loadoutGroup
   id: SecurityBelt
@@ -1111,7 +1086,6 @@
   id: SecurityOuterClothing
   name: loadout-group-security-outerclothing
   loadouts:
-  - ArmorVestSec # Corvax
   - ArmorVest
   - ArmorVestSlim
   - ClothingOuterCoatSecurityOvercoat #Backmen
@@ -1196,8 +1170,8 @@
   id: SecurityCadetJumpsuit
   name: loadout-group-security-cadet-jumpsuit
   loadouts:
-  - SecurityJumpsuitGrey # Corvax-Resprite
-  - SecurityJumpskirtGrey # Corvax-Resprite
+  - SecurityJumpsuitGrey #Backmen
+  - SecurityJumpskirtGrey #Backmen
 
 - type: loadoutGroup
   id: SurvivalSecurity
@@ -1298,7 +1272,6 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
-  - MedicalDoctorMessenger # Backmen
 
 - type: loadoutGroup
   id: MedicalShoes
@@ -1359,7 +1332,6 @@
   - ChemistBackpack
   - ChemistSatchel
   - ChemistDuffel
-  - ChemistMessenger # Backmen
 
 - type: loadoutGroup
   id: ParamedicHead

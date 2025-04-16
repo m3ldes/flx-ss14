@@ -15,10 +15,6 @@
   wageDepartment: Civilian
   wage: 50
   #end-backmen: currency
-  special:
-  - !type:GiveItemOnHolidaySpecial
-    holiday: MonkeyDay
-    prototype: MonkeyCubeBox
 
 - type: startingGear
   id: ZookeeperGear

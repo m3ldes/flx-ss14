@@ -4,7 +4,6 @@
     ClothingBackpackSecurity: 3
     ClothingBackpackSatchelSecurity: 3
     ClothingBackpackDuffelSecurity: 3
-    ClothingBackpackMessengerSecurity: 3 # Backmen
     ClothingUniformJumpsuitSec: 3
     ClothingShoesBootsJack: 3
     ClothingHeadHatBeretSecurity: 3
@@ -29,6 +28,3 @@
     ClothingHeadHelmetJustice: 1
   contrabandInventory:
     ClothingMaskClownSecurity: 1
-    ToyFigurineSecurity: 1
-    ToyFigurineWarden: 1
-    ToyFigurineHeadOfSecurity: 1

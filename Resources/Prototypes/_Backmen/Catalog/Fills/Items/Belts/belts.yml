@@ -51,7 +51,6 @@
           amount: 2
         - id: MagazineShotgun
           amount: 4
-        - id: ExGrenade
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -64,10 +63,10 @@
       - 0,0,3,3
     - type: StorageFill
       contents:
-        - id: C4
-          amount: 4
-        - id: RCD
-        - id: RCDAmmo
+        - id: SheetSteel
+          amount: 2
+        - id: SheetRGlass
+        - id: MagazinePistol
           amount: 2
 
 - type: entity
@@ -77,11 +76,10 @@
   components:
     - type: StorageFill
       contents:
-        - id: TearGasGrenade
+        - id: MagazineRifle
+          amount: 3
+        - id: MagazinePistol
           amount: 2
-        - id: MagazinePistol45ACP
-          amount: 2
-        - id: WeaponPistolACP14
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -94,35 +92,7 @@
           amount: 2
         - id: BattleSpaceMedipen
           amount: 2
-        - id: MagazineRifle556UEG
-          amount: 4
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: ClothingPounchMTF
-  id: ClothingPounchMTFBattleSMGMP5Filled
-  components:
-    - type: StorageFill
-      contents:
-        - id: BattleMedipen
-          amount: 2
-        - id: BattleSpaceMedipen
-          amount: 2
-        - id: MagazinePistolSubMachineGun9x17
-          amount: 4
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: ClothingPounchMTF
-  id: ClothingPounchMTFBattleSMGFilled
-  components:
-    - type: StorageFill
-      contents:
-        - id: BattleMedipen
-          amount: 2
-        - id: BattleSpaceMedipen
-          amount: 2
-        - id: MagazinePistolTopSubMachineGun
+        - id: MagazineRifle
           amount: 4
 
 - type: entity
@@ -132,30 +102,14 @@
   components:
     - type: StorageFill
       contents:
-        - id: ChemistryBottleEpinephrine
+        - id: EpinephrineChemistryBottle
           amount: 2
-        - id: ChemistryBottleOmnizine
+        - id: OmnizineChemistryBottle
           amount: 3
         - id: SyringeBluespace
         - id: HandheldHealthAnalyzer
-        - id: OmnimedTool
-
-- type: entity
-  id: ClothingBeltMedicalEps11Filled
-  parent: ClothingBeltMedical
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-      - id: MedicatedSuture
-        amount: 3
-      - id: RegenerativeMesh
-        amount: 1
-      - id: Bloodpack
-        amount: 2
-      - id: Gauze
-      - id: EmergencyMedipen
-        amount: 2
+        - id: MagazinePistol
+          amount: 2
 
 - type: entity
   parent: Medkit
@@ -276,7 +230,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: MagazinePistolSubMachineGun9x17
+        - id: MagazinePistolSubMachineGun
           amount: 6
 
 - type: entity
@@ -286,7 +240,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: MagazineRifle556UEG
+        - id: MagazineRifle
           amount: 6
 
 - type: entity
@@ -355,11 +309,11 @@
   components:
     - type: StorageFill
       contents:
-        - id: ChemistryBottleOmnizine
+        - id: OmnizineChemistryBottle
           amount: 4
-        - id: ChemistryBottleEpinephrine
+        - id: EpinephrineChemistryBottle
           amount: 4
-        - id: ChemistryBottleEphedrine
+        - id: EphedrineChemistryBottle
           amount: 4
         - id: Hypospray
         - id: EmergencyMedipen
@@ -459,20 +413,3 @@
         - id: SpeedLoaderMagnumAP
           amount: 4
         - id: PinpointerNuclear
-
-- type: entity
-  parent: ClothingBeltInteQDropPouch
-  id: ClothingBeltInteQDropPouchMedicFilled
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: StorageFill
-      contents:
-      - id: Brutepack
-        amount: 2
-      - id: Ointment
-        amount: 2
-      - id: Bloodpack
-      - id: Gauze
-      - id: EmergencyMedipen
-        amount: 3
-      - id: Stimpack

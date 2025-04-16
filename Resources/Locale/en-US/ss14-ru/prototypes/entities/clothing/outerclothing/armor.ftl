@@ -1,7 +1,5 @@
-ent-ClothingOuterArmorBase = armor vest
+ent-ClothingOuterArmorBasic = armor vest
     .desc = A standard Type I armored vest that provides decent protection against most types of damage.
-ent-ClothingOuterArmorBasic = { ent-ClothingOuterArmorBase }
-    .desc = { ent-ClothingOuterArmorBase.desc }
 ent-ClothingOuterArmorBasicSlim = armor vest
     .desc = A slim Type I armored vest that provides decent protection against most types of damage.
     .suffix = slim

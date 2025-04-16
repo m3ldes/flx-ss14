@@ -43,3 +43,6 @@
     pocket2: BookSpaceLaw
   inhand:
     - BriefcaseIAAFilled
+  storage:
+    back:
+    - BoxSurvival

@@ -56,7 +56,7 @@
       collection: IanBark
 
 - type: entity
-  parent: [ClothingBackpack, BaseSecurityContraband]
+  parent: [ClothingBackpack, BaseRestrictedContraband]
   id: ClothingBackpackSecurity
   name: security backpack
   description: It's a very robust backpack.
@@ -65,7 +65,7 @@
     sprite: Clothing/Back/Backpacks/security.rsi
 
 - type: entity
-  parent: [ClothingBackpack, BaseSecurityContraband]
+  parent: [ClothingBackpack, BaseRestrictedContraband]
   id: ClothingBackpackBrigmedic
   name: brigmedic backpack
   description: It's a very sterile backpack.
@@ -180,9 +180,6 @@
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/salvage.rsi
-    - type: Construction # Backmen-edit
-      graph: BackpackSalvage
-      node: start
 
 - type: entity
   parent: ClothingBackpack
@@ -283,10 +280,6 @@
     sprite: Clothing/Back/Backpacks/syndicate.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
-  - type: Storage
-    grid:
-    - 0,0,7,3
-    - 8,1,8,3
 
 #Special
 - type: entity

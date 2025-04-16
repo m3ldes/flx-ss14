@@ -2,7 +2,6 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
-using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -64,13 +63,6 @@ namespace Content.Server.Database
             }
 
             cfg.OnValueChanged(CCVars.DatabaseSqliteDelay, v => _msDelay = v, true);
-            cfg.OnValueChanged(Shared.Backmen.CCVar.CCVars.PlayTimeServerUrl, v => _playtimeServerUrl = v, true);
-            cfg.OnValueChanged(Shared.Backmen.CCVar.CCVars.PlayTimeServerApiKey, v =>
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", v);
-            }, true);
-            cfg.OnValueChanged(Shared.Backmen.CCVar.CCVars.PlayTimeServerSaveLocally, v => _playtimeServerSaveLocally = v, true);
-            cfg.OnValueChanged(Shared.Backmen.CCVar.CCVars.PlayTimeServerEnabled, v => _playtimeServerEnabled = v, true);
         }
 
         #region Ban
@@ -543,12 +535,6 @@ namespace Content.Server.Database
             }
 
             return await base.AddAdminMessage(message);
-        }
-
-        public override Task SendNotification(DatabaseNotification notification)
-        {
-            // Notifications not implemented on SQLite.
-            return Task.CompletedTask;
         }
 
         protected override DateTime NormalizeDatabaseTime(DateTime time)

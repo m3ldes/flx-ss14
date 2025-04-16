@@ -16,7 +16,6 @@ disease-proto-bleeders = Укус Кровопотерь
 disease-proto-plague = чума
 disease-proto-owonavirus = OwOнавирус
 disease-proto-tongue-twister = Языковой Твистер
-disease-proto-tongue-greenflue = зеленый грипп
 
 disease-proto-xeno = Ксеновирус
 disease-proto-xenodrone = Ксеновирус

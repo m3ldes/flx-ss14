@@ -47,6 +47,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
     [UISystemDependency] private readonly ClientInventorySystem _inventory = default!;
     [UISystemDependency] private readonly StationSpawningSystem _spawn = default!;
     [UISystemDependency] private readonly GuidebookSystem _guide = default!;
+    [UISystemDependency] private readonly LoadoutSystem _loadouts = default!;
 
     private CharacterSetupGui? _characterSetup;
     private HumanoidProfileEditor? _profileEditor;
@@ -491,21 +492,23 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
             if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
             {
                 var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
-
                 //backmen-clothing: start
-                IReadOnlyList<string> groupsToShow = ["Werx", "Niz", "Socks"]; //consts
-                if (!jobClothes)
+                HashSet<string> groupsToShow = ["Werx", "Niz", "Socks"];
+                if (jobClothes)
                 {
-                    foreach (var loadoutsKey in loadout.SelectedLoadouts.Keys)
+                    foreach (var loadoutsKey in loadout.SelectedLoadouts.Keys.Where(loadoutsKey => groupsToShow.Contains(loadoutsKey)))
                     {
-                        if (groupsToShow.Contains(loadoutsKey.Id))
-                        {
-                            loadout.SelectedLoadouts.Remove(loadoutsKey);
-                        }
+                        loadout.SelectedLoadouts.Remove(loadoutsKey);
+                    }
+                }
+                else
+                {
+                    foreach (var loadoutsKey in loadout.SelectedLoadouts.Keys.Where(loadoutsKey => !groupsToShow.Contains(loadoutsKey)))
+                    {
+                        loadout.SelectedLoadouts.Remove(loadoutsKey);
                     }
                 }
                 //backmen-clothing: end
-
                 GiveDummyLoadout(dummyEnt, loadout);
             }
         }

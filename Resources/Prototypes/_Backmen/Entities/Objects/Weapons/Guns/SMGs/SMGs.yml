@@ -35,20 +35,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGun9x17
+        startingItem: MagazinePistolSubMachineGun
         insertSound: /Audio/Weapons/Guns64/SMGs/mp5_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/SMGs/mp5_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineSMG9x17
+            - MagazinePistolSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -65,6 +65,18 @@
   parent: WeaponSubMachineGunMP5
   id: WeaponSubMachineGunMP5NonLethal
   suffix: Пистолет-пулемёт [Non Lethal]
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolSubMachineGun
+        insertSound: /Audio/Weapons/Guns64/SMGs/mp5_reload.ogg
+        ejectSound: /Audio/Weapons/Guns64/SMGs/mp5_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolSubMachineGun
 
 - type: entity
   name: MP7
@@ -85,7 +97,7 @@
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/SMGs/mp7/tiny.rsi
   - type: BkmGunWieldBonus
-    cameraRecoilScalar: -2
+    cameraRecoilScalar: -4
   - type: GunWieldBonus
     minAngle: -10
     maxAngle: 0
@@ -93,7 +105,7 @@
   - type: Gun
     angleDecay: 20
     angleIncrease: 4
-    cameraRecoilScalar: 3
+    cameraRecoilScalar: 5
     minAngle: 14
     maxAngle: 35
     fireRate: 8
@@ -103,20 +115,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGun57x28
+        startingItem: MagazinePistolSubMachineGun
         insertSound: /Audio/Weapons/Guns64/SMGs/smg_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/SMGs/smg_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineSMG57x28
+            - MagazinePistolSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol57x28
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol57x28
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -163,20 +175,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGunVector45ACP
+        startingItem: MagazinePistolSubMachineGun
         insertSound: /Audio/Weapons/Guns64/SMGs/smg_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/SMGs/smg_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineSMGVector45ACP
+            - MagazinePistolSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: Construction
     graph: VectorTactical
     node: start
@@ -218,20 +230,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGunScorpion9x17
+        startingItem: MagazinePistolSubMachineGun
         insertSound: /Audio/Weapons/Guns64/SMGs/skorpion_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/SMGs/skorpion_unload.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineSMGScorpion9x17
+            - MagazinePistolSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -284,11 +296,11 @@
             - MagazinePistolBoxSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -317,7 +329,7 @@
     maxAngle: 46
     angleDecay: 40
     angleIncrease: 7
-    fireRate: 8
+    fireRate: 12
     soundGunshot:
       path: /Audio/Weapons/Guns64/SMGs/uzi.ogg
   - type: Clothing
@@ -336,11 +348,11 @@
             - MagazinePistolBoxSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -395,11 +407,11 @@
             - MagazinePistolDrumSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -435,7 +447,7 @@
     angleIncrease: -3
   - type: Gun
     angleDecay: 40
-    angleIncrease: 6
+    angleIncrease: 7
     cameraRecoilScalar: 5
     minAngle: 24
     maxAngle: 45
@@ -455,11 +467,11 @@
             - MagazinePistolTopSubMachineGun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9x17
+        startingItem: CartridgePistol
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9x17
+            - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 6
@@ -494,20 +506,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifleLight762x39
+        startingItem: MagazineRifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineRifleLight762x39
+            - MagazineRifle
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifleLight762x39
+        startingItem: CartridgeRifle
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle762x39
+            - CartridgeRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -517,19 +529,3 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-
-- type: entity
-  parent: [WeaponSubMachineGunMP7, BaseMajorContraband]
-  id: WeaponSubMachineGunInteQSMG
-  name: SMG
-  suffix: SubMachineGun
-  description: Firearm that is often used by the InteQ. Uses 5.7x28 ammo. It is painted in the InteQ brand color.
-  components:
-  - type: Sprite
-    sprite: Backmen/Objects/Weapons/Guns/SMG/inteq_smg.rsi
-  - type: Clothing
-    sprite: Backmen/Objects/Weapons/Guns/SMG/inteq_smg.rsi
-  - type: MagazineVisuals
-    magState: mag
-    steps: 6
-    zeroVisible: true

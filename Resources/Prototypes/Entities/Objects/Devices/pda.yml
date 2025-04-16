@@ -64,9 +64,8 @@
   - type: UnpoweredFlashlight
   - type: ShadowkinLight
   - type: PointLight
-    mask: /Textures/Effects/LightMasks/cone.png # Backmen
     enabled: false
-    radius: 1.8 # Backmen-Edit
+    radius: 1.5
     softness: 5
     autoRot: true
   - type: Ringer
@@ -84,7 +83,6 @@
       - NotekeeperCartridge
       - BankCartridge
       - GlimmerMonitorCartridge
-      - NanoTaskCartridge
       - NewsReaderCartridge
     cartridgeSlot:
       priority: -1
@@ -135,25 +133,6 @@
 
 - type: entity
   parent: BasePDA
-  id: BaseWidePDA
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/pda.rsi
-    layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
-      state: "pda"
-    - state: "light_overlay_wide"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
-      shader: "unshaded"
-      visible: false
-    - state: "id_overlay_wide"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
-      shader: "unshaded"
-      visible: false
-
-- type: entity
-  parent: BasePDA
   id: BaseSecurityPDA
   abstract: true
   components:
@@ -161,7 +140,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
 
@@ -175,7 +153,6 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NanoTaskCartridge
       - NewsReaderCartridge
       - MedTekCartridge
 
@@ -395,35 +372,11 @@
   components:
   - type: Pda
     id: MimeIDCard
-    paiSlot:
-      priority: -2
-      ejectSound: null
-      insertSound: null
-      whitelist:
-        components:
-        - PAI
-    idSlot:
-      name: access-id-card-component-default
-      ejectSound: null # mime is silent
-      insertSound: null
+    idSlot: #  rewrite without sound because mime
+      name: ID Card
       whitelist:
         components:
         - IdCard
-    penSlot:
-      startingItem: Pen
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-      ejectSound: null
-      insertSound: null
-  - type: CartridgeLoader
-    cartridgeSlot:
-      ejectSound: null
-      insertSound: null
-      whitelist:
-        components:
-        - Cartridge
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -525,7 +478,6 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NanoTaskCartridge
       - NewsReaderCartridge
       - AstroNavCartridge
 
@@ -548,7 +500,7 @@
     state: pda-bartender
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA
   id: LibrarianPDA
   name: librarian PDA
   description: Smells like books.
@@ -874,7 +826,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
@@ -943,7 +894,6 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NanoTaskCartridge
       - NewsReaderCartridge
       - MedTekCartridge
       - WantedListCartridge
@@ -960,7 +910,6 @@
   - type: Pda
     id: UniversalIDCard
   - type: HealthAnalyzer
-    maxScanRange: null
     scanDelay: 0
     silent: true
   - type: CartridgeLoader
@@ -969,7 +918,6 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NanoTaskCartridge
       - NewsReaderCartridge
       - LogProbeCartridge
       - WantedListCartridge
@@ -1092,7 +1040,6 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
-      - NanoTaskCartridge
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1119,7 +1066,6 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NanoTaskCartridge
       - NewsReaderCartridge
       - MedTekCartridge
       - WantedListCartridge
@@ -1290,7 +1236,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
@@ -1318,7 +1263,6 @@
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
-    - NanoTaskCartridge
     - NewsReaderCartridge
     - WantedListCartridge
     - MedTekCartridge
@@ -1332,13 +1276,6 @@
   components:
   - type: Pda
     id: CluwneIDCard
-    penSlot:
-      startingItem: CrayonGreen
-      ejectSound: /Audio/Items/bikehorn.ogg
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1348,6 +1285,13 @@
     borderColor: "#1c8f4d"
   - type: Icon
     state: pda-cluwne
+    penSlot:
+      startingItem: CrayonGreen
+      ejectSound: /Audio/Items/bikehorn.ogg
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Unremoveable
 
 - type: entity
@@ -1465,7 +1409,6 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
-      - NanoTaskCartridge
       - MedTekCartridge
 
 - type: entity
@@ -1498,27 +1441,3 @@
         type: HealthAnalyzerBoundUserInterface
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
-
-- type: entity
-  parent: BaseWidePDA
-  id: WizardPDA
-  name: wizard PDA
-  description: You hear faint whispers coming from it.
-  components:
-  - type: Pda
-    id: WizardIDCard
-    penSlot:
-      startingItem: PenWiz
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-  - type: Appearance
-    appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-wizard
-  - type: PdaBorderColor
-    borderColor: "#7F3300"
-  - type: Icon
-    state: pda-wizard

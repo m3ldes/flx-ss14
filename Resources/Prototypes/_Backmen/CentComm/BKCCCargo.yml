@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: SpawnPointCMBKCCCargo
   name: Карго ЦК
-  suffix: Спавнер, Директор Событий, DO NOT MAP
+  suffix: Спавнер, Директор Событий
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -14,8 +14,6 @@
       - Maintain Central Command cargo protocols
       - Coordinate with station cargo department
       - Follow Central Command chain of command
-    mindRoles:
-    - MindRoleBKCCCargo
     raffle:
       settings: short
     requirements:
@@ -40,7 +38,7 @@
 
 - type: entity
   name: Карго ЦК
-  suffix: Директор Событий, DO NOT MAP
+  suffix: Директор Событий
   parent: MobHumanCombine
   id: MobHumanCMBKCCCargo
   description: ""

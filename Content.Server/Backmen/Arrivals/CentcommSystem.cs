@@ -25,13 +25,11 @@ using Content.Shared.Random.Helpers;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Whitelist;
 using Robust.Server.GameObjects;
+using Robust.Server.Maps;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
-using Robust.Shared.EntitySerialization;
-using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
-using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -58,12 +56,10 @@ public sealed class CentcommSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly MapLoaderSystem _loader = default!;
-    [Dependency] private readonly  SharedMapSystem _mapSystem = default!;
 
     public EntityUid CentComGrid { get; private set; } = EntityUid.Invalid;
     public MapId CentComMap { get; private set; } = MapId.Nullspace;
-    public Entity<MapComponent>? CentComMapUid { get; private set; }
+    public EntityUid CentComMapUid { get; private set; } = EntityUid.Invalid;
     public float ShuttleIndex { get; set; } = 0;
 
     private WeightedRandomPrototype _stationCentComMapPool = default!;
@@ -130,9 +126,9 @@ public sealed class CentcommSystem : EntitySystem
 
     private void OnCentComEndRound(RoundEndedEvent ev)
     {
-        if (CentComMapUid != null && _shuttleSystem.TryAddFTLDestination(CentComMap, true, out var ftl))
+        if (CentComMapUid.IsValid() && _shuttleSystem.TryAddFTLDestination(CentComMap, true, out var ftl))
         {
-            EnableFtl((CentComMapUid.Value, ftl));
+            EnableFtl((CentComMapUid, ftl));
         }
     }
 
@@ -246,7 +242,7 @@ public sealed class CentcommSystem : EntitySystem
             _mapManager.DeleteMap(CentComMap);
 
         CentComMap = MapId.Nullspace;
-        CentComMapUid = null;
+        CentComMapUid = EntityUid.Invalid;
         ShuttleIndex = 0;
     }
 
@@ -270,55 +266,40 @@ public sealed class CentcommSystem : EntitySystem
 
         Log.Info("Start load centcom");
 
-        var mapPickId = _stationCentComMapPool.Pick(_random);
-        if (!_prototypeManager.TryIndex<GameMapPrototype>(mapPickId, out var mapToLoad))
+        if (CentComMap == MapId.Nullspace)
         {
-            mapPickId = StationCentComMapDefault;
-            mapToLoad = _prototypeManager.Index<GameMapPrototype>(StationCentComMapDefault);
+            CentComMap = _mapManager.CreateMap();
         }
 
-        var opts = DeserializationOptions.Default with {InitializeMaps = true, PauseMaps = false};
-        var grids = _gameTicker.LoadGameMap(mapToLoad, out var mapIdMap, opts);
+        CentComMapUid = _mapManager.GetMapEntityId(CentComMap);
 
-        Entity<MapComponent?> mapId = (_mapSystem.GetMapOrInvalid(mapIdMap),null);
-        mapId.Comp = CompOrNull<MapComponent>(mapId.Owner);
-
-        var grid = grids.FirstOrNull(HasComp<BecomesStationComponent>);
-
-        if (!Exists(mapId))
+        var mapId = _stationCentComMapPool.Pick(_random);
+        if (!_prototypeManager.TryIndex<GameMapPrototype>(mapId, out var map))
         {
-            Log.Error($"Failed to set up centcomm map!");
-            QueueDel(grid);
+            mapId = StationCentComMapDefault;
+            map = _prototypeManager.Index<GameMapPrototype>(StationCentComMapDefault);
+        }
+
+
+        var ent = _gameTicker.LoadGameMap(
+            map, CentComMap, new MapLoadOptions()
+            {
+                LoadMap = false
+            }, "Central Command").FirstOrNull(HasComp<BecomesStationComponent>);
+
+        _metaDataSystem.SetEntityName(_mapManager.GetMapEntityId(CentComMap), Loc.GetString("map-name-centcomm"));
+
+        if (ent == null)
+        {
+            Log.Warning("No CentComm map found, skipping setup.");
             return;
         }
 
-        if (!Exists(grid))
-        {
-            Log.Error($"Failed to set up centcomm grid!");
-            QueueDel(mapId);
-            return;
-        }
-
-        var xform = Transform(grid.Value);
-        if (xform.ParentUid != mapId.Owner || xform.MapUid != mapId.Owner)
-        {
-            Log.Error($"Centcomm grid is not parented to its own map?");
-            QueueDel(mapId);
-            QueueDel(grid);
-            return;
-        }
-
-
-        CentComMapUid = (mapId.Owner, mapId.Comp!);
-        CentComMap = mapIdMap;
-
-        _metaDataSystem.SetEntityName(CentComMapUid.Value, Loc.GetString("map-name-centcomm"));
-
-        CentComGrid = grid.Value;
+        CentComGrid = ent.Value;
         if (_shuttle.TryAddFTLDestination(CentComMap, true, false, false, out var ftl))
         {
             ftl.RequireCoordinateDisk = false;
-            DisableFtl((CentComMapUid.Value.Owner, ftl));
+            DisableFtl((CentComMapUid, ftl));
         }
 
         var q = EntityQueryEnumerator<StationCentcommComponent>();
@@ -376,10 +357,7 @@ public sealed class CentcommSystem : EntitySystem
                 return;
         }
 
-        ev.Options.PauseMaps = false;
-        ev.Options.InitializeMaps = true;
-        ev.Offset = Vector2.Zero;
-        ev.Rotation = Angle.Zero;
+        ev.Options.Offset = new Vector2(0, 0);
     }
 
     private void OnFtlActionUsed(EntityUid uid, ActorComponent component, CentcomFtlAction args)

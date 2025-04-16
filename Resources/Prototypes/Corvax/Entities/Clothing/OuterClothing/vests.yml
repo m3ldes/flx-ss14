@@ -8,9 +8,6 @@
       sprite: Corvax/Clothing/OuterClothing/Vests/armor_sec.rsi
     - type: Clothing
       sprite: Corvax/Clothing/OuterClothing/Vests/armor_sec.rsi
-    - type: Tag
-      tags:
-        - BroneArachne
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -22,9 +19,6 @@
       sprite: Corvax/Clothing/OuterClothing/Vests/armor_sec_med.rsi
     - type: Clothing
       sprite: Corvax/Clothing/OuterClothing/Vests/armor_sec_med.rsi
-    - type: Tag
-      tags:
-      - BroneArachne
 
 - type: entity
   parent: ClothingOuterBase
@@ -36,6 +30,3 @@
       sprite: Corvax/Clothing/OuterClothing/Vests/vest_security_medic.rsi
     - type: Clothing
       sprite: Corvax/Clothing/OuterClothing/Vests/vest_security_medic.rsi
-    - type: Tag
-      tags:
-      - BroneArachne
