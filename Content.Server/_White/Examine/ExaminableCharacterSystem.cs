@@ -138,7 +138,7 @@ namespace Content.Server._White.Examine
 
                 if (!args.IsSecondaryInfo)
                 {
-                    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+                    TextInfo textInfo = new CultureInfo("ru-RU", false).TextInfo;
                     logLines.Add($"[color=DarkGray][font size=11]{textInfo.ToTitleCase(metaData.EntityName)}[/font][/color]");
                 }
 
