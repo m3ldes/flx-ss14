@@ -1,0 +1,16 @@
+descriptions-atv-dataset-1 = Вездеходное транспортное средство.
+descriptions-atv-dataset-2 = Анти-термитный вездеход.
+descriptions-atv-dataset-3 = Авто-транспорт овощей.
+descriptions-atv-dataset-4 = Абсолютно-два вездехода.
+descriptions-atv-dataset-5 = Альтернативно-типовая величина.
+descriptions-atv-dataset-6 = Аварийно-травматическое вездеходное средство.
+descriptions-atv-dataset-7 = Аналитически-транслируемый вирус.
+descriptions-atv-dataset-8 = Аномальная-таверна вахтера.
+descriptions-atv-dataset-9 = Адски-трясущийся вулкан.
+descriptions-atv-dataset-10 = Астрономически-телевизионный видеопоток.
+descriptions-atv-dataset-11 = Абсурдно-топчущийся вольнодумец.
+descriptions-atv-dataset-12 = Артистично-трагический волонтер.
+descriptions-atv-dataset-13 = Автоматизированно-тарелочная вакансия.
+descriptions-atv-dataset-14 = Альтернативно-туристический вид.
+descriptions-atv-dataset-15 = Амурно-трепещущие визави.
+descriptions-atv-dataset-16 = Адски-тревожный вездеход.

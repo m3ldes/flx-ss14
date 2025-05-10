@@ -1,4 +1,4 @@
-figurines-hop-1 = Бумаги, пожалуйста.
+figurines-hop-1 = Ваши документы.
 figurines-hop-2 = Вы уволены.
 figurines-passenger-1 = Изоли пожалуйста.
 figurines-passenger-2 = Вызывайте эвак.
@@ -40,7 +40,7 @@ figurines-security-1 = Я тут закон!
 figurines-security-2 = Вы нарушили статью 1984.
 figurines-security-3 = Всякий раз, как мне становится скучно, я использую клоуна в качестве мишени.
 figurines-security-4 = У тебя есть два права: молчать и поплакать об этом.
-figurines-lawyer-1 = Лучше звоните солу!
+figurines-lawyer-1 = Лучше звоните Солу!
 figurines-lawyer-2 = Objection!
 figurines-cargotech-1 = ДРАКОН НА ТОРГОВОМ ПОСТУ!
 figurines-cargotech-2 = Я продал станцию!
