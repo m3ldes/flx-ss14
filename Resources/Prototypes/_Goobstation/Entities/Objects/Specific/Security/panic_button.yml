@@ -1,7 +1,7 @@
 - type: entity
   id: PanicButton
-  name: distress signaller
-  description: A small device with a small red button on the top. Press it to send a distress signal over the security channel.
+  name: кнопка паники
+  description: Небольшое устройство с маленькой красной кнопкой наверху. Нажмите её, чтобы отправить сигнал тревоги по частоте службы безопасности.
   parent: [BaseItem, BaseSecurityContraband]
   components:
   - type: Sprite

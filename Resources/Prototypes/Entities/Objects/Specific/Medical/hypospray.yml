@@ -549,10 +549,10 @@
     tags: []
 
 - type: entity
-  name: airloss auto-injector
+  name: автоинъектор от удушья
   parent: ChemicalMedipen
   id: AirlossAutoInjector
-  description: A rapid dose of saline and dexalin plus, intended to get someone up quickly.
+  description: Быстрая доза физраствора и дексалина плюс, предназначенная для оперативного приведения существа в нормальное состояние.
   components:
   - type: Item
     inhandVisuals:
