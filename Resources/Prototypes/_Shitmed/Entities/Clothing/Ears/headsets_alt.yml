@@ -9,7 +9,8 @@
 - type: entity
   parent: [ ClothingHeadsetAlt, BaseMajorContraband ]
   id: ClothingHeadsetAltAbductor
-  name: abductor over-ear headset
+  name: полноразмерная гарнитура абдукторов
+  description: Модифицированный, модульный интерком, надеваемый на голову. Принимает ключи шифрования.
   components:
   - type: ContainerFill
     containers:

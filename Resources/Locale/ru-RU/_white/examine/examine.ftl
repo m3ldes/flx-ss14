@@ -1,8 +1,13 @@
 ﻿# Poggers examine system
 
 examine-name = Это же [bold]{$name}[/bold]!
+examine-name-selfaware = Это вы!
 examine-can-see = Осмотрев {OBJECT($ent)}, вы можете увидеть:
 examine-can-see-nothing = {CAPITALIZE(SUBJECT($ent))} полностью без ничего!
+examine-border-line = ═════════════════════
+examine-present-tex = Это [enttex id="{ $id }" size={ $size }] [bold]{$name}[/bold]!
+examine-present = Это [bold]{$name}[/bold]!
+examine-present-line = ═══
 
 id-examine = - [bold]{$item}[/bold] на {POSS-ADJ($ent)} ремне.
 head-examine = - [bold]{$item}[/bold] на {POSS-ADJ($ent)} голове.
@@ -18,13 +23,15 @@ gloves-examine = - [bold]{$item}[/bold] на {POSS-ADJ($ent)} руках.
 belt-examine = - [bold]{$item}[/bold] на {POSS-ADJ($ent)} поясе.
 shoes-examine = - [bold]{$item}[/bold] на {POSS-ADJ($ent)} ногах.
 
+id-card-examine-full = - {CAPITALIZE(POSS-ADJ($wearer))} ID: [bold]{$nameAndJob}[/bold].
+
 # Selfaware version
 
-examine-name-selfaware = Это вы, [bold]{$name}[/bold]!
 examine-can-see-selfaware = Осмотрев себя, вы можете увидеть:
 examine-can-see-nothing-selfaware = На вас вообще ничего нет!
 
 id-examine-selfaware = - [bold]{$item}[/bold] на вашем поясе.
+head-examine-selfaware = - [bold]{$item}[/bold] на вашей голове.
 eyes-examine-selfaware = - [bold]{$item}[/bold] на ваших глазах.
 mask-examine-selfaware = - [bold]{$item}[/bold] на вашем лице.
 neck-examine-selfaware = - [bold]{$item}[/bold] на вашей шее.
