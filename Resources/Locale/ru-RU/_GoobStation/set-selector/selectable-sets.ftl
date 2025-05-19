@@ -1,111 +1,111 @@
 # Thief
 
-selectable-set-thief-anatomy-name = Anatomy Kit
+selectable-set-thief-anatomy-name = Набор анатомии
 selectable-set-thief-anatomy-description =
-    You've reached peak physical performance... with a little help.
-    Includes: Storage implanter, DNA scrambler implanter, a lollypop,
-    ephedrine bottle, syringe, empty shaker, and omega soap.
+    Ты достиг пика физической формы... с небольшим посторонним вмешательством.
+    Включает: имплантатор хранения, имплантатор смешивания ДНК, леденец,
+    бутылочку эфедрина, шприц, пустой шейкер и омега-мыло.
 
-selectable-set-thief-breacher-name = Breacher Kit
+selectable-set-thief-breacher-name = Набор проломщика
 selectable-set-thief-breacher-description =
-    What's that sound? A lil' C4 knockin' at their door.
-    No obstacle can stop you!
-    Includes: Two C4, a multitool, remote signaller, jaws of life,
-    advanced welder, engineering goggles, and insulated gloves.
+    Что это за звук? Немного C4 стучится в их дверь.
+    Никакое препятствие не остановит тебя!
+    Включает: два C4, мультитул, дистанционный сигнализатор, спасательные ножницы,
+    продвинутый сварочный аппарат, инженерные очки и изолированные перчатки.
 
-selectable-set-thief-chameleon-name = Chameleon Kit
+selectable-set-thief-chameleon-name = Набор хамелеона
 selectable-set-thief-chameleon-description =
-    You are everyone and no one; you are a master of disguise.
-    Includes: A full set of chameleon clothing,
-    a chameleon projector, and an Agent ID.
-    Disguise as anyone and anything.
+    Ты — каждый и никто одновременно; ты — мастер маскировки.
+    Включает: полный комплект хамелеоновой одежды,
+    хамелеоновый проектор и идентификатор агента.
+    Маскируйся под кого угодно и во что угодно.
 
-selectable-set-thief-syndie-name = Syndie Kit
+selectable-set-thief-syndie-name = Набор синдиката
 selectable-set-thief-syndie-description =
-    Trinkets from a disavowed past, or stolen from a careless agent?
-    You've made some connections. Whiskey, echo...
-    Includes: An Emag, Access Breaker, Interdyne cigs, a Syndicate codeword,
-    a Radio Jammer, a lighter and some strange red crystals.
+    Безделушки из отречённого прошлого или украденные у неосторожного агента?
+    Ты завёл кое-какие связи. Виски, эхо...
+    Включает: Эмаг, взломщик доступа, сигареты Interdyne, кодовое слово синдиката,
+    радиоглушитель, зажигалку и несколько странных красных кристаллов.
 
-selectable-set-thief-sleeper-name = Sleeper Kit
+selectable-set-thief-sleeper-name = Набор усыпителя
 selectable-set-thief-sleeper-description =
-    Until we close our eyes for good, use your illegal prescriptions
-    to keep others asleep.
-    Includes: Sleepy nitrous oxide tank, two nocturine bottles,
-    and a hypopen.
+    Пока мы окончательно не закроем глаза, используй свои запрещённые препараты,
+    чтобы усыпить других.
+    Включает: баллон с усыпляющим закисью азота, две бутылочки ночтурина
+    и гипопен.
 
-selectable-set-thief-communicator-name = Communicator Kit
+selectable-set-thief-communicator-name = Набор коммуникатора
 selectable-set-thief-communicator-description =
-    Money is power, and secrets are money. Use your silver tongue
-    and wealth to subvert the station.
-    Includes: Master key for all station channels, a CyberSun pen,
-    voice chameleon mask, and 20k spesos inside a briefcase.
+    Деньги — это власть, а секреты — это деньги. Используй своё серебряное красноречие
+    и богатство, чтобы подорвать станцию.
+    Включает: мастер-ключ ко всем каналам станции, ручку CyberSun,
+    голосовую маску-хамелеон и 20 тысяч спецо в дипломатическом кейсе.
 
-selectable-set-thief-smuggler-name = Smuggler Kit
+selectable-set-thief-smuggler-name = Набор контрабандиста
 selectable-set-thief-smuggler-description =
-    All thieves need somewhere to stash their goods in the dark.
-    Don't forget to link your fulton.
-    Includes: Fulton beacon, 10 fultons, 3 smoke grenades,
-    and an invisible crate to hide valuable loot.
+    Всем ворам нужно место, чтобы прятать свои трофеи в темноте.
+    Не забудь связать свой фултон.
+    Включает: маяк фултона, 10 фултонов, 3 дымовые гранаты
+    и невидимый ящик для хранения ценной добычи.
 
 # Syndicate
 
-selectable-set-syndicate-spy-name = Spy Bundle
+selectable-set-syndicate-spy-name = Набор шпиона
 selectable-set-syndicate-spy-description =
-    Complete your objectives quietly with this compilation of stealthy items.
-    Contains: chameleon thieving gloves, chameleon kit, voice mask,
-    agent ID card, an empty hypopen, radio jammer, stealth box,
-    syndicate jaws of life, and a syndicate encryption key.
+    Выполняй свои задачи бесшумно с этим набором скрытных предметов.
+    Включает: воровские хамелеоновые перчатки, набор хамелеона, голосовую маску,
+    идентификационную карту агента, пустой гипопен, радиоглушитель, скрытую коробку,
+    спасательные ножницы синдиката и ключ шифрования синдиката.
 
-selectable-set-syndicate-hitman-name = Hitman Bundle
+selectable-set-syndicate-hitman-name = Набор киллера
 selectable-set-syndicate-hitman-description =
-    Find and eliminate your targets quietly and effectively with this bundle.
-    Contains: Cobra pistol with 3 extra mags, CQC manual,
-    special armor vest, no-slip shoes, Interdyne herbals packet,
-    combat medkit, a stylish look and a syndicate encryption key.
+    Найди и устрани свои цели бесшумно и эффективно с этим комплектом.
+    Включает: пистолет Cobra с 3 дополнительными магазинами, руководство по ближнему бою,
+    специальный бронежилет, нескользящие ботинки, упаковку трав Interdyne,
+    медицинский боевой комплект, стильный образ и ключ шифрования синдиката.
 
-selectable-set-syndicate-implants-name = Cyberpsychosis Bundle
+selectable-set-syndicate-implants-name = Набор киберпсихоза
 selectable-set-syndicate-implants-description =
-    A few implants to give you some options for when you inevitably get arrested.
-    Contains: holoparasite kit, EMP, scram, freedom,
-    smoke, krav maga and syndicate radio implanters.
+    Несколько имплантов, которые дадут тебе варианты, когда тебя неизбежно арестуют.
+    Включает: набор голопаразита, импланты ЭМП, скрама, свободы,
+    дыма, крав-мага и синдикатской радиосвязи.
 
-selectable-set-syndicate-hacker-name = Hacker Bundle
+selectable-set-syndicate-hacker-name = Набор хакера
 selectable-set-syndicate-hacker-description =
-    A bundle with everything you need to hack into and disrupt the Station itself,
-    the station AI, its cyborgs and the Security team. HACK THE PLANET!
-    Contains: Antimov law circuit, authentication disruptor, EMAG,
-    camera bug, filled toolbox, contortionist suit,
-    cool glasses and both binary and syndicate encryption keys.
+    Комплект со всем, что нужно для взлома и саботажа станции,
+    её ИИ, киборгов и службы безопасности. ВЗЛОМАЙ ПЛАНЕТУ!
+    Включает: схемы антимов, нарушитель аутентификации, Эмаг,
+    жучок камеры, наполненный ящик с инструментами, костюм конторциониста,
+    крутые очки и ключи шифрования синдиката и бинарной сети.
 
-selectable-set-syndicate-desword-name = Dark Lord Bundle
+selectable-set-syndicate-desword-name = Набор Тёмного Лорда
 selectable-set-syndicate-desword-description =
-    Turn your anger into hate and your hate into suffering with this lightsaber.
-    Contains: double-bladed energy sword, hyperzine microinjector kit, glue tube,
-    all clothing you need for a proper cosplay and a syndicate encryption key.
+    Преврати свою ярость в ненависть, а ненависть в страдания с этим световым мечом.
+    Включает: двухлезвийный энергомеч, набор микроинъектора гиперзина, тюбик клея,
+    всю одежду, необходимую для полноценного косплея, и ключ шифрования синдиката.
 
-selectable-set-syndicate-grenadier-name = Grenadier Bundle
+selectable-set-syndicate-grenadier-name = Набор гренадера
 selectable-set-syndicate-grenadier-description =
-    Some explosives to ensure you can blast your way through any situation.
-    Contains: syndicate encryption key, minibomb, C4, and then incendiary,
-    explosive, shrapnel, EMP, whitehole, supermatter, smoke and flash grenades.
+    Немного взрывчатки, чтобы ты мог прорваться сквозь любую ситуацию.
+    Включает: ключ шифрования синдиката, минибомбу, C4, а также зажигательные,
+    осколочные, ЭМП, белодырчатые, суперматиные, дымовые и светошумовые гранаты.
 
-selectable-set-syndicate-fluclear-name = Fluclear Operative Bundle
+selectable-set-syndicate-fluclear-name = Набор япперного оперативника
 selectable-set-syndicate-fluclear-description =
-    Declare your allegiance to the Syndicate with this bundle, get dat fuckin' disk!
-    Contains: C-20R SMG, 3 extra mags, energy shield, jetpack,
-    and some basic nuclear operative gear (including the hardsuit).
+    Покажи свою верность Синдикату с этим набором, добудь этот чёртов диск!
+    Включает: пистолет-пулемёт C-20R, 3 дополнительных магазина, энергетический щит, реактивный ранец
+    и базовую экипировку ядерного оперативника (включая бронекостюм).
 
-selectable-set-syndicate-friendship-name = Friendship Bundle
+selectable-set-syndicate-friendship-name = Набор дружбы
 selectable-set-syndicate-friendship-description =
-    Friendship is magic! Go find yourself some friends with this bundle!
-    Contains: Contractor baton, handcuffs, 2 mindcontrol implanters,
-    3 Mosin rifles and 3 syndicate encryption keys for all of you.
+    Дружба — это магия! Найди себе друзей с этим набором!
+    Включает: дубинку наёмника, наручники, 2 импланта контроля разума,
+    3 винтовки Мосина и 3 ключа шифрования синдиката для всей вашей компании.
 
-selectable-set-syndicate-carp-name = Carp Bundle
+selectable-set-syndicate-carp-name = Набор карпа
 selectable-set-syndicate-carp-description =
-    Grr! Rrrr! Grr... Grrow?! KOWABUNGA!
-    Contains: Sleeping Carp, 10 dehydrated carp and a syndicate encryption key.
+    Грр! Рррр! Грр... Грроу?! КОВАБУНГА!
+    Включает: Сонный Карп, 10 обезвоженных карпов и ключ шифрования синдиката.
 
 # Blueshield
 
