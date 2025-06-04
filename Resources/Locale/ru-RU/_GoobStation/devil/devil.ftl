@@ -1,43 +1,43 @@
-devil-roundend-name = Devil
-objective-issuer-devil = Devil
+roles-antag-devil-name = Дьявол
+objective-issuer-devil = Дьявол
 
-roundend-prepend-devil-contracts = Someone has made [color=red]{$number}[/color] successful contracts.
-roundend-prepend-devil-contracts-named = [color=white]{$name}[/color] has made [color=red]{$number}[/color] successful contracts.
+roundend-prepend-devil-contracts = Кто-то заключил [color=red]{$number}[/color] успешных контрактов.
+roundend-prepend-devil-contracts-named = [color=white]{$name}[/color] заключил [color=red]{$number}[/color] успешных контрактов.
 
-devil-component-examined = [color=darkred]{CAPITALIZE(POSS-ADJ($target))} eyes glow a faint red.[/color]
-condemned-component-examined = [color=chartreuse]{CAPITALIZE($target)}'s eyes are hollow and soulless.[/color]
+devil-component-examined = [color=darkred]В глазах {CAPITALIZE(POSS-ADJ($target))} горит слабый красный огонь.[/color]
+condemned-component-examined = [color=chartreuse]В глазах {CAPITALIZE($target)} пустота и нет души.[/color]
 
-devil-role-greeting = You are a devil from the depths of hell,
-  who has possessed the body of {$playerName}
-  Corrupt mortals and collect souls through the use of contracts.
-  Your true name is {$trueName} - Try to keep it a secret, will you?
+devil-role-greeting = Вы дьявол из глубин ада,
+  который овладел телом {$playerName}.
+  Развращайте смертных и собирайте души с помощью контрактов.
+  Ваше истинное имя {$trueName} - постарайтесь сохранить его в тайне, хорошо?
 
-devil-true-name-heard = The act of {$speaker} commanding {$target}'s true name compels {POSS-ADJ($target)} to stop.
-devil-true-name-heard-chaplain = The act of {$speaker}'s holy words commanding your true name burns away at {$target}'s very soul.
+devil-true-name-heard = Приказ {$speaker}, произнесенный вашим истинным именем, заставляет {$target} остановиться.
+devil-true-name-heard-chaplain = Действие святых слов {$speaker}, повелевающих вашим истинным именем, выжигает саму душу {$target}.
 
-objective-condition-contract-title = Collect Souls
-objective-condition-contract-description = Collect as many souls as possible.
+objective-condition-contract-title = Собрать Души
+objective-condition-contract-description = Соберите как можно больше душ.
 
-hand-shake-prompt-verb = Offer handshake to {$target}
-hand-shake-accept-verb = Shake {$target}'s hand
+hand-shake-prompt-verb = Предложить рукопожатие {$target}
+hand-shake-accept-verb = Пожать руку {$target}
 
-handshake-offer-popup = {$user} offers {POSS-ADJ($user)} hand to you, a sly grin on {POSS-ADJ($user)} face.
-handshake-offer-popup-self = You outstretch your hand to {$target}, a sly grin on your face.
+handshake-offer-popup = {$user} протягивает вам руку, на его лице хитрая ухмылка.
+handshake-offer-popup-self = Вы протягиваете руку {$target}, на вашем лице хитрая ухмылка.
 
-handshake-accept-verb = Accept Handshake.
-handshake-decline-verb = Decline Handshake.
-handshake-decline-message = The target declined your handshake offer.
-handshake-success = You feel slightly lighter as you shake {$user}'s hand.
-handshake-fail =  You shake {POSS-ADJ($user)} hand, but nothing happens!
+handshake-accept-verb = Принять Рукопожатие.
+handshake-decline-verb = Отклонить Рукопожатие.
+handshake-decline-message = Цель отклонила ваше предложение о рукопожатии.
+handshake-success = Вы чувствуете себя немного легче, пожимая руку {$user}.
+handshake-fail = Вы пожимаете руку {POSS-ADJ($user)}, но ничего не происходит!
 
-not-enough-souls = You do not have enough souls to use this spell!
+not-enough-souls = У вас недостаточно душ, чтобы использовать это заклинание!
 
-weaktoholy-component-bible-sizzle = {$target}'s skin is singed with the {$item}!
-devil-banish-begin = {$user} begins to perform an exorcism on {$target}!
-devil-exorcised = The ground cracks and splinters beneath {$target} as they are forcefully returned to hell!
+weaktoholy-component-bible-sizzle = Кожа {$target} обжигается {$item}!
+devil-banish-begin = {$user} начинает проводить обряд экзорцизма над {$target}!
+devil-exorcised = Земля трескается и разлетается под ногами {$target}, когда его насильно возвращают в ад!
 
-invalid-possession-target = You cannot possess this target!
+invalid-possession-target = Вы не можете овладеть этой целью!
 
-devil-power-level-increase-weak = Bits of flame flare out from your fingertips. Your connection with hell has strengthened.
-devil-power-level-increase-moderate = You feel your power surge. Your connection with hell has strengthened.
-devil-power-level-increase-powerful = You've almost completed your tasks here. Just a few more souls.
+devil-power-level-increase-weak = Кончики ваших пальцев вспыхивают искрами пламени. Ваша связь с адом укрепилась.
+devil-power-level-increase-moderate = Вы чувствуете, как ваша сила нарастает. Ваша связь с адом укрепилась.
+devil-power-level-increase-powerful = Вы почти завершили свои задачи здесь. Всего несколько душ.

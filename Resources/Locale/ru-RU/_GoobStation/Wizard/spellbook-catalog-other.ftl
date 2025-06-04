@@ -5,68 +5,70 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-spellbook-mime-bundle-name = Mime Wizard Bundle
+spellbook-mime-bundle-name = Набор Волшебника-Мима
 spellbook-mime-bundle-desc =
-    Contains a set of mime clothes, as well as mime PDA and special mime wizard hat and robes.
-    Cannot be refunded.
-    Warning: Purchasing this blocks the refund of Mime Malaise spell!
+    Содержит набор одежды мима, а также КПК мима и специальные шляпу и мантию волшебника-мима.
+    Не подлежит возврату.
+    Внимание: Покупка этого набора блокирует возврат заклинания Мим-Недомогание!
 
-spellbook-clown-bundle-name = Clown Wizard Bundle
+spellbook-clown-bundle-name = Набор Волшебника-Клоуна
 spellbook-clown-bundle-desc =
-    Contains a set of clown clothes, as well as clown PDA and special clown wizard hat and robes.
-    Cannot be refunded.
-    Warning: Purchasing this blocks the refund of Banana Touch and Curse of the Cluwne spells!
+    Содержит набор клоунской одежды, а также КПК клоуна и специальные шляпу и мантию волшебника-клоуна.
+    Не подлежит возврату.
+    Внимание: Покупка этого набора блокирует возврат заклинаний Банановое Касание и Проклятие Клувна!
 
-spellbook-oblivion-enforcer-name = Oblivion Enforcer Bundle
+spellbook-oblivion-enforcer-name = Набор Силовика Забвения
 spellbook-oblivion-enforcer-desc =
-    Contains Oblivion Enforcer robes, a pair of insulated gloves and Oblivion Enforcer mask with integrated voice changer.
-    The Oblivion Order is an isolated clique of monks that revere supermatter. Oblivion Enforcers are how the Order imposes their will on the universe as a whole. By taking this bundle, you give up your identity and become a faceless hand of the Order.
-    Cannot be refunded.
-    You can get this bundle as many times as you have purchased Supermatter Halberd.
-    Warning: Purchasing this blocks the refund of Supermatter Halberd!
+    Содержит мантию Силовика Забвения, пару изолированных перчаток и маску Силовика Забвения со встроенным изменением голоса.
+    Орден Забвения - это изолированная группа монахов, почитающих сверхматерию. Силовики Забвения - это то, как Орден навязывает свою волю вселенной в целом. Приобретая этот набор, вы отказываетесь от своей личности и становитесь безликой рукой Ордена.
+    Не подлежит возврату.
+    Вы можете получить этот набор столько раз, сколько раз вы приобрели Суперматериевую Алебарду.
+    Внимание: Покупка этого набора блокирует возврат Суперматериевой Алебарды!
 
-spellbook-tider-bundle-name = Tider Wizard Bundle
+spellbook-tider-bundle-name = Набор Волшебника-Таидера
 spellbook-tider-bundle-desc =
-    Contains an ancient jumpsuit, a pair of insulated gloves, a gas mask, gray winter coat and mantle as well as assistant PDA.
-    Cannot be refunded.
-    Warning: Purchasing this blocks the refund of Homing Toolbox spell!
+    Содержит древний комбинезон, пару изолированных перчаток, противогаз, серое зимнее пальто и мантию, а также КПК ассистента.
+    Не подлежит возврату.
+    Внимание: Покупка этого набора блокирует возврат заклинания Самонаводящийся Ящик с Инструментами!
 
-spellbook-full-random-name = Full Random
+spellbook-full-random-name = Полный Случайный Выбор
 spellbook-full-random-desc =
-    Get 15 WizCoins worth of completely random spells. There's no going back.
-    Not recommended for newer wizards.
+    Получите случайные заклинания на 15 Визкоинов. Пути назад нет.
+    Не рекомендуется для начинающих волшебников.
 
-spellbook-semi-random-name = Semi-Random
+spellbook-semi-random-name = Полуслучайный Выбор
 spellbook-semi-random-desc =
-    Get 12 WizCoins worth of random spells. You are guaranteed to get at least some mobility and lethal spells though. There's no going back.
-    Not recommended for newer wizards.
+    Получите случайные заклинания на 12 Визкоинов. Вам гарантировано хотя бы немного мобильности и смертоносных заклинаний. Пути назад нет.
+    Не рекомендуется для начинающих волшебников.
 
-spellbook-event-dimension-shift-name = Dimension Shift
+spellbook-event-dimension-shift-name = Сдвиг Измерения
 spellbook-event-dimension-shift-desc =
-    Shift dimensions of the target station, making space atmosphere safe for humanoid beings but still non-breathable. Useful if you are afraid of space, but this also prevents crew from dying to it as well.
-    This spell goes into effect immediately the moment you buy it.
-    Cannot be refunded.
-spellbook-event-global-tile-toggle-name = Global Tile Movement
-spellbook-event-global-tile-toggle-description = The station will not like this.
-spellbook-apprentice-name = Contract of Apprenticeship
+    Сдвигает измерения целевой станции, делая космическую атмосферу безопасной для гуманоидных существ, но все еще непригодной для дыхания. Полезно, если вы боитесь космоса, но это также не позволяет экипажу умирать от него.
+    Это заклинание вступает в силу немедленно в момент его покупки.
+    Не подлежит возврату.
+
+spellbook-event-global-tile-toggle-name = Глобальное Перемещение Плиток
+spellbook-event-global-tile-toggle-description = Станции это не понравится.
+
+spellbook-apprentice-name = Контракт на Ученичество
 spellbook-apprentice-desc =
-    A magical contract binding an apprentice wizard to your service, using it will summon them to your side.
-    Can only be purchased once.
+    Магический контракт, связывающий ученика-волшебника с вашей службой, использование его призовет его на вашу сторону.
+    Можно приобрести только один раз.
 
-    You can choose between 8 set of spells for your apprentice to learn:
-    Destruction: Fireball and Mutate.
-    Ethereal: Ethereal Jaunt and Teleport.
-    Summoning: Lesser Summon Bees and Summon Simians.
-    Gunslinger: Lesser Summon Guns, Smoke and Blink.
-    Arcane: Arcane Barrage, Charge and Instant Summons.
-    Sanguine: Scream For Me, Exsanguinating Strike and Instant Summons.
-    Robeless: Mind Swap, Force Wall and Knock.
-    Chaos: 6 WizCoins worth of random spells, except for Bind Soul and Soul Tap.
+    Вы можете выбрать один из 8 наборов заклинаний для обучения вашего ученика:
+    Разрушение: Огненный Шар и Мутация.
+    Эфирный: Эфирный Прыжок и Телепортация.
+    Призыв: Малый Призыв Пчел и Призыв Обезьян.
+    Стрелок: Малый Призыв Оружия, Дым и Телепортация.
+    Магический: Магический Обстрел, Рывок и Мгновенный Призыв.
+    Кровавый: Закричи на Меня, Обескровливающий Удар и Мгновенный Призыв.
+    Без Робы: Обмен Разумом, Силовая Стена и Стук.
+    Хаос: Случайные заклинания на 6 Визкоинов, кроме Связать Душу и Высасывание Души.
 
-spellbook-magical-lamp-name = Magical Lamp
+spellbook-magical-lamp-name = Волшебная Лампа
 spellbook-magical-lamp-desc =
-    A magical golden lamp, capable of binding a personal guardian to your body. The guardian will transfer some amount of damage to you.
-    It would be wise to avoid buying these with anything capable of causing you to swap bodies with others.
-    After hosting guardian you won't be able to change your species in wizard magic mirror.
-    Can only be purchased once.
-    Cannot be refunded.
+    Волшебная золотая лампа, способная привязать личного хранителя к вашему телу. Хранитель будет передавать вам часть урона.
+    Было бы разумно избегать покупки этого с чем-либо, способным заставить вас поменяться телами с другими.
+    После размещения хранителя вы не сможете изменить свой вид в волшебном зеркале волшебника.
+    Можно приобрести только один раз.
+    Не подлежит возврату.

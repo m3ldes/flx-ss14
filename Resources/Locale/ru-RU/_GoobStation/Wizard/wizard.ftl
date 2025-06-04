@@ -4,38 +4,38 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-roles-antag-wizard-name = Wizard
-roles-antag-wizard-description = Cause havoc and destruction to the station.
+roles-antag-wizard-name = Волшебник
+roles-antag-wizard-description = Сеять хаос и разрушения на станции.
 
-roles-antag-apprentice-name = Apprentice
-roles-antag-apprentice-description = Aid the wizard who has summoned you and keep them alive.
+roles-antag-apprentice-name = Ученик
+roles-antag-apprentice-description = Помогать призвавшему вас волшебнику и беречь его жизнь.
 
-wizard-roundend-name = wizard
-apprentice-roundend-name = apprentice
+wizard-roundend-name = волшебник
+apprentice-roundend-name = ученик
 
-roles-wizard-name = Wizard
-roles-wizard-objective = Cause havoc and destruction to the station.
+roles-wizard-name = Волшебник
+roles-wizard-objective = Сеять хаос и разрушения на станции.
 
-dynamic-gamerule-wizard-title = [color=cyan]Wizard[/color]
+dynamic-gamerule-wizard-title = [color=cyan]Волшебник[/color]
 
-objective-issuer-wizard-federation = [color=cyan]Space Wizard Federation[/color]
+objective-issuer-wizard-federation = [color=cyan]Федерация Космических Волшебников[/color]
 
 wizard-role-greeting =
-    You are a powerful space wizard. Your goal is to cause as much chaos as possible on {$station}, and survive. Space Wizard Federation provided you with magical wizard grimoire which you can use to learn devastating spells.
+    Вы могущественный космический волшебник. Ваша цель - сеять как можно больше хаоса на {$station} и выжить. Федерация Космических Волшебников предоставила вам магический гримуар, который вы можете использовать для изучения разрушительных заклинаний.
 
-wizard-role-briefing = You are a space wizard. Survive and wreak havoc on the simpletons.
-apprentice-role-briefing = You are a space wizard apprentice. Keep whoever summoned you alive.
+wizard-role-briefing = Вы - космический волшебник. Выживите и сейте хаос среди простаков.
+apprentice-role-briefing = Вы - ученик космического волшебника. Берегите жизнь того, кто вас призвал.
 
-admin-verb-make-wizard = Make the target into a wizard.
-admin-verb-text-make-wizard = Make Wizard
+admin-verb-make-wizard = Превратить цель в волшебника.
+admin-verb-text-make-wizard = Сделать Волшебником
 
-wizard-title = Wizard
-wizard-description = A powerful space wizard is visiting the station. Embrace the chaos.
+wizard-title = Волшебник
+wizard-description = Могущественный космический волшебник посетил станцию. Примите хаос.
 
 lich-greeting =
-    With a hideous feeling of emptiness you watch in horrified fascination as skin sloughs off bone! Blood boils, nerves disintegrate, eyes boil in their sockets! As your organs crumble to dust in your fleshless chest you come to terms with your choice.
-    You're a lich.
+    С ужасающим чувством пустоты вы с ужасом наблюдаете, как кожа слезает с костей! Кровь кипит, нервы распадаются, глаза выкипают в глазницах! Когда ваши органы рассыпаются в пыль в вашей безжизненной груди, вы приходите к согласию со своим выбором.
+    Вы - лич.
 
-objective-condition-wizard-alive-title = Ensure wizard {$targetName} stays alive.
+objective-condition-wizard-alive-title = Обеспечить выживание волшебника {$targetName}.
 
-stamp-component-stamped-name-wizard = Wizard
+stamp-component-stamped-name-wizard = Волшебник
