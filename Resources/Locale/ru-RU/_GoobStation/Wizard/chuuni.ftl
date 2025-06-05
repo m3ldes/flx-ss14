@@ -4,27 +4,27 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-chuuni-eyepatch-backstory-1 = [color=hotpink]This eyepatch is a seal that contains the power of the demon king. If I remove it, I will unleash a cataclysmic destruction upon the world.[/color]
-chuuni-eyepatch-backstory-2 = [color=hotpink]This eyepatch is a gift from the angel of light. It allows me to see the true nature of things and protect the innocent from harm.[/color]
-chuuni-eyepatch-backstory-3 = [color=hotpink]This eyepatch is a mark of my contract with the dragon god. It grants me access to his ancient wisdom and fiery breath.[/color]
-chuuni-eyepatch-backstory-4 = [color=hotpink]This eyepatch is a symbol of my sacrifice for the sake of love. It hides the scar that I received from saving my beloved from a fatal attack.[color]
+chuuni-eyepatch-backstory-1 = [color=hotpink]Эта повязка - печать, сдерживающая силу короля демонов. Если я сниму её, я обрушу катастрофическое разрушение на мир.[/color]
+chuuni-eyepatch-backstory-2 = [color=hotpink]Эта повязка - дар от ангела света. Она позволяет мне видеть истинную природу вещей и защищать невинных от зла.[/color]
+chuuni-eyepatch-backstory-3 = [color=hotpink]Эта повязка - знак моего контракта с богом-драконом. Она дарует мне доступ к его древней мудрости и огненному дыханию.[/color]
+chuuni-eyepatch-backstory-4 = [color=hotpink]Эта повязка - символ моей жертвы ради любви. Она скрывает шрам, который я получил, спасая свою возлюбленную от смертельной атаки.[/color]
 
-chuuni-invocation-unset = This is embarrassing... I can't remember the words... um... maybe if I just wave my hand like this... no, that's not wor- Ah! There it goes!
-chuuni-invocation-holy = By the grace of the holy one, I summon the light of salvation. Let my allies rejoice. O, Heaven! Bless them!
-chuuni-invocation-psychic = By the secret of the hidden one, I reveal the truth of creation. Let my mind expand. O, Mystery! Enlighten me!
-chuuni-invocation-mime = O, Silence! Embrace my soul and amplify my gesture. Let me create the illusion and manipulate the perception!
-chuuni-invocation-restoration = I invoke the name of the goddess of mercy, hear my plea and grant your blessing to this soul! Divine Grace!
-chuuni-invocation-evocation = Behold, the ultimate power of the Dark Flame Master! I call upon the ancient forces of chaos and destruction to unleash their wrath upon my enemies!
-chuuni-invocation-transmutation = I invoke the law of equivalent exchange, the balance of the cosmos. As I offer this sacrifice, I demand a new creation. Reveal, the mystery of transmutation!
-chuuni-invocation-translocation = By the power of the spatial rifts, I bend the fabric of reality and move across the dimensions! Let nothing stand in my way as I travel to my destination!
-chuuni-invocation-conjuration = With the eye of fate, I see through the threads of destiny. Nothing can hide from me. Witness me, witness the miracle of manifestation!
-chuuni-invocation-necromancy = I am the Lord of the Dead, the Master of Bones, the Ruler of Shadows. I command the legions of the damned to rise from their graves and serve me!
-chuuni-invocation-forbidden = I renounce the laws of this world and embrace the chaos of the old gods! Let the forbidden power flow through me and destroy everything in its path!
-chuuni-invocation-sanguine = I cover my eye with an eyepatch to seal my true power, but now I will unleash it upon you. I feast on the life force of my prey and grow stronger with every drop!
-chuuni-invocation-chuuni = By the decree of the dark lord, I invoke the curse of the chuuni. Let all my spells be tainted by the power of delusion. O, Reality! Bend to my will!
+chuuni-invocation-unset = Какое унижение... Я не могу вспомнить слова... хм... может, если я просто взмахну рукой вот так... нет, не раб- О! Вот оно!
+chuuni-invocation-holy = Силой святого я призываю свет спасения. Да возрадуются мои союзники. О, Небеса! Благословите их!
+chuuni-invocation-psychic = Тайной сокрытого я открываю правду творения. Да расширится мой разум. О, Тайна! Просвети меня!
+chuuni-invocation-mime = О, Тишина! Прими мою душу и усиль мой жест. Дайте мне создать иллюзию и манипулировать восприятием!
+chuuni-invocation-restoration = Я взываю к имени богини милосердия, услышь мою мольбу и даруй свое благословение этой душе! Божественная Благодать!
+chuuni-invocation-evocation = Узрите, величайшая сила Повелителя Темного Пламени! Я призываю древние силы хаоса и разрушения, чтобы обрушить их гнев на моих врагов!
+chuuni-invocation-transmutation = Я взываю к закону равноценного обмена, балансу космоса. Предлагая эту жертву, я требую новое творение. Откройся, тайна трансмутации!
+chuuni-invocation-translocation = Силой пространственных разломов я искривляю ткань реальности и перемещаюсь сквозь измерения! Пусть ничто не встанет на моем пути, когда я направляюсь к своей цели!
+chuuni-invocation-conjuration = Глазом судьбы я вижу сквозь нити предназначения. Ничто не может скрыться от меня. Узрите меня, узрите чудо проявления!
+chuuni-invocation-necromancy = Я - Повелитель Мертвых, Хозяин Костей, Владыка Теней. Я повелеваю легионам проклятых восстать из своих могил и служить мне!
+chuuni-invocation-forbidden = Я отрекаюсь от законов этого мира и принимаю хаос древних богов! Пусть запретная сила течет сквозь меня и уничтожает все на своем пути!
+chuuni-invocation-sanguine = Я закрываю глаз повязкой, чтобы запечатать свою истинную силу, но теперь я обрушу её на вас. Я питаюсь жизненной силой своей жертвы и становлюсь сильнее с каждой каплей!
+chuuni-invocation-chuuni = По указу темного владыки я призываю проклятие чуни. Пусть все мои заклинания будут запятнаны силой заблуждения. О, Реальность! Подчинись моей воле!
 
 chat-manager-entity-say-wrap-message-chuuni = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}: [font={$fontType} size={$fontSize}]"[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/font]
 chat-manager-entity-say-bold-wrap-message-chuuni = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}: [font={$fontType} size={$fontSize}]"[BubbleContent][color=hotpink][bold]{$message}[/bold][/color][/BubbleContent]"[/font]
 
-chat-manager-entity-whisper-wrap-message-chuuni = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message-chuuni = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] whispers: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-wrap-message-chuuni = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] шепчет: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message-chuuni = [font size=11][italic][BubbleHeader]Кто-то[/BubbleHeader] шепчет: "[BubbleContent][color=hotpink]{$message}[/color][/BubbleContent]"[/italic][/font]

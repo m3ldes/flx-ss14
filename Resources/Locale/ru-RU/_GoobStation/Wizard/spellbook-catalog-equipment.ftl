@@ -5,89 +5,89 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-spellbook-scrying-orb-name = Scrying Orb
+spellbook-scrying-orb-name = Сфера Ясновидения
 spellbook-scrying-orb-desc =
-    An incandescent orb of crackling energy, using it will allow you to ghost while alive, allowing you to spy upon the station with ease. In addition, holding it in your hand or in your pocket will grant you x-ray vision.
+    Сияющая сфера потрескивающей энергии, использование которой позволит вам становиться призраком, будучи живым, что позволит вам с легкостью шпионить за станцией. Кроме того, держа ее в руке или в кармане, вы получите рентгеновское зрение.
 
-spellbook-spellblade-name = Spellblade
+spellbook-spellblade-name = Клинок Заклинаний
 spellbook-spellblade-desc =
-    A magical sword that can be enchanted by using it in hand to have a unique on-hit effect.
+    Магический меч, который можно зачаровать, используя его в руке, чтобы получить уникальный эффект при попадании.
 
-    Lighting: arcs electricity between nearby targets, stunning and damaging them.
-    Fire: ignites nearby targets on hit, and makes the wielder immune to fire.
-    Bluespace: allows you to teleport a long distance, knocking down targets in a small radius around teleport location.
-    Forceshield: on hit, makes you stun immune for 5 seconds and reduces brute and heat damage by half.
-    Spacetime: will slice faster but weaker and will curse the target, slashing them a few seconds after they have not been swung at for each hit.
+    Молния: создает электрические дуги между близлежащими целями, оглушая и нанося им урон.
+    Огонь: поджигает близлежащие цели при попадании и делает владельца невосприимчивым к огню.
+    Синий космос: позволяет телепортироваться на большое расстояние, сбивая с ног цели в небольшом радиусе вокруг места телепортации.
+    Силовое поле: при попадании делает вас невосприимчивым к оглушению на 5 секунд и уменьшает грубый урон и урон от жары вдвое.
+    Пространство-время: будет рубить быстрее, но слабее, и проклянет цель, нанося удары через несколько секунд после того, как по ней не наносили удары, за каждое попадание.
 
-spellbook-everfull-mug-name = Everfull Mug
+spellbook-everfull-mug-name = Вечно Полная Кружка
 spellbook-everfull-mug-desc =
-    A magical mug that can be filled with omnizine at will. Great source of healing.
+    Магическая кружка, которую можно по желанию наполнить омнизином. Отличный источник исцеления.
 
-spellbook-cryo-katana-name = Cryo Katana
+spellbook-cryo-katana-name = Крио-Катана
 spellbook-cryo-katana-desc =
-    Modified Spider Clan energy katana, imbued with frost magic. Freezes the targets on hit, slowing them down. Able to dash a short distance, slicing anyone on your path. Can't dash while lying down.
+    Модифицированная энергетическая катана Клана Паука, пропитанная морозной магией. Замораживает цели при попадании, замедляя их. Способен совершить рывок на короткое расстояние, разрезая всех на своем пути. Нельзя совершить рывок, лежа.
 
-spellbook-skates-name = Wizard Skates
+spellbook-skates-name = Волшебные Ролики
 spellbook-skates-desc =
-    A pair of roller skates that greatly increase your movement speed.
-    These skates are imbued with collision protection magic so you don't have to worry about hitting obstacles.
+    Пара роликовых коньков, которые значительно увеличивают вашу скорость передвижения.
+    Эти коньки наделены магией защиты от столкновений, поэтому вам не нужно беспокоиться о столкновении с препятствиями.
 
-spellbook-hardsuit-name = Mastercrafted Armor Set
+spellbook-hardsuit-name = Комплект Брони Мастерской Работы
 spellbook-hardsuit-desc =
-    An artefact suit of armor that allows you to cast spells while providing more protection against attacks and the void of space.
-    Cannot be refunded.
+    Артефактный комплект брони, который позволяет вам применять заклинания, обеспечивая при этом большую защиту от атак и пустоты космоса.
+    Не подлежит возврату.
 
-spellbook-paper-robe-name = Papier-Mâché Robes
+spellbook-paper-robe-name = Доспехи из Папье-Маше
 spellbook-paper-robe-desc =
-    Special wizard robes that allow the user to summon angry stick minions to aid them in battle
+    Особые волшебные мантии, которые позволяют пользователю призывать злых миньонов-палочек, чтобы помочь им в битве.
 
-spellbook-high-freq-name = High Frequency Blade
+spellbook-high-freq-name = Высокочастотный Клинок
 spellbook-high-freq-desc =
-    An incredibly swift enchanted blade resonating at a frequency high enough to be able to slice through anything.
-    Deals triple damage on light attack. Reflects lasers and bullets. Easily delimbs. Blocks thrown projectiles and bolas.
+    Невероятно быстрый зачарованный клинок, резонирующий на частоте, достаточно высокой, чтобы прорезать что угодно.
+    Наносит тройной урон при легкой атаке. Отражает лазеры и пули. Легко расчленяет. Блокирует брошенные снаряды и болы.
 
-spellbook-sm-halberd-name = Supermatter Halberd
+spellbook-sm-halberd-name = Суперматериевая Алебарда
 spellbook-sm-halberd-desc =
-    Powerful two-handed halberd, used by Oblivion Enforcers, able to knockdown targets on light attack as well as easily ash walls, windows, doors and fallen enemies.
-    Purchasing this allows you to get magical Oblivion Enforcer equipment for free!
+    Мощная двуручная алебарда, используемая Силовиками Забвения, способная сбивать цели с ног легкой атакой, а также легко превращать в пепел стены, окна, двери и павших врагов.
+    Покупка этого позволяет вам бесплатно получить магическое снаряжение Силовика Забвения!
 
-spellbook-staff-healing-name = Staff of Healing
+spellbook-staff-healing-name = Посох Исцеления
 spellbook-staff-healing-desc =
-    An altruistic staff that can heal the lame and raise the dead.
-    Effects are reversed on the undead, the staff would instantly kill them instead.
-    Automatically recharges once every 8 seconds.
+    Альтруистичный посох, который может исцелять хромых и воскрешать мертвых.
+    Эффекты обратные на нежити, посох мгновенно убьет их вместо этого.
+    Автоматически перезаряжается каждые 8 секунд.
 
-spellbook-staff-change-name = Staff of Change
+spellbook-staff-change-name = Посох Перемен
 spellbook-staff-change-desc =
-    An artefact that spits bolts of coruscating energy which cause the target's very form to reshape itself.
-    Automatically recharges once every 8 seconds.
+    Артефакт, который выплевывает снопы сверкающей энергии, которые заставляют саму форму цели изменить себя.
+    Автоматически перезаряжается каждые 8 секунд.
 
-spellbook-staff-chaos-name = Staff of Chaos
+spellbook-staff-chaos-name = Посох Хаоса
 spellbook-staff-chaos-desc =
-    A caprious tool that can fire all sorts of magic without any rhyme or reason. Using it on people you care about is not recommended.
-    Automatically recharges once every 2 seconds.
+    Капризный инструмент, который может стрелять всеми видами магии без какой-либо рифмы или причины. Использовать его на людях, о которых вы заботитесь, не рекомендуется.
+    Автоматически перезаряжается каждые 2 секунды.
 
-spellbook-staff-slipping-name = Staff of Slipping
+spellbook-staff-slipping-name = Посох Скольжения
 spellbook-staff-slipping-desc =
-    A staff that shoots magical bananas. These bananas will either slip or stun the target when hit. Surprisingly reliable!
-    Make sure you don't step on the bananas yourself!
-    Automatically recharges once every 4 seconds.
+    Посох, который стреляет магическими бананами. Эти бананы либо заставят цель поскользнуться, либо оглушат ее при попадании. Удивительно надежный!
+    Убедитесь, что вы сами не наступили на бананы!
+    Автоматически перезаряжается каждые 4 секунды.
 
-spellbook-wand-name = Magic Wand
+spellbook-wand-name = Волшебная Палочка
 spellbook-wand-desc =
-    The iconic wizard's wand. Has 14 different magical firing modes, activate it to change them.
-    Only wizards and their apprentices can change wand firing mode.
-    Can be used on yourself.
-    Wand is more compact compared to staves but doesn't recharge automatically.
+    Культовая волшебная палочка. Имеет 14 различных магических режимов стрельбы, активируйте ее, чтобы изменить их.
+    Только волшебники и их ученики могут изменять режим стрельбы палочки.
+    Можно использовать на себе.
+    Палочка более компактна по сравнению с посохами, но не перезаряжается автоматически.
 
-spellbook-staff-animate-name = Staff of Animation
+spellbook-staff-animate-name = Посох Оживления
 spellbook-staff-animate-desc =
-    An arcane staff capable of infusing eldritch energy on contact which cause inanimate objects to come to life.
-    This magic doesn't affect machines.
-    Objects brought to life using this staff will have silly googly eyes but make no mistake, they are quite dangerous!
+    Тайный посох, способный при контакте вселять потустороннюю энергию, заставляя неодушевленные предметы оживать.
+    Эта магия не влияет на машины.
+    Объекты, оживленные с помощью этого посоха, будут иметь дурацкие выпученные глаза, но не заблуждайтесь, они довольно опасны!
 
-spellbook-hammer-mjollnir-name = Mjollnir
-spellbook-hammer-mjollnir-description = Wield the power of THUNDER in your hands. Send foes flying with a mighty swing or by throwing it right at em!
+spellbook-hammer-mjollnir-name = Мьёльнир
+spellbook-hammer-mjollnir-description = Обладайте силой ГРОМА в своих руках. Заставьте врагов летать могучим взмахом или бросив его прямо в них!
 
-spellbook-hammer-singularity-name = Singularity Hammer
-spellbook-hammer-singularity-description = Ever wonder what it'd be like to be the singularity? Swing this hammer to draw in your surroundings, even works if you miss!
+spellbook-hammer-singularity-name = Молот Сингулярности
+spellbook-hammer-singularity-description = Вы когда-нибудь задумывались, каково это быть сингулярностью? Взмахните этим молотом, чтобы притянуть к себе все вокруг, даже если промахнетесь!

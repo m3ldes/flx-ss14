@@ -1,8 +1,8 @@
-cheat-death-component-examined = [color=red] Something tells you {SUBJECT($target)} has no fear of death. [/color]
-cheat-death-component-remaining-revives = You have {$amount} revive(s) left.
+cheat-death-component-examined = [color=red] Что-то подсказывает вам, что {SUBJECT($target)} не боится смерти. [/color]
+cheat-death-component-remaining-revives = У вас осталось {$amount} воскрешение(я).
 
-action-cheat-death-fail-no-lives = You aren't slipping away this time...
-action-cheat-death-fail-not-dead = You can't cheat death while alive!
+action-cheat-death-fail-no-lives = На этот раз вам не уйти...
+action-cheat-death-fail-not-dead = Нельзя обмануть смерть, будучи живым!
 
-action-cheated-death-dead = {$name} jerks awake. Bones mended, wounds sewn, organs arranged ever so perfectly.
-action-cheated-death-alive = {$name} violently shakes, all manners of wounds disappearing in a flash of flames.
+action-cheated-death-dead = {$name} вздрогнул и проснулся. Кости срослись, раны затянулись, органы расположены идеально.
+action-cheated-death-alive = {$name} яростно потрясло, и все раны исчезли во вспышке пламени.
