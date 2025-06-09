@@ -1,27 +1,20 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
+reagent-name-triclor = триклор
+reagent-desc-triclor = Самовоспроизводится при контакте с кровью и вызывает постоянную рвоту у метаболятора, быстро опустошая его желудок и вызывая другие эффекты. Обладает относительно низкой силой действия и требует больших доз для убийства. Неэффективен в следовых количествах.
 
-reagent-name-triclor = triclor
-reagent-desc-triclor = Replicates itself upon contact with blood, and causes the metabolizer to constantly vomit, quickly emptying their stomachs and more. Has relatively low potency, and needs high doses to kill. Ineffective in trace amounts.
+reagent-name-cyanide = цианид
+reagent-desc-cyanide = Легко изготавливаемое ядовитое вещество с смертельным потенциалом в средних дозах. Однако постоянные затруднения с дыханием быстро выявляют потенциальную жертву.
 
-reagent-name-cyanide = cyanide
-reagent-desc-cyanide = Easy to make toxin, and with deadly potential at average doses. However constant difficulties with breathing will quickly alert any potential victim.
+reagent-name-anacea = анацея
+reagent-desc-anacea = Быстро выводит большинство лекарств из кровотока, делая его незаменимым ингредиентом любого яда. Сильные противоядия значительно замедляют этот процесс.
 
-reagent-name-anacea = anacea
-reagent-desc-anacea = Quickly flushes most medicines from bloodstream, making it an invaluable ingredient of any poison mix. Strong anti-poison medicines can vastly slow down that process.
+reagent-name-pendetide = пендитид
+reagent-desc-pendetide = В основном нейтральный, усиливает любой существующий радиационный урон. Также выводит лекарства из кровотока, затрудняя исцеление.
 
-reagent-name-pendetide = pendetide
-reagent-desc-pendetide = While mostly neutral, it amplifies any existing radiation damage. Additionally flushes medicines from bloodstream, making healing difficult.
+reagent-name-aluite = алюит
+reagent-desc-aluite = Неактивная молекула, которая при низких температурах связывается с другими химическими веществами для транспортировки и повышения их эффективности. Взрывается в кровотоке, а передозировка вызывает разрывы органов.
 
-reagent-name-aluite = aluite
-reagent-desc-aluite = Non-reactive molecule that binds with other chemicals at low temperatures to transport them and boost their efficiency. Bursts when in bloodstream, with overdoses causing organ ruptures.
+reagent-name-sarin = сарин
+reagent-desc-sarin = Жестокий нейротоксин, вызывающий сильные ожоги при контакте с кожей. Ядовит при вдыхании и вызывает паралич.
 
-reagent-name-sarin = sarin
-reagent-desc-sarin = A brutal neurotoxin that creates nasty caustic burns on contact with the skin. Poisonous when breathed in, and causes paralysis.
-
-reagent-name-nevcottapowder = nevcotta powder
-reagent-desc-nevcottapowder = A highly toxic powder created from grinding the bark of the nevcotta tree. Used in the creation of a classified chemical.
+reagent-name-nevcottapowder = порошок невцотты
+reagent-desc-nevcottapowder = Высоко токсичный порошок, получаемый путем измельчения коры дерева невцотта. Используется при создании секретного химического вещества.

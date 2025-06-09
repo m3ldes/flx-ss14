@@ -4,19 +4,19 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-data-siphon-activated = RESOURCE SIPHON HAS BEEN ACTIVATED. Please ensure it's operating at full capacity, meaning prevention of external damage and power loss.
-data-siphon-activated-announcement = Attention! Data theft signal detected! Traced source position is {$pos}! Secure our assets no matter what!
+data-siphon-activated = РЕСУРСНЫЙ СИФОН АКТИВИРОВАН. Пожалуйста, убедитесь, что он работает на полную мощность, что подразумевает предотвращение внешних повреждений и потери энергии.
+data-siphon-activated-announcement = Внимание! Обнаружен сигнал кражи данных! Источник отслежен до {$pos}! Обеспечьте безопасность наших активов любой ценой!
 
-pirate-siphon-deactivated-full = RESOURCE CAPACITY FULL. Unable to siphon any more resources. Mechanism has been stopped. Thank you for using Donk. Co. branded RS!
-pirate-siphon-deactivated-broken = CRITICAL DAMAGE THRESHOLD REACHED. Forced resource disposal imminent, please step aside from the emergency disposal mechanism.
-pirate-siphon-deactivated-announcement = Data theft signal source has been lost! Please ensure station systems are operating in normal mode. And do not let any more such signals show up on our radars!
+pirate-siphon-deactivated-full = РЕСУРСНЫЙ БАЛАНС ЗАПОЛНЕН. Невозможно выкачать больше ресурсов. Механизм остановлен. Благодарим за использование RS от Donk. Co.!
+pirate-siphon-deactivated-broken = ДОСТИГНУТ КРИТИЧЕСКИЙ ПОРОГ ПОВРЕЖДЕНИЙ. Неизбежна принудительная утилизация ресурсов, пожалуйста, отойдите от механизма аварийной утилизации.
+pirate-siphon-deactivated-announcement = Сигнал источника кражи данных потерян! Пожалуйста, убедитесь, что системы станции работают в нормальном режиме. И не допускайте появления больше таких сигналов на наших радарах!
 
-pirate-siphon-examine = The siphon has [color=yellow]{$num}[/color] / [color=yellow]{$max_num} spesos[/color] stored.
+pirate-siphon-examine = Сифон хранит [color=yellow]{$num}[/color] / [color=yellow]{$max_num} спесо[/color].
 
-pirate-siphon-activate-1 = SHUTTLE WILL BE ANCHORED! Confirm action.
-pirate-siphon-activate-2 = THE ENTIRE SECTOR WILL BE ALERTED!! Confirm action.
+pirate-siphon-activate-1 = ШАТТЛ БУДЕТ ЗАЯКОРЕН! Подтвердите действие.
+pirate-siphon-activate-2 = ВЕСЬ СЕКТОР БУДЕТ ПРЕДУПРЕЖДЕН!! Подтвердите действие.
 
-pirate-siphon-nosignal = No signals detected.
-pirate-siphon-weaksignal = Weak signal found. Approach signal source.
+pirate-siphon-nosignal = Сигналы не обнаружены.
+pirate-siphon-weaksignal = Обнаружен слабый сигнал. Приблизьтесь к источнику сигнала.
 
-console-block-something = Something is stopping the console from working properly.
+console-block-something = Что-то мешает консоли нормально работать.

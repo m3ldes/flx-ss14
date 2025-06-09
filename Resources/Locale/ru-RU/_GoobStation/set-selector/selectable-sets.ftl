@@ -109,102 +109,101 @@ selectable-set-syndicate-carp-description =
 
 # Blueshield
 
-selectable-set-blueshield-shield-name = blueshield set
+selectable-set-blueshield-shield-name = комплект "Синий щит"
 selectable-set-blueshield-shield-description =
-    The iconic namesake of these soldiers.
-    Includes: The greatshield, and the DT-4 Atrocity customized stun baton.
+    Знаменитый комплект, давший название этим солдатам.
+    Включает в себя: Большой щит и DT-4 "Зверство" - модернизированный электрошокер.
 
-selectable-set-blueshield-revolver-name = revolver set
+selectable-set-blueshield-revolver-name = комплект "Револьвер"
 selectable-set-blueshield-revolver-description =
-    Running out of ammo is the worst thing that could happen in a firefight.
-    Includes: The EG-4 energy revolver, capable of firing bolts using
-    recharging speedloaders, both lethal and not, and a shoulder holster.
+    Хуже всего в перестрелке - остаться без патронов.
+    Включает в себя: Энергетический револьвер EG-4, способный стрелять болтами с использованием
+    перезаряжающихся спидлоадеров, как летальных, так и нет, и наплечную кобуру.
 
-selectable-set-blueshield-cqc-name = close quarters combat set
+selectable-set-blueshield-cqc-name = комплект для ближнего боя
 selectable-set-blueshield-cqc-description =
-    Sometimes you need to get your hands dirty.
-    Includes: A book capable of teaching the user
-    advanced close-quarters-combat.
+    Иногда нужно испачкать руки.
+    Включает в себя: Книгу, способную обучить пользователя
+    продвинутому рукопашному бою.
 
-selectable-set-blueshield-chester-name = chester set
+selectable-set-blueshield-chester-name = комплект "Честер"
 selectable-set-blueshield-chester-description =
-    Ready to go hunting?
-    Includes: 8 Gauge shotgun, the Chester. Spare ammo,
-    Alternate ammo, Spare magazines.
+    Готовы отправиться на охоту?
+    Включает в себя: Ружьё 8-го калибра, "Честер". Запасные патроны,
+    альтернативные патроны, запасные магазины.
 
-selectable-set-blueshield-syringe-name = medical set
+selectable-set-blueshield-syringe-name = медицинский комплект
 selectable-set-blueshield-syringe-description =
-    Perfect for healing allies or poisioning foes in a pinch.
-    Includes: A combat injector, and several vials of medicine.
+    Идеально подходит для лечения союзников или отравления врагов в крайнем случае.
+    Включает в себя: Боевой инъектор и несколько флаконов с лекарствами.
 
-# Blueshield hardsuits
+# Хардсьюты "Синего щита"
 
-selectable-set-blueshield-hardsuit-light-name = light hardsuit
+selectable-set-blueshield-hardsuit-light-name = лёгкий хардсьют
 selectable-set-blueshield-hardsuit-light-description =
-    A lighter hardsuit, allowing for more speed at the cost of protection.
+    Более лёгкий хардсьют, обеспечивающий большую скорость, но меньшую защиту.
 
-selectable-set-blueshield-hardsuit-heavy-name = heavy hardsuit
+selectable-set-blueshield-hardsuit-heavy-name = тяжёлый хардсьют
 selectable-set-blueshield-hardsuit-heavy-description =
-    A heavier hardsuit, allowing for more armor at the cost of speed.
+    Более тяжёлый хардсьют, обеспечивающий большую броню, но меньшую скорость.
 
-selectable-set-blueshield-modsuit-name = modsuit
+selectable-set-blueshield-modsuit-name = модсьют
 selectable-set-blueshield-modsuit-description =
-    A modsuit, allowing for more customisation, at the cost of requiring power.
+    Модсьют, позволяющий больше настраивать броню, но требующий энергии.
 
-# ERT
+# ERT (Emergency Response Team - Группа Экстренного Реагирования)
 
-selectable-set-ert-ballistic-name = ballistics set
+selectable-set-ert-ballistic-name = баллистический комплект
 selectable-set-ert-ballistic-description =
-    Reliable, efficient, and compact. The Annies got your back.
-    Includes: .30 caliber rifle, the Annie.
-    Spare magazines for it, and an N1984.
+    Надёжный, эффективный и компактный. "Энни" прикроет вас.
+    Включает в себя: Винтовку 30-го калибра, "Энни".
+    Запасные магазины для неё и N1984.
 
-selectable-set-ert-pulse-name = pulse set
+selectable-set-ert-pulse-name = импульсный комплект
 selectable-set-ert-pulse-description =
-    Running out of ammo is the worst thing that could happen
-    in a firefight.
-    Includes: A modified pulse carbine.
-    EG-4 revolver, pulse cells.
+    Хуже всего в перестрелке - остаться без патронов.
+    Включает в себя: Модифицированный импульсный карабин.
+    Револьвер EG-4, импульсные ячейки.
 
-# Voidsuit selectors
+# Селекторы вакуумных костюмов (Voidsuit selectors)
 
-selectable-set-paramedic-voidsuit-name = Paramedic voidsuit
+selectable-set-paramedic-voidsuit-name = Вакуумный костюм фельдшера
 selectable-set-paramedic-voidsuit-desc =
-    A light voidsuit with minimal protection
-    but a fast movement speed.
+    Лёгкий вакуумный костюм с минимальной защитой,
+    но высокой скоростью передвижения.
 
-selectable-set-paramedic-modsuit-name = Sanitater hardsuit
+selectable-set-paramedic-modsuit-name = Хардсьют санитара
 selectable-set-paramedic-modsuit-desc =
-    A modular hardsuit with heavier plates
-    to shrug off a bullet or two, hopefully.
+    Модульный хардсьют с более тяжёлыми пластинами,
+    чтобы выдержать одну или две пули, надеюсь.
 
-selectable-set-security-voidsuit-name = Security voidsuit
+selectable-set-security-voidsuit-name = Вакуумный костюм службы безопасности
 selectable-set-security-voidsuit-desc =
-    A light voidsuit with an in-built plate carrier to provide
-    moderate protection while remaining mobile for low intensity kinetic ops.
+    Лёгкий вакуумный костюм со встроенным бронежилетом для обеспечения
+    умеренной защиты, сохраняя при этом мобильность для кинетических операций низкой интенсивности.
 
-selectable-set-security-modsuit-name = Security 'soldat' hardsuit
+selectable-set-security-modsuit-name = Хардсьют службы безопасности "Солдат"
 selectable-set-security-modsuit-desc =
-    A modular hardsuit with ceramic inserts to provide more protection
-    than the voidsuit counterpart, but with less mobility.
+    Модульный хардсьют с керамическими вставками для обеспечения большей защиты,
+    чем у вакуумного костюма, но с меньшей мобильностью.
 
-selectable-set-headofsecurity-voidsuit-name = Head of security's voidsuit
+selectable-set-headofsecurity-voidsuit-name = Вакуумный костюм главы службы безопасности
 selectable-set-headofsecurity-voidsuit-desc =
-    A light voidsuit with material cut from non-vital areas to slightly increase
-    the armour value of the vital organs and increase mobility
-    compared to the standard security voidsuit.
+    Лёгкий вакуумный костюм, в котором материал вырезан из второстепенных областей, чтобы немного увеличить
+    значение брони жизненно важных органов и повысить мобильность
+    по сравнению со стандартным вакуумным костюмом службы безопасности.
 
-selectable-set-headofsecurity-modsuit-name = Head of security's 'bulwark' hardsuit
+selectable-set-headofsecurity-modsuit-name = Хардсьют главы службы безопасности "Бастион"
 selectable-set-headofsecurity-modsuit-desc =
-    A modular hardsuit with expensive plastitanium armour for the head of security's use.
-    Comes equipped with a manually operated on-board intravenous stim injector
+    Модульный хардсьют с дорогой пластитановой бронёй для использования главой службы безопасности.
+    Поставляется с ручным бортовым внутривенным инъектором стимуляторов.
 
-selectable-set-engineering-voidsuit-name = Engineering voidsuit
+selectable-set-engineering-voidsuit-name = Вакуумный костюм инженера
 selectable-set-engineering-voidsuit-desc =
-    A light voidsuit for low-intensity repairs around the station
+    Лёгкий вакуумный костюм для ремонта низкой интенсивности вокруг станции
 
-selectable-set-engineering-modsuit-name = Engineering 'sapper' hardsuit
+selectable-set-engineering-modsuit-name = Хардсьют инженера "Сапёр"
 selectable-set-engineering-modsuit-desc =
-    A modular hardsuit with increased blast plating and the large vulnerable visor
-    replaced with external cameras to better protect against explosions
-    and other external threats.
+    Модульный хардсьют с усиленной взрывозащитой и большим уязвимым козырьком,
+    заменённым внешними камерами для лучшей защиты от взрывов
+    и других внешних угроз.

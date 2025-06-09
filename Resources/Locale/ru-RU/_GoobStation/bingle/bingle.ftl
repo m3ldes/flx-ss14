@@ -5,24 +5,24 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 
-bingle-accent-1 = Bingle
-bingle-accent-2 = Bing
-bingle-accent-3 = Bongle
-bingle-accent-4 = Bong
-bingle-accent-5 = BINGLE
+bingle-accent-1 = Бингл
+bingle-accent-2 = Бинг
+bingle-accent-3 = Бонгл
+bingle-accent-4 = Бонг
+bingle-accent-5 = БИНГЛ
 
-chat-speech-verb-name-bingle = Bingle
-bingle-verb-1 = Croaks
-bingle-verb-2 = Mumbles
-bingle-verb-3 = Harks
-bingle-verb-4 = Grumbles
+chat-speech-verb-name-bingle = Бинглить
+bingle-verb-1 = Кряхтит
+bingle-verb-2 = Бормочет
+bingle-verb-3 = Говорит
+bingle-verb-4 = Ворчит
 
-bingle-station-announcement = Bingle Bingle Bingle
+bingle-station-announcement = Бингл Бингл Бингл
 
-ghost-role-information-bingle-name = Bingle
-ghost-role-information-bingle-description = The Pit is love. The Pit is life. The Pit must grow
-ghost-role-information-bingle-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with other Bingles
+ghost-role-information-bingle-name = Бингл
+ghost-role-information-bingle-description = Яма - это любовь. Яма - это жизнь. Яма должна расти.
+ghost-role-information-bingle-rules = Вы [color=red][bold]Командный Антагонист[/bold][/color] вместе с другими Бинглами
 
-bingle-upgrade-success = You feel stronger
-bingle-pit-grow =  The pit grows larger
-bingle-pit-end-of-round = The Binglepit near {$location} grew to level [color=teal]{$level}[/color] and collected [color=teal]{$points}[/color] Bingle points
+bingle-upgrade-success = Вы чувствуете себя сильнее
+bingle-pit-grow = Яма становится больше
+bingle-pit-end-of-round = Бинглояма возле {$location} выросла до уровня [color=teal]{$level}[/color] и собрала [color=teal]{$points}[/color] Бингл-очков

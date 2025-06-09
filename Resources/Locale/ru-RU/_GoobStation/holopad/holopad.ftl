@@ -4,6 +4,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-# Command-adjacent
-holopad-command-ntr = Command - NT Representative
-holopad-command-bso = Command - Blueshield Officer
+# Близко к команде
+holopad-command-ntr = Командование - Представитель NT
+holopad-command-bso = Командование - Офицер "Синий щит"

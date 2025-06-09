@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lavaland-examine-pressure-in-range-buff = This piece of equipment reaches maximum capability between [color=yellow]{$min} - {$max} kPa[/color], allowing it to deal [color=yellow]{$modifier} times[/color] the damage!
-lavaland-examine-pressure-in-range-debuff = This piece of equipment is weakened between [color=yellow]{$min} - {$max} kPa[/color], causing it to deal [color=yellow]{$modifier} times[/color] the damage!
-lavaland-examine-pressure-out-range-buff = This piece of equipment performs better outside [color=yellow]{$min} - {$max} kPa[/color], allowing it to deal [color=yellow]{$modifier} times[/color] the damage!
-lavaland-examine-pressure-out-range-debuff = This piece of equipment is weakened outside [color=yellow]{$min} - {$max} kPa[/color], causing it to deal [color=yellow]{$modifier} times[/color] the damage!
+lavaland-examine-pressure-in-range-buff = Это оборудование достигает максимальной производительности в диапазоне [color=yellow]{$min} - {$max} кПа[/color], что позволяет ему наносить урон в [color=yellow]{$modifier} раз[/color] больше!
+lavaland-examine-pressure-in-range-debuff = Это оборудование ослаблено в диапазоне [color=yellow]{$min} - {$max} кПа[/color], что приводит к нанесению урона в [color=yellow]{$modifier} раз[/color] меньше!
+lavaland-examine-pressure-out-range-buff = Это оборудование работает лучше вне диапазона [color=yellow]{$min} - {$max} кПа[/color], что позволяет ему наносить урон в [color=yellow]{$modifier} раз[/color] больше!
+lavaland-examine-pressure-out-range-debuff = Это оборудование ослаблено вне диапазона [color=yellow]{$min} - {$max} кПа[/color], что приводит к нанесению урона в [color=yellow]{$modifier} раз[/color] меньше!

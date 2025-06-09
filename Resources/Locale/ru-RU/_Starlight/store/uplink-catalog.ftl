@@ -5,9 +5,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-uplink-contortionist-jumpsuit-name = Contortionist's Jumpsuit
-uplink-contortionist-jumpsuit-desc = It looks like an Atmos jumpsuit, but it really is. This jumpsuit allows the agent to slip through the vents. Make sure you don't have a backpack or suit on you, and you need your hands to be empty.
+uplink-contortionist-jumpsuit-name = Комбинезон Акробата
+uplink-contortionist-jumpsuit-desc = Выглядит как комбинезон Атмос, но это и есть он. Этот комбинезон позволяет агенту проскальзывать через вентиляционные шахты. Убедитесь, что на вас нет рюкзака или костюма, и ваши руки должны быть пустыми.
 
 # Goobstation
-uplink-contortionist-jumpsuit-advanced-name = Contortionist's Bluespace Jumpsuit
-uplink-contortionist-jumpsuit-advanced-desc = An Atmos jumpsuit that allows you to crawl through the vents even with gear on, uses bluespace technology.
+uplink-contortionist-jumpsuit-advanced-name = Блюспейс Комбинезон Акробата
+uplink-contortionist-jumpsuit-advanced-desc = Комбинезон Атмос, который позволяет вам ползать по вентиляционным шахтам даже с экипировкой, использует блуспейс технологию.

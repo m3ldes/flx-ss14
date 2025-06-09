@@ -1,16 +1,16 @@
-nullrod-untrained-usage-popup = The usually cold rod flashes with searing heat.
-nullrod-rosary-untrained-usage-popup = The beads constrict, digging painfully into your skin.
-nullrod-holyclaymore-untrained-usage-popup = The blade slips from your grasp, slicing into your arm.
-nullrod-godhand-untrained-usage-popup = The divine energy crackles, causing your arm to spasm uncontrollably.
-nullrod-arrythmicknife-untrained-usage-popup = The blade jerks out of control, inflicting a painful gash on your arm.
-nullrod-monkstaff-untrained-usage-popup = The staff slips from your grasp and hits you in the shoulder.
-nullrod-atheistfedora-untrained-usage-popup = The hat's razor sharp brim begins to hum.
-nullrod-pistol-untrained-usage-popup = The silver grips heat painfully in your hands.
-nullrod-honkmother-untrained-usage-popup = You think you're funny, huh?
-nullrod-uristhand-untrained-usage-popup = Secure trespass.
-nullrod-chainsaw-untrained-usage-popup = Ahh, and look at what we have here — a bloody heathen!
+nullrod-untrained-usage-popup = Обычно холодный стержень вспыхивает обжигающим жаром.
+nullrod-rosary-untrained-usage-popup = Бусины сжимаются, болезненно врезаясь в вашу кожу.
+nullrod-holyclaymore-untrained-usage-popup = Клинок выскальзывает из вашей хватки, рассекая вашу руку.
+nullrod-godhand-untrained-usage-popup = Божественная энергия трещит, заставляя вашу руку неконтролируемо дергаться.
+nullrod-arrythmicknife-untrained-usage-popup = Лезвие выходит из-под контроля, нанося болезненный порез вашей руке.
+nullrod-monkstaff-untrained-usage-popup = Посох выскальзывает из вашей хватки и бьет вас по плечу.
+nullrod-atheistfedora-untrained-usage-popup = Острое лезвие шляпы начинает гудеть.
+nullrod-pistol-untrained-usage-popup = Серебряная рукоять болезненно нагревается в ваших руках.
+nullrod-honkmother-untrained-usage-popup = Думаешь, ты смешной, а?
+nullrod-uristhand-untrained-usage-popup = Безопасное вторжение.
+nullrod-chainsaw-untrained-usage-popup = Ах, и что мы здесь имеем — кровавого язычника!
 
-nullrod-pray-prompt = Pray to Nullrod
-nullrod-pray-start = {$user} begins to whisper to the {$nullrod}...
+nullrod-pray-prompt = Молиться Нульроду
+nullrod-pray-start = {$user} начинает шептать {$nullrod}...
 
-nullrod-spelldenial-popup = THE POWER OF GOD COMPELS YOU!
+nullrod-spelldenial-popup = СИЛОЮ БОЖИЕЙ ЗАКЛИНАЮ ТЕБЯ!

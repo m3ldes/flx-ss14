@@ -5,60 +5,60 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Command
-highlights-captain = Captain, "Cap", Bridge, Command
-highlights-head-of-personnel = Head Of Personnel, "HoP", HoPline, Service, Bridge, Command
-highlights-chief-engineer = Chief Engineer, "CE", Atmos, Atmosia, Atmospherics, Engi, Engineer, Engineering, Bridge, Command
-highlights-chief-medical-officer = Chief Medical Officer, "CMO", Doctor, "Doc", "Medic", Medbay, "Med", Medical, Chemistry, "Chem", Chemlab, Chemical Lab, Bridge, Command
-highlights-head-of-security = Head of Security, "HoS", Security, Shitsec, Shitcurity, Brig, "Sec", "Law", "Perma", Permabrig, Bridge, Command
-highlights-quartermaster = Quartermaster, "QM", "Cargo", Cargonia, Bridge, Command
-highlights-research-director = Research Director, "RD", Scientist, Science, "Sci", "RnD", Robotics, "Robo", Bridge, Command
-highlights-nanotrasen-representative = Nanotrasen Representative, Representative, "NTR"
-highlights-blueshield-officer = Blueshield Officer, Blueshield, "BSO", Bridge, Command
+highlights-captain = Капитан, "Кэп", Мостик, Командный состав
+highlights-head-of-personnel = Глава персонала, "ГП", Горячая линия ГП, Обслуживание, Мостик, Командный состав
+highlights-chief-engineer = Главный инженер, "ГИ", Атмос, Атмосфера, Атмосферика, Инженер, Инженерия, Мостик, Командный состав
+highlights-chief-medical-officer = Главный врач, "ГВ", Врач, "Док", "Медик", Медблок, "Мед", Медицина, Химия, "Хим", Химлаборатория, Химическая лаборатория, Мостик, Командный состав
+highlights-head-of-security = Глава службы безопасности, "ГСБ", Служба безопасности, Дерьмосек, Дерьмохрана, Карцер, "Сек", "Закон", "Перма", Пермакарцер, Мостик, Командный состав
+highlights-quartermaster = Квартирмейстер, "КМ", "Груз", Грузоград, Мостик, Командный состав
+highlights-research-director = Научный руководитель, "НР", Ученый, Наука, "Науч", "НИОКР", Робототехника, "Робот", Мостик, Командный состав
+highlights-nanotrasen-representative = Представитель Nanotrasen, Представитель, "НТР"
+highlights-blueshield-officer = Офицер Blueshield, Blueshield, "BSO", Мостик, Командный состав
 
 # Security
-highlights-detective = Detective, "Det", Security, Shitsec, Shitcurity, Brig, "Sec", "Law"
-highlights-security-cadet = Cadet, Secoff, Officer, Security, Shitsec, Shitcurity, Brig, "Sec", "Law"
-highlights-security-officer = Secoff, Officer, Security, Shitsec, Shitcurity, Brig, "Sec", "Law"
-highlights-warden = Warden, "Ward", Security, Shitsec, Shitcurity, Brig, "Sec", "Law", "Perma", Permabrig
+highlights-detective = Детектив, "Дет", Служба безопасности, Дерьмосек, Дерьмохрана, Карцер, "Сек", "Закон"
+highlights-security-cadet = Кадет, СекОфиц, Офицер, Служба безопасности, Дерьмосек, Дерьмохрана, Карцер, "Сек", "Закон"
+highlights-security-officer = СекОфиц, Офицер, Служба безопасности, Дерьмосек, Дерьмохрана, Карцер, "Сек", "Закон"
+highlights-warden = Смотритель, "Смот", Служба безопасности, Дерьмосек, Дерьмохрана, Карцер, "Сек", "Закон", "Перма", Пермакарцер
 
 # Cargo
-highlights-cargo-technician = Cargo Technician, Cargotech, Cargo Tech, Mailman, Cargo, Cargonia
-highlights-salvage-specialist = Salvage Specialist, Salvager, Salvage, "Salv", Miner, Lavaland, "Cargo", Cargonia
+highlights-cargo-technician = Техник грузового отсека, Грузотех, ГрузТех, Почтальон, Груз, Грузоград
+highlights-salvage-specialist = Специалист по спасательным работам, Спасатель, Спасение, "Спас", Шахтер, Лаваленд, "Груз", Грузоград
 
 # Engineering
-highlights-atmospheric-technician = Atmospheric Technician, Atmostech, Atmos Tech, Atmos, Atmosia, Atmospherics, Engi, Engineer, Engineering
-highlights-station-engineer = Station Engineer, Engi, Engineer, Engineering
-highlights-technical-assistant = Technical Assistant, Tech Assistant, "TA", Engi, Engineer, Engineering
+highlights-atmospheric-technician = Техник по атмосферике, АтмосТех, Атмос Тех, Атмос, Атмосфера, Атмосферика, Инженер, Инженерия
+highlights-station-engineer = Инженер станции, Инженер, Инженерия
+highlights-technical-assistant = Технический помощник, ТехПомощник, "ТП", Инженер, Инженерия
 
 # Medical
-highlights-chemist = Chemist, Chemistry, "Chem", Chemlab, Chemical Lab, Medbay, "Med", Medical
-highlights-medical-doctor = Physician, Doctor, "Doc", "Medic", Medbay, "Med", Medical
-highlights-medical-intern = Intern, Doctor, "Doc", Medbay, "Med", "Medic", Medical
-highlights-paramedic = Paramedic, "Para", Doctor, "Doc", "Medic", Medbay, "Med", Medical
+highlights-chemist = Химик, Химия, "Хим", Химлаборатория, Химическая лаборатория, Медблок, "Мед", Медицина
+highlights-medical-doctor = Врач, Доктор, "Док", "Медик", Медблок, "Мед", Медицина
+highlights-medical-intern = Интерн, Врач, "Док", Медблок, "Мед", "Медик", Медицина
+highlights-paramedic = Парамедик, "Пара", Врач, "Док", "Медик", Медблок, "Мед", Медицина
 
 # Science
-highlights-scientist = Scientist, Science, "Sci", "RnD", Robotics, Roboticist, "Robo"
-highlights-research-assistant = Research Assistant, Scientist, Science, "Sci", "RnD", Robotics, Roboticist, "Robo"
+highlights-scientist = Ученый, Наука, "Науч", "НИОКР", Робототехника, Робототехник, "Робот"
+highlights-research-assistant = Научный сотрудник, Ученый, Наука, "Науч", "НИОКР", Робототехника, Робототехник, "Робот"
 
 # Civilian
-highlights-bartender = Bartender, Barkeep, Barman, "Bar"
-highlights-botanist = Botanist, Botany, Hydroponics
-highlights-chaplain = Chaplain, "Chap", Chapel
-highlights-chef = Chef, "Cook", Kitchen
-highlights-clown = Clown, Jester
-highlights-janitor = Janitor, "Jani"
-highlights-lawyer = Lawyer, Attorney
-highlights-librarian = Librarian, Library
-highlights-mime = Mime
-highlights-assistant = Passenger, Tider, Greytider, Greytide, Tide, Assistant
-highlights-service-worker = Service Worker
+highlights-bartender = Бармен, Барменша, Бар, Барная стойка
+highlights-botanist = Ботаник, Ботаника, Гидропоника
+highlights-chaplain = Капеллан, "Капел", Часовня
+highlights-chef = Шеф-повар, "Повар", Кухня
+highlights-clown = Клоун, Шут
+highlights-janitor = Уборщик, "Убор"
+highlights-lawyer = Юрист, Адвокат
+highlights-librarian = Библиотекарь, Библиотека
+highlights-mime = Мим
+highlights-assistant = Пассажир, Тупой, Серый прилив, Серая волна, Волна, Ассистент
+highlights-service-worker = Работник сферы услуг
 
 # Wildcards
-highlights-boxer = Boxer
-highlights-reporter = Reporter, Journalist
-highlights-zookeeper = Zookeeper
-highlights-psychologist = Psychologist, Psychology
+highlights-boxer = Боксер
+highlights-reporter = Репортер, Журналист
+highlights-zookeeper = Смотритель зоопарка
+highlights-psychologist = Психолог, Психология
 
 # Silicon
-highlights-cyborg = Cyborg, Borg, Silicon, Law 2
-highlights-station-ai = Station AI, "AI", "sAI", Big Brother, Door Wizard, Silicon, Law 2, Law 3
+highlights-cyborg = Киборг, Борг, Кремний, Закон 2
+highlights-station-ai = Станционный ИИ, "ИИ", "

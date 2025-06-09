@@ -1,2 +1,2 @@
-alerts-shadow-cloak-name = Cloak of Shadow
-alerts-shadow-cloak-desc = Your identity is concealed, you also move faster but interact slower.
+alerts-shadow-cloak-name = Плащ Тени
+alerts-shadow-cloak-desc = Ваша личность скрыта, вы также движетесь быстрее, но взаимодействуете медленнее.

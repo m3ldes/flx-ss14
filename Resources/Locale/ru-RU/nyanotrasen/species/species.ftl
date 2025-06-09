@@ -1,2 +1,3 @@
-species-name-felinid = Felinid
-species-name-oni = Oni
+species-name-felinid = фелинид
+species-name-oni = Они
+species-name-shadowkin = Тенерожденные

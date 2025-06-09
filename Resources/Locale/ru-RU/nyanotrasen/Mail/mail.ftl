@@ -15,17 +15,17 @@ mail-penalty-expired = ВРЕМЯ ДОСТАВКИ ВЫШЛО. ЛОГИСТИЧ�
 mail-item-name-unaddressed = письмо
 mail-item-name-addressed = письмо ({$recipient})
 
-command-mailto-description = Queue a parcel to be delivered to an entity. Example usage: `mailto 1234 5678 false false`. The target container's contents will be transferred to an actual mail parcel.
+command-mailto-description = Добавляет посылку в очередь на доставку сущности. Пример использования: `mailto 1234 5678 false false`. Содержимое целевого контейнера будет перенесено в реальную почтовую посылку.
 ### Frontier: add is-large description
-command-mailto-help = Usage: {$command} <recipient entityUid> <container entityUid> [is-fragile: true or false] [is-priority: true or false] [is-large: true or false, optional]
-command-mailto-no-mailreceiver = Target recipient entity does not have a {$requiredComponent}.
-command-mailto-no-blankmail = The {$blankMail} prototype doesn't exist. Something is very wrong. Contact a programmer.
-command-mailto-bogus-mail = {$blankMail} did not have {$requiredMailComponent}. Something is very wrong. Contact a programmer.
-command-mailto-invalid-container = Target container entity does not have a {$requiredContainer} container.
-command-mailto-unable-to-receive = Target recipient entity was unable to be setup for receiving mail. ID may be missing.
-command-mailto-no-teleporter-found = Target recipient entity was unable to be matched to any station's mail teleporter. Recipient may be off-station.
-command-mailto-success = Success! Mail parcel has been queued for next teleport in {$timeToTeleport} seconds.
+command-mailto-help = Использование: {$command} <uid сущности получателя> <uid сущности контейнера> [хрупкая: true или false] [приоритетная: true или false] [большая: true или false, опционально]
+command-mailto-no-mailreceiver = У целевой сущности-получателя отсутствует {$requiredComponent}.
+command-mailto-no-blankmail = Прототип {$blankMail} не существует. Что-то пошло совсем не так. Обратитесь к программисту.
+command-mailto-bogus-mail = У {$blankMail} отсутствует {$requiredMailComponent}. Что-то пошло совсем не так. Обратитесь к программисту.
+command-mailto-invalid-container = У целевой сущности-контейнера отсутствует контейнер {$requiredContainer}.
+command-mailto-unable-to-receive = Не удалось настроить целевую сущность-получателя для получения почты. Возможно, отсутствует ID.
+command-mailto-no-teleporter-found = Не удалось сопоставить целевую сущность-получателя с почтовым телепортером ни одной станции. Возможно, получатель находится вне станции.
+command-mailto-success = Успех! Почтовая посылка добавлена в очередь на следующую телепортацию через {$timeToTeleport} секунд.
 
-command-mailnow = Force all mail teleporters to deliver another round of mail as soon as possible. This will not bypass the undelivered mail limit.
-command-mailnow-help = Usage: {$command}
-command-mailnow-success = Success! All mail teleporters will be delivering another round of mail soon.
+command-mailnow = Немедленно заставляет все почтовые телепортеры доставить еще один раунд почты как можно скорее. Это не обойдет ограничение на недоставленную почту.
+command-mailnow-help = Использование: {$command}
+command-mailnow-success = Успех! Все почтовые телепортеры скоро доставят еще один раунд почты.

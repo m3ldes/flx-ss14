@@ -1,31 +1,31 @@
-selectable-set-hos-smg-name = X-6 "Threadripper"
+selectable-set-hos-smg-name = X-6 "Потрошитель"
 selectable-set-hos-smg-description =
-    An elaborately designed SMG, firing shots of pure phoron.
-    Amazing for laying down suppressive fire.
+    Тщательно разработанный пистолет-пулемёт, стреляющий зарядами чистого форона.
+    Отлично подходит для подавления огнем.
 
-selectable-set-hos-shotgun-name = X-12 "Flamberge"
+selectable-set-hos-shotgun-name = X-12 "Фламберг"
 selectable-set-hos-shotgun-description =
-    An elaborately designed shotgun, firing shots of pure phoron.
-    Built to break down defenses, and it does that job well.
+    Тщательно разработанный дробовик, стреляющий зарядами чистого форона.
+    Создан для прорыва обороны и отлично справляется с этой задачей.
 
-selectable-set-hos-sniper-name = X-18 "Ranought"
+selectable-set-hos-sniper-name = X-18 "Дредноут"
 selectable-set-hos-sniper-description =
-    An elaborately designed sniper rifle, firing shots of pure phoron.
-    You won't want to get hit by this.
+    Тщательно разработанная снайперская винтовка, стреляющая зарядами чистого форона.
+    Вы не захотите, чтобы в вас попали из этого.
 
-selectable-set-hos-rifle-name = X-8 "Station Sweeper"
+selectable-set-hos-rifle-name = X-8 "Зачиститель Станции"
 selectable-set-hos-rifle-description =
-    An elaborately designed rifle, firing shots of pure phoron.
-    Low fire rate, high damage.
+    Тщательно разработанная винтовка, стреляющая зарядами чистого форона.
+    Низкая скорострельность, высокий урон.
 
-selectable-set-hos-sword-name = DT-2 "Justice"
+selectable-set-hos-sword-name = DT-2 "Правосудие"
 selectable-set-hos-sword-description =
-    A sword with numerous combat modes, extremely versatile.
+    Меч с многочисленными боевыми режимами, чрезвычайно универсален.
 
-selectable-set-hos-lawbringer-name = Lawbringer
+selectable-set-hos-lawbringer-name = Законник
 selectable-set-hos-lawbringer-description =
-    An extremely overdesigned pistol with numerous fire modes, extremely versatile.
+    Чрезвычайно переработанный пистолет с многочисленными режимами стрельбы, чрезвычайно универсален.
 
-selectable-set-hos-utility-name = Utility Set
+selectable-set-hos-utility-name = Набор Утилит
 selectable-set-hos-utility-description =
-    Includes numerous utility items including: Advanced thermal goggles, an upgraded hardsuit, and advanced jackboots.
+    Включает в себя многочисленные полезные предметы, в том числе: Улучшенные тепловизионные очки, модернизированный хардсьют и улучшенные ботинки.

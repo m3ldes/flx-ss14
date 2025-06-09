@@ -7,6 +7,10 @@ job-name-hecu = оперативник HECU
 
 # Role timers - Make these alphabetical or I cut you (dont listen to upstream, i copied and pasted this, make it very un-alphabetical :godo:)
 
-JobBlueshieldOfficer = офицер синего щита
-JobNanotrasenRepresentative = представитель НаноТрейзен
-JobHecuOperative = оперативник HECU
+ent-JobBlueshieldOfficer = офицер синего щита
+ent-JobNanotrasenRepresentative = представитель НаноТрейзен
+ent-JobHecuOperative = оперативник HECU
+ent-BlueshieldOfficer =  офицер синего щита
+    .desc = Охрана командования
+ent-NanotrasenRepresentative = представитель NanoTrasen
+    .desc = Проверка командования
