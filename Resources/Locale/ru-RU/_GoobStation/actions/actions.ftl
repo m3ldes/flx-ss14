@@ -6,7 +6,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-world-target-out-of-range = Your target is not on the same map as you. Try FTLing there.
-action-speech-implant-vaporize = That will be all.
-action-speech-implant-stoptime = Prepare for unforeseen consequences.
-action-popup-lay-egg-unable = You can't create offspring anymore...
+world-target-out-of-range = Ваша цель находится не на той же карте, что и вы. Попробуйте переместиться туда с помощью FTL.
+action-speech-implant-vaporize = На этом всё.
+action-speech-implant-stoptime = Приготовьтесь к непредвиденным последствиям.
+action-popup-lay-egg-unable = Вы больше не можете создавать потомство...

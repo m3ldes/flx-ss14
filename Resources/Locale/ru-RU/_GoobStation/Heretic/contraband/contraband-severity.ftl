@@ -1,1 +1,1 @@
-contraband-examine-text-magic = [color=purple]Это магическкая хуйня! Она под запретом![/color]
+contraband-examine-text-magic = [color=purple]Это магическкая штука! Она под запретом![/color]

@@ -3,7 +3,7 @@ heretic-ritual-switch = Выбран {$name}
 heretic-ritual-success = Шалость удалась!
 
 heretic-ritual-fail-items = Ритуал провален. Нужны эти вещи: {$itemlist}
-heretic-ritual-norituals = Вы нихуя не знаете!
+heretic-ritual-norituals = Вы ничего не знаете!
 heretic-ritual-noritual = Вы не выбрали ритуал!
 
 heretic-ritual-basic-sacrifice = Сердцебиение Мансуса

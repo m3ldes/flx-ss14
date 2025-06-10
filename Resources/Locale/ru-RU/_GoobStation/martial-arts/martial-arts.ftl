@@ -1,45 +1,39 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
+cqc-fail-used = {CAPITALIZE(THE($manual))} уже используется.
+cqc-fail-notself = Вы не можете обучать никого с помощью {CAPITALIZE(THE($manual))}.
 
-cqc-fail-used = {CAPITALIZE(THE($manual))} is already used.
-cqc-fail-notself = You can't teach anyone with {CAPITALIZE(THE($manual))}.
+cqc-fail-changeling = Мы перешли за пределы использования этого.
+cqc-fail-knowanother = Вы уже знаете другое боевое искусство.
+cqc-fail-already = Вы уже знаете всё о боевом искусстве.
+cqc-success-unblocked = Ваши навыки ККЦ больше не связаны с кухней.
+cqc-success-learned = Вы изучили ККЦ.
 
-cqc-fail-changeling = We are beyond using this.
-cqc-fail-knowanother = You already know another martial art.
-cqc-fail-already = You already know everything about a Martial art.
-cqc-success-unblocked = Your CQC skills are not bound to kitchen anymore.
-cqc-success-learned = You have learned CQC.
+cqc-manual-used = [color=white]{CAPITALIZE(THE($manual))} кажется уже использовано.[/color]
 
-cqc-manual-used = [color=white]{CAPITALIZE(THE($manual))} looks to be already used.[/color]
+ent-CQCManual = Руководство по ККЦ
+    .desc = Похоже на обычную книгу, но внутри скрыты секреты.
 
-ent-CQCManual = CQC manual
-    .desc = Looks like a usual book, but contains some secrets inside.
+carp-scroll-waiting = Путешествие в тысячу миль начинается с одного шага, и путь мудрости идет медленно, урок за уроком.
+carp-scroll-advance = Вы сделали один шаг ближе к тому, чтобы стать мастером Пути Спящих Карпов.
+carp-scroll-complete = Теперь вы мастер Пути Спящих Карпов.
 
-carp-scroll-waiting = The journey of a thousand miles begins with one step, and the path of wisdom is traveled slowly, one lesson at a time.
-carp-scroll-advance = You have taken one step closer to becoming a master of the Way of the Sleeping Carp.
-carp-scroll-complete = You are now a master of the Way of the Sleeping Carp.
+carp-saying-huah = ХУАХ!
+carp-vaying-hya = ХЯ!
+carp-saying-choo = ЧУ!
+carp-saying-wuo = ВУО!
+carp-saying-kya = КЯ!
+carp-saying-huh = ХУ!
+carp-saying-hiyoh = ХИЙОХ!
+carp-saying-strike = УДАР КАРПА!
+carp-saying-bite = УДАР КАРПА!
 
-carp-saying-huah = HUAH!
-carv-vaying-hya = HYA!
-carp-saying-choo = CHOO!
-carp-saying-wuo = WUO!
-carp-saying-kya = KYA!
-carp-saying-huh = HUH!
-carp-saying-hiyoh = HIYOH!
-carp-saying-strike = CARP STRIKE!
-carp-saying-bite = CARP BITE!
+carp-saying-banzai = БАНЗАИ!!!
+carp-saying-kiya = КИЯЯЯ!
+carp-saying-omae = ОМАЕ ВА МОДЗУ ШИНДЕИРУ!
+carp-saying-see = НЕ ВИДИТЕ МЕНЯ!
+carp-saying-time = МОЕ ВРЕМЯ НАСТАЛО!!
+carp-saying-cowabunga = КАВАБАНГА!
 
-carp-saying-banzai = BANZAIII!
-carp-saying-kiya = KIYAAAA!
-carp-saying-omae = OMAE WA MOU SHINDEIRU!
-carp-saying-see = YOU CAN'T SEE ME!
-carp-saying-time = MY TIME IS NOW!!
-carp-saying-cowabunga = COWABUNGA!
+krav-maga-ready = Ты готов к {$action}
 
-krav-maga-ready = You ready a {$action}
-
-martial-arts-action-sender = You hit {$name} with {$move}
-martial-arts-action-receiver = {$name} hit you with {$move}
+martial-arts-action-sender = Ты ударил {$name} с помощью {$move}
+martial-arts-action-receiver = {$name} ударил тебя с помощью {$move}

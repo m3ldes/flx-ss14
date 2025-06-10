@@ -1,14 +1,14 @@
-possession-fail-changeling = There's no soul to tamper with!
-possession-fail-heretic = The power of the mansus prevents you from possessing them!
-possession-fail-ghoul = There's no mind for you to possess!
-possession-fail-ghost = There's no mind for you to possess!
-possession-fail-temporary = There's no mind for you to possess!
-possession-fail-target-dead = There's no mind for you to possess!
-possession-fail-target-shielded = A pesky shield prevents you from prying at their mind!
-possession-fail-target-already-possessed = Someone else has already taken over this mind...
+possession-fail-changeling = Нет души, с которой можно было бы поиграть!
+possession-fail-heretic = Сила манысу мешает вам овладеть им!
+possession-fail-ghoul = Нет разума, которым можно было бы овладеть!
+possession-fail-ghost = Нет разума, которым можно было бы овладеть!
+possession-fail-temporary = Нет разума, которым можно было бы овладеть!
+possession-fail-target-dead = Нет разума, которым можно было бы овладеть!
+possession-fail-target-shielded = Надежный щит мешает вам проникнуть в их разум!
+possession-fail-target-already-possessed = Кто-то уже захватил этот разум...
 
-possession-popup-others = {$target}'s limbs contort in a strange way, {POSS-ADJ($target)} eyes rolling back in {POSS-ADJ($target)} head.
-possession-popup-self = Your soul is forced out of your body!
-possession-end-popup = {$target} seizes up and falls limp to the ground.
+possession-popup-others = {$target} руки и ноги искажаются странным образом, {POSS-ADJ($target)} глаза закатываются назад в {POSS-ADJ($target)} голове.
+possession-popup-self = Ваша душа вынуждена покинуть ваше тело!
+possession-end-popup = {$target} судорожно дергается и падает безжизненным на землю.
 
-possessed-component-examined = You have {$timeremaining} seconds left in this body.
+possessed-component-examined = У вас осталось {$timeremaining} секунд в этом теле.

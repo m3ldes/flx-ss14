@@ -1,1 +1,1 @@
-changelog-tab-title-GoobChangelog = "FlxLog"
+changelog-tab-title-GoobChangelog = "Flx Журнал изменений"

@@ -1,1 +1,1 @@
-executive-card-success = The card swipes through the devices reader.
+executive-card-success = Карта успешно проходит через считывающее устройство.

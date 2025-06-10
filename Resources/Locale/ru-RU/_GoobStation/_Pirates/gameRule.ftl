@@ -5,23 +5,23 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 antag-pirate-briefing =
-    The station refused to pay for your protection!
+    Станция отказалась платить за вашу защиту!
 
-    You must raid the station for valuables. Once you've gathered enough, sell it on your cargo pallet and insert the credits into the Data Siphon located on your ship.
-    Get as much loot as possible!
+    Вы должны совершить набег на станцию и собрать ценности. Как только вы наберете достаточно, продайте это на вашем грузовом поддоне и вставьте кредиты в Дата-сифон, расположенный на вашем корабле.
+    Добудьте как можно больше добычи!
 
-    By activating the Data Siphon you will start draining the cargo department from their credits.
-    Beware, this will anchor your ship, alert and anger the entire crew, so get ready for a big fight!
+    Активировав Дата-сифон, вы начнете выкачивать кредиты из грузового отдела.
+    Остерегайтесь, это заякорит ваш корабль, встревожит и разозлит весь экипаж, так что приготовьтесь к большой драке!
 
 antag-pirate-briefing-short =
-    You are a pirate.
-    Protect the ship, siphon the credits from the station, and raid it for even more loot!
+    Вы - пират.
+    Защитите корабль, выкачайте кредиты со станции и совершите набег на нее, чтобы получить еще больше добычи!
 
-pirate-roundend-append = The pirate crew plundered the station of it's valuables worth a total of [color=yellow]{$num}[/color] credits!
+pirate-roundend-append = Команда пиратов разграбила станцию, получив ценности на общую сумму [color=yellow]{$num}[/color] кредитов!
 
-pirate-roundend-append-siphon = [color=green]The pirate crew managed to siphon[/color] [color=yellow]{$num}[/color] [color=green]credits from the station![/color]
+pirate-roundend-append-siphon = [color=green]Команде пиратов удалось выкачать[/color] [color=yellow]{$num}[/color] [color=green]кредитов со станции![/color]
 
-pirate-roundend-append-lose = [color=red]The pirate crew lost their data bank![/color]
+pirate-roundend-append-lose = [color=red]Команда пиратов потеряла свой банк данных![/color]
 
 pirate-roundend-list =
-    The pirates were:
+    Пиратами были:

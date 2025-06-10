@@ -4,8 +4,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-blink-component-control-active = blink: [color=green]active[/color]
-blink-component-control-inactive = blink: [color=red]inactive[/color]
+blink-component-control-active = моргание: [color=green]активно[/color]
+blink-component-control-inactive = моргание: [color=red]неактивно[/color]
 
-blink-activated-message = Blink activated.
-blink-deactivated-message = Blink deactivated.
+blink-activated-message = Моргание активировано.
+blink-deactivated-message = Моргание деактивировано.

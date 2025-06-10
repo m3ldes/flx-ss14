@@ -8,8 +8,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-## Species Names
+## Названия видов
 
-species-name-vulpkanin = Vulpkanin
-species-name-harpy = Harpy
-species-name-rodentia = Rodentia
+species-name-vulpkanin = Вулпканин
+species-name-harpy = Гарпия
+species-name-rodentia = Грызун
