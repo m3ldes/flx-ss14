@@ -245,8 +245,7 @@
 - type: entity
   parent: ClothingHeadsetAlt
   id: ClothingHeadsetAltFreelancer
-  name: полноразмерная гарнитура фрилансера
-  description: Модифицированный, модульный интерком, надеваемый на голову. Принимает ключи шифрования.
+  name: freelancer's over-ear headset
   components:
     - type: Headset
     - type: EncryptionKeyHolder
@@ -259,3 +258,20 @@
       sprite: Clothing/Ears/Headsets/freelance.rsi
     - type: Clothing
       sprite: Clothing/Ears/Headsets/freelance.rsi
+
+- type: entity
+  parent: [ClothingHeadsetAlt, BaseMagicalContraband]
+  id: ClothingHeadsetAltWizard
+  name: wizard's over-ear headset
+  components:
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 5
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - EncryptionKeyStationMaster
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/wizard.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/wizard.rsi

@@ -1,9 +1,11 @@
 # SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 CliveOcelot <165305605+Orion-416@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
 # SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot02@gmail.com>
 # SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot20@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
+# SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
 # SPDX-FileCopyrightText: 2025 Orion-416 <cliveocelot@gmail.com>
 # SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
 # SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
@@ -196,7 +198,7 @@
   - ToolboxSyndicateFilled
   - ClothingUniformJumpsuitAtmosSyndie
   - ClothingEyesGlassesOutlawGlasses
-  - EncryptionKeyBinarySyndicate
+  - BinaryImplanter
 
 - type: selectableSet
   id: SyndicateDeswordSet
@@ -315,7 +317,7 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/erevolver.rsi
     state: icon
   content:
-    - ClothingBeltHolsterFilledBlueshield # Pistol, 1+2 lethal speedloaders and 2 disabler speedloaders
+    - ClothingBeltHolsterFilledBlueshield # Pistol, 1+2 lethal speedloaders and 1 disabler speedloader
 
 - type: selectableSet
   id: BSOCQCSet
@@ -335,13 +337,14 @@
     sprite: _Goobstation/Objects/Weapons/Guns/Lever/chester.rsi
     state: base
   content:
-    - MagazineShotgunLeverRifleEmpty
-    - MagazineShotgunLeverRifleEmpty
-    - MagazineBoxShotgunHighCaliber
-    - MagazineBoxShotgunHighCaliberFlash
-    - MagazineBoxShotgunHighCaliberEnsnaring
-    - MagazineBoxShotgunHighCaliberEMP
-    - WeaponLeverChester
+  # Guaranteed items
+  - WeaponLeverChester
+  - MagazineShotgunLeverRifleEmpty
+  - MagazineShotgunLeverRifleEmpty
+  - MagazineBoxShotgunHighCaliberEMP
+  - MagazineBoxShotgunHighCaliberEnsnaring
+#  tables:
+#  - ChesterRandomAmmoTable
 
 - type: selectableSet
   id: BSOSyringeSet
@@ -557,3 +560,25 @@
     state: control
   content:
   - ClothingModsuitCaptainPowerCell
+
+# Research Director RD
+
+- type: selectableSet
+  id: VoidsuitSelectorRDVoidsuit
+  name: selectable-set-research-director-voidsuit-name
+  description: selectable-set-research-director-voidsuit-desc
+  sprite:
+    sprite: Clothing/OuterClothing/Hardsuits/rd.rsi
+    state: icon
+  content:
+  - ClothingOuterHardsuitRd
+
+- type: selectableSet
+  id: VoidsuitSelectorRDHardsuit
+  name: selectable-set-research-director-modsuit-name
+  description: selectable-set-research-director-modsuit-desc
+  sprite:
+    sprite: _Goobstation/Clothing/Back/Modsuits/researchdirector.rsi
+    state: control
+  content:
+  - ClothingModsuitResearchDirectorPowerCell
