@@ -1,4 +1,3 @@
-roles-antag-devil-name = Дьявол
 objective-issuer-devil = Дьявол
 
 roundend-prepend-devil-contracts = Кто-то заключил [color=red]{$number}[/color] успешных контрактов.
