@@ -5,8 +5,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-minerssalve = Minerslavine
-reagent-desc-minerssalve = A powerful mixture of stimulants intended for use by lavaland shaft miners.
+reagent-name-minerssalve = ШахтерскаяМазь
+reagent-desc-minerssalve = Мощная смесь стимуляторов, предназначенная для использования шахтерами лавовых шахт.
 
-reagent-name-luxurium = Luxurium
-reagent-desc-luxurium = An evil concoction devised by the top Nanotrasen scientists which becomes harmful outside of low pressure, reducing the effectiveness of the luxury mining pen when used outside of intended environments.
+reagent-name-luxurium = Луксуриум
+reagent-desc-luxurium = Зловещее варево, разработанное ведущими учеными Nanotrasen, которое становится вредным вне условий низкого давления, снижая эффективность роскошной горнодобывающей ручки при использовании вне предназначенных для этого условий.

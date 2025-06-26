@@ -3,9 +3,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-ui-options-auto-fill-highlights = Auto-fill the highlights with the character's information
-ui-options-highlights-color = Highlighs color:
-ui-options-highlights-color-example = This is an highlighted text!
-ui-options-function-resist-grab = Resist Grab
-ui-options-coalesce-identical-messages = Coalesce identical messages in chat
-ui-options-detailed-examine = Show detailed examine text
+ui-options-auto-fill-highlights = Автоматически заполнять выделения информацией о персонаже
+ui-options-highlights-color = Цвет выделений:
+ui-options-highlights-color-example = Это выделенный текст!
+ui-options-function-resist-grab = Сопротивление захвату
+ui-options-coalesce-identical-messages = Объединять идентичные сообщения в чате
+ui-options-detailed-examine = Показывать подробный текст осмотра

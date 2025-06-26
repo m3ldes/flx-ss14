@@ -1,10 +1,10 @@
-fishing-rod-remove-lure = { $ent } is reeling
-fishing-progress-success = You pull something up from the spot!
-fishing-progress-fail = You missed it...
-fishing-progress-lost-rod = You lost control over the { $ent }!
-fishing-progress-start = You feel something clinging to the fishing lure!
+fishing-rod-remove-lure = { $ent } сматывает удочку
+fishing-progress-success = Вы вытаскиваете что-то из воды!
+fishing-progress-fail = Вы промахнулись...
+fishing-progress-lost-rod = Вы потеряли контроль над { $ent }!
+fishing-progress-start = Вы чувствуете, что что-то зацепилось за приманку!
 
-action-fishing-stop = Reel fishing rod
-action-fishing-stop-desc = Reel your fishing rod to pull an object that it attached to, or stop fishing.
-action-fishing-start = Throw fishing lure
-action-fishing-start-desc = Throw lure from the fishing rod to catch something!
+action-fishing-stop = Смотать удочку
+action-fishing-stop-desc = Смотать удочку, чтобы вытащить предмет, который зацепился, или прекратить рыбалку.
+action-fishing-start = Забросить приманку
+action-fishing-start-desc = Забросить приманку с удочки, чтобы что-нибудь поймать!

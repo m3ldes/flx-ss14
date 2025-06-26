@@ -1,17 +1,17 @@
-automation-filter-examine-empty = [color=red]This filter isn't configured yet.[/color]
-automation-filter-examine-string = This filter is set to '{$name}'
-stack-filter-examine = This filter is set to a minimum of [color=green]{$size}[/color] items in a stack.
-combined-filter-examine = This filter is set to {INDEFINITE($gate)} [color=green]{$gate}[/color] comparison with its inputs.
+automation-filter-examine-empty = [color=red]Этот фильтр еще не настроен.[/color]
+automation-filter-examine-string = Этот фильтр настроен на '{$name}'
+stack-filter-examine = Этот фильтр настроен на минимум [color=green]{$size}[/color] предметов в стопке.
+combined-filter-examine = Этот фильтр настроен на {INDEFINITE($gate)} [color=green]{$gate}[/color] сравнение со своими входами.
 
-label-filter-window-title = Edit Label Filter
-label-filter-placeholder = label to match against
+label-filter-window-title = Редактировать Фильтр Метки
+label-filter-placeholder = метка для сравнения
 
-name-filter-window-title = Edit Name Filter
-name-filter-mode-Contain = Contain
-name-filter-mode-Start = Start with
-name-filter-mode-End = End with
-name-filter-mode-Match = Match exactly
+name-filter-window-title = Редактировать Фильтр Имени
+name-filter-mode-Contain = Содержит
+name-filter-mode-Start = Начинается с
+name-filter-mode-End = Заканчивается на
+name-filter-mode-Match = Точное соответствие
 
-stack-filter-window-title = Edit Stack Filter
-stack-filter-min-stack-size = Min stack size
-stack-filter-stack-chunk-size = Out chunk size
+stack-filter-window-title = Редактировать Фильтр Стопки
+stack-filter-min-stack-size = Мин. размер стопки
+stack-filter-stack-chunk-size = Размер выдаваемого куска

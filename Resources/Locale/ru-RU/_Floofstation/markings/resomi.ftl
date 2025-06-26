@@ -4,21 +4,21 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-marking-ResomiTail = Resomi tail
-marking-ResomiTail-tail = Resomi tail
-marking-ResomiTailFeathers = Tail feathers
-marking-ResomiTailFeathers-tail_feathers = Tail feathers
-marking-ResomiLArmFeathers = Resomi left arm Feathers
-marking-ResomiLArmFeathers-l_hand_feathers = Resomi left arm Feathers
-marking-ResomiLLegFeathers = Resomi left leg Feathers
-marking-ResomiLLegFeathers-l_foot_feathers = Resomi left leg Feathers
-marking-ResomiRArmFeathers = Resomi right arm Feathers
-marking-ResomiRArmFeathers-r_hand_feathers = Resomi right arm Feathers
-marking-ResomiRLegFeathers = Resomi right leg Feathers
-marking-ResomiRLegFeathers-r_foot_feathers = Resomi right leg Feathers
-marking-ResomiFluff = Resomi under fluff
-marking-ResomiFluff-fluff = Resomi under fluff
-marking-ResomiFluffHead = Resomi head fluff
-marking-ResomiFluffHead-fluff_head = Resomi head fluff
-marking-ResomiFluffHeadUp = Resomi head fluff (up)
-marking-ResomiFluffHeadUp-fluff_head_up = Resomi head fluff (up)
+marking-ResomiTail = Хвост Резоми
+marking-ResomiTail-tail = Хвост Резоми
+marking-ResomiTailFeathers = Хвостовые перья
+marking-ResomiTailFeathers-tail_feathers = Хвостовые перья
+marking-ResomiLArmFeathers = Перья на левой руке Резоми
+marking-ResomiLArmFeathers-l_hand_feathers = Перья на левой руке Резоми
+marking-ResomiLLegFeathers = Перья на левой ноге Резоми
+marking-ResomiLLegFeathers-l_foot_feathers = Перья на левой ноге Резоми
+marking-ResomiRArmFeathers = Перья на правой руке Резоми
+marking-ResomiRArmFeathers-r_hand_feathers = Перья на правой руке Резоми
+marking-ResomiRLegFeathers = Перья на правой ноге Резоми
+marking-ResomiRLegFeathers-r_foot_feathers = Перья на правой ноге Резоми
+marking-ResomiFluff = Нижний пух Резоми
+marking-ResomiFluff-fluff = Нижний пух Резоми
+marking-ResomiFluffHead = Пух на голове Резоми
+marking-ResomiFluffHead-fluff_head = Пух на голове Резоми
+marking-ResomiFluffHeadUp = Пух на голове Резоми (верх)
+marking-ResomiFluffHeadUp-fluff_head_up = Пух на голове Резоми (верх)

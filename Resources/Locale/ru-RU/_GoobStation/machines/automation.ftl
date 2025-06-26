@@ -1,76 +1,76 @@
-# Robotic Arm
+# Роботизированная рука
 
-signal-port-name-input-machine = Item: Input Machine
-signal-port-description-input-machine = A machine automation slot to take items out of, instead of taking them from the floor.
+signal-port-name-input-machine = Предмет: Входная машина
+signal-port-description-input-machine = Слот автоматизации машины для взятия предметов, вместо того чтобы брать их с пола.
 
-signal-port-name-output-machine = Item: Output Machine
-signal-port-description-output-machine = A machine automation slot to insert items into, instead of placing them on the floor.
+signal-port-name-output-machine = Предмет: Выходная машина
+signal-port-description-output-machine = Слот автоматизации машины для вставки предметов, вместо того чтобы класть их на пол.
 
-signal-port-name-item-moved = Item Moved
-signal-port-description-item-moved = Signal port that gets pulsed after an item is moved by this arm.
+signal-port-name-item-moved = Предмет перемещён
+signal-port-description-item-moved = Сигнальный порт, который активируется после перемещения предмета этой рукой.
 
-signal-port-name-automation-slot-filter = Item: Filter Slot
-signal-port-description-automation-slot-filter = An automation slot for an automation machine's filter.
+signal-port-name-automation-slot-filter = Предмет: Фильтр
+signal-port-description-automation-slot-filter = Слот автоматизации для фильтра автоматической машины.
 
-# Reagent Grinder
+# Мельница для реагентов
 
-signal-port-name-automation-slot-beaker = Item: Beaker Slot
-signal-port-description-automation-slot-beaker = An automation slot for a liquid-handling machine's beaker.
+signal-port-name-automation-slot-beaker = Предмет: Стакан
+signal-port-description-automation-slot-beaker = Слот автоматизации для стакана жидкостной машины.
 
-signal-port-name-automation-slot-input = Item: Input items
-signal-port-description-automation-slot-input = An automation slot for a machine's input item storage.
+signal-port-name-automation-slot-input = Предмет: Входные предметы
+signal-port-description-automation-slot-input = Слот автоматизации для хранения входных предметов машины.
 
-# Flatpacker
+# Flatpacker (упаковщик)
 
-signal-port-name-automation-slot-board = Item: Board Slot
-signal-port-description-automation-slot-board = An automation slot for a flatpacker's circuitboard.
+signal-port-name-automation-slot-board = Предмет: Плата
+signal-port-description-automation-slot-board = Слот автоматизации для цепной платы flatpacker.
 
-signal-port-name-automation-slot-materials = Item: Material Storage
-signal-port-description-automation-slot-materials = An automation slot for inserting materials into a machine's storage.
+signal-port-name-automation-slot-materials = Предмет: Хранение материалов
+signal-port-description-automation-slot-materials = Слот автоматизации для вставки материалов в хранилище машины.
 
-# Disposal Unit
+# Устройство утилизации
 
-signal-port-name-flush = Flush
-signal-port-description-flush = Signal port to toggle a disposal unit's flush mechanism.
+signal-port-name-flush = Сброс
+signal-port-description-flush = Сигнальный порт для переключения механизма сброса утилизационного устройства.
 
-signal-port-name-eject = Eject
-signal-port-description-eject = Signal port to eject a disposal unit's contents.
+signal-port-name-eject = Извлечь
+signal-port-description-eject = Сигнальный порт для извлечения содержимого утилизационного устройства.
 
-signal-port-name-ready = Ready
-signal-port-description-ready = Signal port that gets pulsed after a disposal unit becomes fully pressurized.
+signal-port-name-ready = Готово
+signal-port-description-ready = Сигнальный порт, который активируется после полного давления утилизационного устройства.
 
-# Storage Bin
+# Стеллаж хранения
 
-signal-port-name-automation-slot-storage = Item: Storage
-signal-port-description-automation-slot-storage = An automation slot for a storage bin's inventory.
+signal-port-name-automation-slot-storage = Предмет: Хранение
+signal-port-description-automation-slot-storage = Слот автоматизации для инвентаря стеллажа хранения.
 
-signal-port-name-storage-inserted = Inserted
-signal-port-description-storage-inserted = Signal port that gets pulsed after an item is inserted into a storage bin.
+signal-port-name-storage-inserted = Вставлено
+signal-port-description-storage-inserted = Сигнальный порт, который активируется после вставки предмета в стеллаж.
 
-signal-port-name-storage-removed = Removed
-signal-port-description-storage-removed = Signal port that gets pulsed after an item is removed from a storage bin.
+signal-port-name-storage-removed = Удалено
+signal-port-description-storage-removed = Сигнальный порт, который активируется после удаления предмета из стеллажа.
 
-# Fax Machine
+# Факс-машина
 
-signal-port-name-automation-slot-paper = Item: Paper
-signal-port-description-automation-slot-paper = An automation slot for a fax machine's paper tray.
+signal-port-name-automation-slot-paper = Предмет: Бумага
+signal-port-description-automation-slot-paper = Слот автоматизации для лотка бумаги факса.
 
-signal-port-name-fax-copy = Copy Fax
-signal-port-description-fax-copy = Signal port to copy a fax machine's paper.
+signal-port-name-fax-copy = Копировать факс
+signal-port-description-fax-copy = Сигнальный порт для копирования бумаги факса.
 
-# Constructor / Interactor
+# Конструктор / Взаимодействующий модуль
 
-signal-port-name-machine-start = Start
-signal-port-description-machine-start = Signal port to start a machine once.
+signal-port-name-machine-start = Запуск
+signal-port-description-machine-start = Сигнальный порт для запуска машины один раз.
 
-signal-port-name-machine-autostart = Auto Start
-signal-port-description-machine-autostart = Signal port to control starting after completing automatically.
+signal-port-name-machine-autostart = Автозапуск
+signal-port-description-machine-autostart = Сигнальный порт для управления автоматическим запуском после завершения.
 
-signal-port-name-machine-started = Started
-signal-port-description-machine-started = Signal port that gets pulsed after a machine starts.
+signal-port-name-machine-started = Запущено
+signal-port-description-machine-started = Сигнальный порт, который активируется после запуска машины.
 
-signal-port-name-machine-completed = Completed
-signal-port-description-machine-completed = Signal port that gets pulsed after a machine completes its work.
+signal-port-name-machine-completed = Завершено
+signal-port-description-machine-completed = Сигнальный порт, который активируется после завершения работы машины.
 
-signal-port-name-machine-failed = Failed
-signal-port-description-machine-failed = Signal port that gets pulsed after a machine fails to start.
+signal-port-name-machine-failed = Не удалось
+signal-port-description-machine-failed = Сигнальный порт, который активируется после неудачного запуска машины.

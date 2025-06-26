@@ -4,21 +4,21 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-marking-HairResomiBackstrafe = Resomi Backstrafe
-marking-HairResomiBurstShort = Resomi Burst Short
-marking-HairResomiDefault = Resomi Default
-marking-HairResomiDroopy = Resomi Droopy
-marking-HairResomiEars = Resomi Ears
-marking-HairResomiFluffymohawk = Resomi Fluffymohawk
-marking-HairResomiHedge = Resomi Hedge
-marking-HairResomiLongway = Resomi Longway
-marking-HairResomiMane = Resomi Mane
-marking-HairResomiManeBeardless = Resomi Mane (Beardless)
-marking-HairResomiMohawk = Resomi Mohawk
-marking-HairResomiMushroom = Resomi Mushroom
-marking-HairResomiNotree = Resomi Notree
-marking-HairResomiSpiky = Resomi Spiky
-marking-HairResomiPointy = ResomiPointy
-marking-HairResomiTwies = Resomi Twies
-marking-HairResomiUpright = Resomi Upright
-marking-HairResomiLong = Resomi Long
+marking-HairResomiBackstrafe = Резоми Назадняя Полоса
+marking-HairResomiBurstShort = Резоми Короткий Взрыв
+marking-HairResomiDefault = Резоми По Умолчанию
+marking-HairResomiDroopy = Резоми Поникший
+marking-HairResomiEars = Резоми Уши
+marking-HairResomiFluffymohawk = Резоми Пушистый Ирокез
+marking-HairResomiHedge = Резоми Ёжик
+marking-HairResomiLongway = Резоми Длинный Путь
+marking-HairResomiMane = Резоми Грива
+marking-HairResomiManeBeardless = Резоми Грива (Без Бороды)
+marking-HairResomiMohawk = Резоми Ирокез
+marking-HairResomiMushroom = Резоми Гриб
+marking-HairResomiNotree = Резоми Нет Дерева
+marking-HairResomiSpiky = Резоми Колючий
+marking-HairResomiPointy = Резоми Остроконечный
+marking-HairResomiTwies = Резоми Двое
+marking-HairResomiUpright = Резоми Вертикальный
+marking-HairResomiLong = Резоми Длинный

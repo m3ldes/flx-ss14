@@ -12,7 +12,7 @@ ghost-role-information-skibidi-toilet-rules = Вы - [color=red][bold]ебаны
 
 ghost-role-information-Hecu-name = Оперативник HECU
 ghost-role-information-Hecu-description = Центральное Командование требует закончить миссию.
-ghost-role-information-Hecu-rules = Следуйте указаниям штаба, не проебитесь. Вы имеете [color=#6495ed][bold]гандона[/bold][/color] в своем распоряжении.
+ghost-role-information-Hecu-rules = Следуйте указаниям штаба, не проиграйте. Вы имеете [color=#6495ed][bold]чего то[/bold][/color] в своем распоряжении.
 
 ghost-role-information-lootbug-name = Червячок
-ghost-role-information-lootbug-description = Если вам скажут, что вы долбаеб - так оно и есть.
+ghost-role-information-lootbug-description = Если вам скажут, что вы странный - так оно и есть.

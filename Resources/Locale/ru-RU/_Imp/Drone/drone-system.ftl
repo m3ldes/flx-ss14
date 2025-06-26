@@ -4,9 +4,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-drone-active = A maintenance drone. It seems totally unconcerned with you.
-drone-dormant = A dormant maintenance drone. Who knows when it will wake up?
-drone-activated = The drone whirrs to life!
-drone-too-close = Be aware of your proximity to {THE($being)}.
-drone-cant-use-nearby = This act could cause harm to {THE($being)}. Your programming prevents it.
-drone-cant-use = This act could cause harm to the station or its inhabitants. Your programming prevents it.
+drone-active = Активный дрон технического обслуживания. Кажется, он совершенно не обращает на вас внимания.
+drone-dormant = Неактивный дрон технического обслуживания. Кто знает, когда он проснется?
+drone-activated = Дрон оживает с жужжанием!
+drone-too-close = Будьте внимательны к вашей близости к {THE($being)}.
+drone-cant-use-nearby = Это действие может нанести вред {THE($being)}. Ваша программа предотвращает это.
+drone-cant-use = Это действие может нанести вред станции или её обитателям. Ваша программа предотвращает это.

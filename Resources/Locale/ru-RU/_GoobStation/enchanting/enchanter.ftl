@@ -1,10 +1,10 @@
-enchanter-examine = [color=lightblue]This item can be used as a source of enchants.[/color]
-enchanting-tool-examine = [color=lightblue]This can enchant items with a source item on an altar.[/color]
+enchanter-examine = [color=lightblue]Этот предмет можно использовать как источник зачарований.[/color]
+enchanting-tool-examine = [color=lightblue]С помощью этого предмета можно зачаровывать предметы, используя предмет-источник на алтаре.[/color]
 
-enchanter-disallowed-enchant = You are not worthy!
-enchanter-cant-enchant = You can't enchant that using this item!
-enchanter-enchanted = A magical aura shimmers across {THE($item)}!
-enchanting-tool-no-enchanter = You need to put an enchanting source with the target item.
+enchanter-disallowed-enchant = Ты недостоин!
+enchanter-cant-enchant = Ты не можешь зачаровать это с помощью этого предмета!
+enchanter-enchanted = Магическая аура мерцает вокруг {THE($item)}!
+enchanting-tool-no-enchanter = Вам нужно поместить источник зачарования вместе с целевым предметом.
 
-enchanting-sacrifice-single = The soul of {$target} empowers {THE($item)}!
-enchanting-sacrifice-multiple = The soul of {$target} empowers nearby items!
+enchanting-sacrifice-single = Душа {$target} наделяет силой {THE($item)}!
+enchanting-sacrifice-multiple = Душа {$target} наделяет силой ближайшие предметы!

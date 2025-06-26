@@ -7,9 +7,9 @@ revolutionaries-win-announcement-shuttle-call =
     Viva la revolution!
 
 revolutionaries-win-announcement =
-    Всех глав выебали в жопу!
-    Главы сосать!
+    Все главы были устранены!
+    Главы проиграли!
     Viva la revolution!
 
-revolutionaries-win-sender = Фурри Члено-девки
-revolutionaries-sender-cc = НаноТрейзен Гейклуб
+revolutionaries-win-sender = Революция победила!
+revolutionaries-sender-cc = НаноТрейзен плохие люди

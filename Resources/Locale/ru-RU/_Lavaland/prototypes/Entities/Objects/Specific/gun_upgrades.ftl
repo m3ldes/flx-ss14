@@ -4,12 +4,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-upgradeable-gun-popup-upgrade-limit = Maximum capacity for upgrades exceeded!
-upgradeable-gun-slot-name = Attachment slot {$value}
-upgradeable-gun-total-remaining-capacity = Total remaining capacity: {$value}
-gun-upgrade-examine-text-damage = Contains a [color=#ec9b2d][bold]damage[/bold][/color] upgrade.
-gun-upgrade-examine-text-range = Contains a [color=#2decec][bold]range[/bold][/color] upgrade.
-gun-upgrade-examine-text-reload = Contains a [color=#bbf134][bold]fire rate.[/bold][/color] upgrade.
-gun-upgrade-examine-text-light = Contains a [color=#bbf134][bold]light.[/bold][/color] upgrade.
-gun-upgrade-examine-text-vampirism = Contains a [color=crimson][bold]vampirism.[/bold][/color] upgrade.
-gun-upgrade-examine-text-capacity-cost = Requires {$value} capacity.
+upgradeable-gun-popup-upgrade-limit = Превышена максимальная вместимость для улучшений!
+upgradeable-gun-slot-name = Слот для насадки {$value}
+upgradeable-gun-total-remaining-capacity = Общая оставшаяся вместимость: {$value}
+gun-upgrade-examine-text-damage = Содержит улучшение [color=#ec9b2d][bold]урона[/bold][/color].
+gun-upgrade-examine-text-range = Содержит улучшение [color=#2decec][bold]дальности[/bold][/color].
+gun-upgrade-examine-text-reload = Содержит улучшение [color=#bbf134][bold]скорострельности[/bold][/color].
+gun-upgrade-examine-text-light = Содержит улучшение [color=#bbf134][bold]подсветки[/bold][/color].
+gun-upgrade-examine-text-vampirism = Содержит улучшение [color=crimson][bold]вампиризма[/bold][/color].
+gun-upgrade-examine-text-capacity-cost = Требуется {$value} вместимости.

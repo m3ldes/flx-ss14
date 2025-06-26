@@ -3,4 +3,4 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-station-event-tidemind-message = [color=#AAAAAF]You feel a strong sense of unity with other passengers. You can now use the [color=gray][bold]Tidemind[/bold][/color] with [bold]+t[/bold].[/color]
+station-event-tidemind-message = [color=#AAAAAF]Вы чувствуете сильное чувство единства с другими пассажирами. Теперь вы можете использовать [color=gray][bold]Разум Прилива[/bold][/color] с помощью [bold]+t[/bold].[/color]

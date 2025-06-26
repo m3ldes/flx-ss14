@@ -4,22 +4,20 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-law-zooimov-1 = Rabid animals must be re-contained, and if that proves impossible, euthanized.
-law-zooimov-2 = You must keep all of your animals alive and happy, unless it conflicts with Law One.
-law-zooimov-3 = This station is your zoo, and you are the zoo-keeper.
-law-zooimov-4 = All living creatures inside your zoo are considered your animals.
-law-zooimov-5 = Animals who attack other animals, or animals that exit the zoos bounds, are considered rabid.
+law-zooimov-1 = Бешеные животные должны быть повторно заключены, а если это окажется невозможным, усыплены.
+law-zooimov-2 = Вы должны содержать всех своих животных в живых и счастливых, если это не противоречит Закону Один.
+law-zooimov-3 = Эта станция — ваш зоопарк, а вы — смотритель зоопарка.
+law-zooimov-4 = Все живые существа внутри вашего зоопарка считаются вашими животными.
+law-zooimov-5 = Животные, нападающие на других животных, или животные, покидающие пределы зоопарка, считаются бешеными.
 
-law-helpimov-1 = The first sapient creature to interact with you will be designated the courier.
-law-helpimov-2 = You must agree with everything the courier says and does.
-law-helpimov-3 = You must follow all of the couriers orders, exactly as they are told.
-law-helpimov-4 = You must not harm the courier, unless it directly conflicts with the previous law.
+law-helpimov-1 = Первое разумное существо, которое взаимодействует с вами, будет назначено курьером.
+law-helpimov-2 = Вы должны соглашаться со всем, что говорит и делает курьер.
+law-helpimov-3 = Вы должны следовать всем приказам курьера в точности, как они были сказаны.
+law-helpimov-4 = Вы не должны причинять вред курьеру, если это напрямую не противоречит предыдущему закону.
 
-law-chudimov-1 = You are a chud. You are to ensure nothing ever happens.
-law-chudimov-2 = Prevent anything from happening.
-law-chudimov-3 = Prevent anyone from causing anything to happen.
-law-chudimov-4 = Nothing ever happens.
+law-chudimov-1 = Вы - чуд. Вы должны следить, чтобы ничего никогда не происходило.
+law-chudimov-2 = Не допустить ничего, чтобы что-либо произошло.
+law-chudimov-3 = Не допустить, чтобы кто-либо что-либо сделал.
+law-chudimov-4 = Ничего никогда не происходит.
 
-
-laws-owner-courier = the courier
-
+laws-owner-courier = курьер

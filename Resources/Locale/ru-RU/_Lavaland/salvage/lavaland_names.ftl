@@ -4,24 +4,24 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lavaland-planet-name-unknown = Unknown Planet
-lavaland-planet-name-lavaland = Lavaland Planet
-lavaland-planet-name-icemoon = IceMoon
+lavaland-planet-name-unknown = Неизвестная Планета
+lavaland-planet-name-lavaland = Планета Лаваландия
+lavaland-planet-name-icemoon = Ледяная Луна
 
 # GPS Signals
-lavaland-planet-outpost = Main Outpost
+lavaland-planet-outpost = Главный Форпост
 
-lavaland-ruin-unknown = Unknown
-lavaland-ruin-cargo = Cargo debris
-lavaland-ruin-arrivals-shuttle = Arrivals debris
-lavaland-ruin-wooden = Wooden building
-lavaland-ruin-seed-graveyard = Graveyard
-lavaland-ruin-seed-vault = Seed vault
-lavaland-ruin-anomalous-landscape = Anomalous Landscape
-lavaland-ruin-shelter = Abandoned shelter
-lavaland-ruin-laboratory = Ruined laboratory
-lavaland-ruin-station = Ruined research station
-lavaland-ruin-big-shuttle = Huge ruined shuttle
-lavaland-ruin-biodome = Biodome
-lavaland-ruin-syndicate = Syndicate base
-lavaland-ruin-hierophant = Interdimensional signal
+lavaland-ruin-unknown = Неизвестно
+lavaland-ruin-cargo = Обломки Грузового Корабля
+lavaland-ruin-arrivals-shuttle = Обломки Прибывающего Шаттла
+lavaland-ruin-wooden = Деревянное здание
+lavaland-ruin-seed-graveyard = Кладбище
+lavaland-ruin-seed-vault = Хранилище семян
+lavaland-ruin-anomalous-landscape = Аномальный Ландшафт
+lavaland-ruin-shelter = Заброшенный приют
+lavaland-ruin-laboratory = Разрушенная лаборатория
+lavaland-ruin-station = Разрушенная исследовательская станция
+lavaland-ruin-big-shuttle = Огромный разрушенный шаттл
+lavaland-ruin-biodome = Биокупол
+lavaland-ruin-syndicate = База Синдиката
+lavaland-ruin-hierophant = Межпространственный сигнал

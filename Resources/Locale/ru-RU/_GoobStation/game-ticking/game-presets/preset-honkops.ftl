@@ -4,40 +4,40 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-honkops-title = Honklear Operatives
-honkops-description = Honklear operatives have targeted the station. Try to keep them from arming and detonating the nuke by protecting the nuke disk!
+honkops-title = Гонклеарные Оперативники
+honkops-description = Гонклеарные оперативники нацелились на станцию. Постарайтесь помешать им вооружить и взорвать ядерную бомбу, защитив диск с кодами!
 
 honkops-welcome =
-    You are a honklear operative. Your goal is to blow up {$station}, and ensure that it is nothing but a pile of rubble. Your bosses, the Honkicate, have provided you with the tools you'll need for the task.
-    Operation {$name} is a go! Honk!
-honkops-briefing = Your objectives are simple. Deliver the payload and make sure it detonates. Begin mission. Honk!
+    Вы - гонклеарный оперативник. Ваша цель - взорвать {$station} и превратить её в груду обломков. Ваши боссы, Гонкикат, предоставили вам инструменты, необходимые для выполнения этой задачи.
+    Операция {$name} начинается! Гонк!
+honkops-briefing = Ваши цели просты. Доставить груз и убедиться, что он детонирует. Начать миссию. Гонк!
 
-honkops-opsmajor = [color=crimson]Honkicate major victory![/color]
-honkops-opsminor = [color=crimson]Honkicate minor victory![/color]
-honkops-neutral = [color=yellow]Neutral outcome![/color]
-honkops-crewminor = [color=green]Crew minor victory![/color]
-honkops-crewmajor = [color=green]Crew major victory![/color]
+honkops-opsmajor = [color=crimson]Главная победа Гонкиката![/color]
+honkops-opsminor = [color=crimson]Малая победа Гонкиката![/color]
+honkops-neutral = [color=yellow]Нейтральный исход![/color]
+honkops-crewminor = [color=green]Малая победа экипажа![/color]
+honkops-crewmajor = [color=green]Главная победа экипажа![/color]
 
-honkops-cond-nukeexplodedoncorrectstation = The honklear operatives managed to blow up the station.
-honkops-cond-nukeexplodedonnukieoutpost = The honklear operative outpost was destroyed by a honklear blast.
-honkops-cond-nukeexplodedonincorrectlocation = The honklear bomb was detonated off-station.
-honkops-cond-nukeactiveinstation = The honklear bomb was left armed on-station.
-honkops-cond-nukeactiveatcentcom = The honklear bomb was delivered to Central Command!
-honkops-cond-nukediskoncentcom = The crew escaped with the honklear authentication disk.
-honkops-cond-nukedisknotoncentcom = The crew left the honklear authentication disk behind.
-honkops-cond-nukiesabandoned = The honklear operatives were abandoned.
-honkops-cond-allnukiesdead = All honklear operatives have died.
-honkops-cond-somenukiesalive = Some honklear operatives died.
-honkops-cond-allnukiesalive = No honklear operatives died.
+honkops-cond-nukeexplodedoncorrectstation = Гонклеарным оперативникам удалось взорвать станцию.
+honkops-cond-nukeexplodedonnukieoutpost = База гонклеарных оперативников была уничтожена гонклеарным взрывом.
+honkops-cond-nukeexplodedonincorrectlocation = Гонклеарная бомба была взорвана за пределами станции.
+honkops-cond-nukeactiveinstation = Гонклеарная бомба была оставлена вооруженной на станции.
+honkops-cond-nukeactiveatcentcom = Гонклеарная бомба доставлена в Центральное командование!
+honkops-cond-nukediskoncentcom = Экипаж сбежал с диском аутентификации гонклеарной бомбы.
+honkops-cond-nukedisknotoncentcom = Экипаж оставил диск аутентификации гонклеарной бомбы.
+honkops-cond-nukiesabandoned = Гонклеарные оперативники были брошены.
+honkops-cond-allnukiesdead = Все гонклеарные оперативники погибли.
+honkops-cond-somenukiesalive = Некоторые гонклеарные оперативники погибли.
+honkops-cond-allnukiesalive = Ни один гонклеарный оперативник не погиб.
 
-honkops-list-start = The honklear operatives were:
+honkops-list-start = Гонклеарными оперативниками были:
 honkops-list-name = - [color=White]{$name}[/color]
 honkops-list-name-user = - [color=White]{$name}[/color] ([color=gray]{$user}[/color])
-honkops-not-enough-ready-players = Not enough players readied up for the game! There were {$readyPlayersCount} players readied up out of {$minimumPlayers} needed. Can't start Honkops.
-honkops-no-one-ready = No players readied up! Can't start Honkops.
+honkops-not-enough-ready-players = Недостаточно игроков подтвердили готовность к игре! Подтвердили готовность {$readyPlayersCount} игроков из необходимых {$minimumPlayers}. Невозможно начать Гонклеарных Оперативников.
+honkops-no-one-ready = Никто из игроков не подтвердил готовность! Невозможно начать Гонклеарных Оперативников.
 
-honkops-role-commander = Honk Commander
-honkops-role-agent = Honk Agent
-honkops-role-operator = Honk Operator
+honkops-role-commander = Гонк-Командир
+honkops-role-agent = Гонк-Агент
+honkops-role-operator = Гонк-Оператор
 
-loadout-group-honkops-mask = Honkops Mask
+loadout-group-honkops-mask = Маска Гонклеарных Оперативников
