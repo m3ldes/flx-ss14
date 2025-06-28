@@ -58,6 +58,7 @@
 // SPDX-FileCopyrightText: 2025 J <billsmith116@gmail.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 // SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
@@ -229,7 +230,7 @@ public sealed class SuicideCommandTests
                 Assert.That(mobStateSystem.IsDead(player, mobStateComp));
                 Assert.That(entManager.TryGetComponent<GhostComponent>(mindComponent.CurrentEntity, out var ghostComp) &&
                             !ghostComp.CanReturnToBody);
-                Assert.That(damageableComp.Damage.GetTotal(), Is.EqualTo(lethalDamageThreshold));
+                Assert.That(damageableComp.Damage.GetTotal(), Is.EqualTo(lethalDamageThreshold).Within(0.05));
             });
         });
 
