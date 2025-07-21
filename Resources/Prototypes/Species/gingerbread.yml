@@ -8,8 +8,8 @@
 
 - type: species
   id: Gingerbread
-  name: Печенье
-  roundStart: true
+  name: Gingerbread
+  roundStart: false
   prototype: MobGingerbread
   sprites: MobGingerbreadSprites
   markingLimits: MobHumanMarkingLimits
